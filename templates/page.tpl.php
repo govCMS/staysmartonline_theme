@@ -106,14 +106,6 @@
     <div class="layout-max spacer--vertical center-left">
 
       <div class="spacer--medium show-at__medium"><?php print render($footer_menu); ?></div>
-      <div class="spacer clearfix">
-        <h2 class="footer__heading"><?php print t('Connect with us'); ?></h2>
-        <ul class="list-inline">
-          <li class="list-inline__item"><a href="https://twitter.com/CommsAu" target="_blank" class="underline-on-hover__never"><img src="<?php print base_path() . drupal_get_path('theme', 'stay_smart_online'); ?>/images/social/twitter.svg" alt="Follow @CommsAu on Twitter" /></a></li>
-          <li class="list-inline__item"><a href="https://www.youtube.com/user/deptcommsau" target="_blank" class="underline-on-hover__never"><img src="<?php print base_path() . drupal_get_path('theme', 'stay_smart_online'); ?>/images/social/youtube.svg" alt="Watch deptcommsau on YouTube" /></a></li>
-          <li class="list-inline__item"><a href="https://www.linkedin.com/company/commsau" target="_blank" class="underline-on-hover__never"><img src="<?php print base_path() . drupal_get_path('theme', 'stay_smart_online'); ?>/images/social/linkedin.svg" alt="Follow commsau on LinkedIn" /></a></li>
-        </ul>
-      </div>
 
       <div class="spacer--large footer__border"><div class="copyright">
         <div class="copyright__left">
@@ -126,7 +118,7 @@
         </div>
         <div class="copyright__right">
           <?php print render($footer_auxilary_menu); ?>
-          <div><?php print t('&copy; Department of Communications and the Arts') . ' ' . date('Y'); ?></div>
+          <div><?php print t('&copy; Attorney-General\'s Department') . ' ' . date('Y'); ?></div>
         </div>
       </div></div>
 
