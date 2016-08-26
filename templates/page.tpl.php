@@ -105,8 +105,6 @@
 
     <div class="layout-max spacer--vertical center-left">
 
-      <div class="spacer--medium show-at__medium"><?php print render($footer_menu); ?></div>
-
       <div class="spacer--large footer__border"><div class="copyright">
         <div class="copyright__left">
           <div class="copyright__item">
