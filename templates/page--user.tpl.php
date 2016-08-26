@@ -27,7 +27,7 @@
         <h1 class="<?php print ($is_front) ? 'element-invisible' : 'page__title'; ?>" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print render($tabs); ?>
-      <div role="main">
+      <div role="main" class="layout-max">
         <a id="main-content"></a>
         <?php print $messages; ?>
         <?php print render($page['help']); ?>
