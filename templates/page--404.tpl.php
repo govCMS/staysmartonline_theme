@@ -43,15 +43,10 @@
           </svg>
         </div>
 
-        <h2 class="heading--3--light">Oops</h2>
+        <h2 class="heading--3--light">Sorry</h2>
 
         <p>It looks like you haven't been able to find what you're looking for.</p>
 
-        <p>This could be because we have a brand new website.</p>
-
-        <p>Try again with the link below and use search to find the information you're after.</p>
-
-        <p><a class="read-more" href="https://www.communications.gov.au">www.communications.gov.au</a></p>
       </div>
     </div>
 
