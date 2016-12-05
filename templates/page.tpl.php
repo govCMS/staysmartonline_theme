@@ -11,7 +11,7 @@
 
 
 <div id="page">
-
+  <?php print $header_search; ?>
   <?php if (!$is_front):?><a id="skip-content" href="#skip-content"></a><?php endif;?>
   <div class="main_content" data-js="on-this-page__content responsive-video external-links">
 
