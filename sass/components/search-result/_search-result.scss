@@ -6,13 +6,24 @@
 
 @import 'components/document-list/document-list';
 
+.search-api-page-results {
+  padding-left: 16px;
+}
+
+ol.search-results {
+  padding-left: 0;
+  .search-snippet-info {
+    padding-left: 0;
+  }
+}
+
 %search-result,
 .search-result {
-  padding: 1rem;
+  padding: 0;
   background-image: none;
 
   @include breakpoint($medium) {
-    padding: 2rem 1rem 2rem 2rem;
+    padding: 1rem 0.5rem 1rem 0rem;
   }
 
   &__icon {

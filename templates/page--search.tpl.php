@@ -51,7 +51,7 @@
               if ( !empty($query) ) {
                 echo 'value="'.$query.'"';
               }
-            ?> placeholder="Search phone policies">
+            ?> placeholder="Search">
             <input class="form-submit" id="edit-submit-full-site-search" name="" type="submit" value="Search">
           </form>
         </div>

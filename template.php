@@ -569,6 +569,14 @@ function stay_smart_online_form_alter(&$form, &$form_state, $form_id) {
       unset($form['state']['#options']['archive']);
     }
   }
+
+  if ($form_id == 'search_block_form') {
+    if ( isset($_GET['search_api_views_fulltext']) && !empty($_GET['search_api_views_fulltext'])) {
+      $query = filter_xss(htmlentities($_GET['search_api_views_fulltext']));
+      drupal_goto('search/'.$query);
+    }
+  }
+
 }
 
 /**
