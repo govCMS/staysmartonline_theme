@@ -27,9 +27,9 @@ ol.search-results {
   }
 
   &__icon {
-    width: 32px;
-    height: 32px;
-    margin: 0 1rem .5rem 0;
+    width: 0px;
+    height: 0px;
+    margin: 0;
 
     @include breakpoint($medium) {
       float: left;
