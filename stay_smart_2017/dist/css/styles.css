@@ -693,7 +693,7 @@ Style guide: Grid.4 Helpers.2 Debugging
 .list-horizontal .tags .see-more::after, .list-vertical .tags .see-more::after, .list-vertical--thirds .tags .see-more::after, .list-vertical--fourths .tags .see-more::after, footer[role='contentinfo'] .footer-top nav .tags .see-more::after, .list-small .tags .see-more::after, .list-highlighted .tags .see-more::after, .primary-nav ul .see-more::after,
 .local-nav ul .see-more::after, [class^='breadcrumbs'] .see-more::after, [class^='breadcrumbs'][class$='--inverted'] .see-more::after, .skip-to .see-more::after, [class^='controls'] .see-more::after, .govau--header .see-more::after, .prerelease-govau--header .see-more::after, .hero .see-more::after,
 .hero-sml .see-more::after,
-.hero-med .see-more::after, .header__inner .header__secondary-menu .see-more::after, .content-body .content .see-more::after, .more-link .see-more::after, .region-footer .block-menu .content ul.menu > li .see-more::after, .region-footer .block-menu-block .content ul.menu > li .see-more::after, .bean-basic-content > .content .see-more::after, #block-views-slideshow-block .banner-description-holder h3 .see-more::after, #block-views-slideshow-block .banner-description-holder .field .see-more::after, .view-home-page-blog-articles .view-content .views-row h2 .see-more::after, .view-home-page-blog-articles .view-content .views-row .display .see-more::after, .view-latest-news .view-content .views-row h2 .see-more::after, .view-latest-news .view-content .views-row .display .see-more::after, .view-whats-new-grid .view-content .views-row h2 .see-more::after, .view-whats-new-grid .view-content .views-row .display .see-more::after, .view-whats-new-grid .view-footer .see-more::after, .view-online-alerts .view-content .views-row h2 .see-more::after, .view-online-alerts .view-content .views-row .display .see-more::after, body.page-events #content .view .view-content .views-row h2 .see-more::after, body.page-events #content .view .view-content .views-row .display .see-more::after, body.page-publications #content .view .view-content .views-row h2 .see-more::after, body.page-publications #content .view .view-content .views-row .display .see-more::after, body.page-news-media #content .view .view-content .views-row h2 .see-more::after, body.page-news-media #content .view .view-content .views-row .display .see-more::after, #block-menu-menu-quick-links ul.menu li .see-more::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 .see-more::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display .see-more::after {
+.hero-med .see-more::after, .header__inner .header__secondary-menu .see-more::after, .content-body .content .see-more::after, .more-link .see-more::after, .region-footer .block-menu .content ul.menu > li .see-more::after, .region-footer .block-menu-block .content ul.menu > li .see-more::after, .content-header .breadcrumbs ul li .see-more::after, .bean-basic-content > .content .see-more::after, #block-views-slideshow-block .banner-description-holder h3 .see-more::after, #block-views-slideshow-block .banner-description-holder .field .see-more::after, .view-home-page-blog-articles .view-content .views-row h2 .see-more::after, .view-home-page-blog-articles .view-content .views-row .display .see-more::after, .view-latest-news .view-content .views-row h2 .see-more::after, .view-latest-news .view-content .views-row .display .see-more::after, .view-whats-new-grid .view-content .views-row h2 .see-more::after, .view-whats-new-grid .view-content .views-row .display .see-more::after, .view-whats-new-grid .view-footer .see-more::after, .view-online-alerts .view-content .views-row h2 .see-more::after, .view-online-alerts .view-content .views-row .display .see-more::after, body.page-events #content .view .view-content .views-row h2 .see-more::after, body.page-events #content .view .view-content .views-row .display .see-more::after, body.page-publications #content .view .view-content .views-row h2 .see-more::after, body.page-publications #content .view .view-content .views-row .display .see-more::after, body.page-news-media #content .view .view-content .views-row h2 .see-more::after, body.page-news-media #content .view .view-content .views-row .display .see-more::after, #block-menu-menu-quick-links ul.menu li .see-more::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 .see-more::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display .see-more::after, .content-body .content .toc-filter-content ul > li .see-more::after {
   background-image: url("../latest/img/icons/arrow-right--aqua.svg");
 }
 
@@ -713,7 +713,7 @@ summary::before, .accordion--controls summary::before, .nav-toggle::before {
 .list-horizontal .tags a[rel~='external']:not(.no-style)::after, .list-vertical .tags a[rel~='external']:not(.no-style)::after, .list-vertical--thirds .tags a[rel~='external']:not(.no-style)::after, .list-vertical--fourths .tags a[rel~='external']:not(.no-style)::after, footer[role='contentinfo'] .footer-top nav .tags a[rel~='external']:not(.no-style)::after, .list-small .tags a[rel~='external']:not(.no-style)::after, .list-highlighted .tags a[rel~='external']:not(.no-style)::after, .primary-nav ul a[rel~='external']:not(.no-style)::after,
 .local-nav ul a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'] a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'][class$='--inverted'] a[rel~='external']:not(.no-style)::after, .skip-to a[rel~='external']:not(.no-style)::after, [class^='controls'] a[rel~='external']:not(.no-style)::after, .govau--header a[rel~='external']:not(.no-style)::after, .prerelease-govau--header a[rel~='external']:not(.no-style)::after, .hero a[rel~='external']:not(.no-style)::after,
 .hero-sml a[rel~='external']:not(.no-style)::after,
-.hero-med a[rel~='external']:not(.no-style)::after, .header__inner .header__secondary-menu a[rel~='external']:not(.no-style)::after, .content-body .content a[rel~='external']:not(.no-style)::after, .more-link a[rel~='external']:not(.no-style)::after, .region-footer .block-menu .content ul.menu > li a[rel~='external']:not(.no-style)::after, .region-footer .block-menu-block .content ul.menu > li a[rel~='external']:not(.no-style)::after, .bean-basic-content > .content a[rel~='external']:not(.no-style)::after, #block-views-slideshow-block .banner-description-holder h3 a[rel~='external']:not(.no-style)::after, #block-views-slideshow-block .banner-description-holder .field a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-footer a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, #block-menu-menu-quick-links ul.menu li a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a[rel~='external']:not(.no-style)::after {
+.hero-med a[rel~='external']:not(.no-style)::after, .header__inner .header__secondary-menu a[rel~='external']:not(.no-style)::after, .content-body .content a[rel~='external']:not(.no-style)::after, .more-link a[rel~='external']:not(.no-style)::after, .region-footer .block-menu .content ul.menu > li a[rel~='external']:not(.no-style)::after, .region-footer .block-menu-block .content ul.menu > li a[rel~='external']:not(.no-style)::after, .content-header .breadcrumbs ul li a[rel~='external']:not(.no-style)::after, .bean-basic-content > .content a[rel~='external']:not(.no-style)::after, #block-views-slideshow-block .banner-description-holder h3 a[rel~='external']:not(.no-style)::after, #block-views-slideshow-block .banner-description-holder .field a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-footer a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, #block-menu-menu-quick-links ul.menu li a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .content-body .content .toc-filter-content ul > li a[rel~='external']:not(.no-style)::after {
   background-image: url("../latest/img/icons/external-link--aqua.svg");
 }
 
@@ -1312,7 +1312,7 @@ form .hint {
   display: block;
   margin-bottom: 0.4em;
   font-size: 0.875rem;
-  color: #00787E;
+  color: #313131;
 }
 
 form textarea {
@@ -1369,7 +1369,7 @@ form input[type='radio'] + label::before, form input[type='checkbox'] + label::b
 }
 
 form input[type='radio'] + label::before {
-  border: 2px solid #00787E;
+  border: 2px solid #313131;
   border-radius: 50%;
   content: '';
   left: 18px;
@@ -1387,7 +1387,7 @@ form input[type='radio']:checked + label::before {
 form input[type='radio']:checked + label::after {
   width: 17px;
   height: 17px;
-  background-color: #00787E;
+  background-color: #313131;
   border: 1px solid transparent;
   border-radius: 50%;
   content: '';
@@ -1404,7 +1404,7 @@ form input[type='radio']:checked + label::after {
 
 form input[type='checkbox'] + label::before {
   left: 20px;
-  border: 2px solid #00787E;
+  border: 2px solid #313131;
   content: '';
 }
 
@@ -1426,7 +1426,7 @@ form input[type='checkbox']:checked + label::before {
 form input[type='checkbox']:checked + label::after {
   width: 17px;
   height: 17px;
-  background-color: #00787E;
+  background-color: #313131;
   border: 1px solid transparent;
   content: '';
   left: 25px;
@@ -1849,7 +1849,7 @@ Link styles
 .list-horizontal .tags a[rel~='external']:not(.no-style)::after, .list-vertical .tags a[rel~='external']:not(.no-style)::after, .list-vertical--thirds .tags a[rel~='external']:not(.no-style)::after, .list-vertical--fourths .tags a[rel~='external']:not(.no-style)::after, footer[role='contentinfo'] .footer-top nav .tags a[rel~='external']:not(.no-style)::after, .list-small .tags a[rel~='external']:not(.no-style)::after, .list-highlighted .tags a[rel~='external']:not(.no-style)::after, .primary-nav ul a[rel~='external']:not(.no-style)::after,
 .local-nav ul a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'] a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'][class$='--inverted'] a[rel~='external']:not(.no-style)::after, .skip-to a[rel~='external']:not(.no-style)::after, [class^='controls'] a[rel~='external']:not(.no-style)::after, .govau--header a[rel~='external']:not(.no-style)::after, .prerelease-govau--header a[rel~='external']:not(.no-style)::after, .hero a[rel~='external']:not(.no-style)::after,
 .hero-sml a[rel~='external']:not(.no-style)::after,
-.hero-med a[rel~='external']:not(.no-style)::after, .header__inner .header__secondary-menu a[rel~='external']:not(.no-style)::after, .content-body .content a[rel~='external']:not(.no-style)::after, .more-link a[rel~='external']:not(.no-style)::after, .region-footer .block-menu .content ul.menu > li a[rel~='external']:not(.no-style)::after, .region-footer .block-menu-block .content ul.menu > li a[rel~='external']:not(.no-style)::after, .bean-basic-content > .content a[rel~='external']:not(.no-style)::after, #block-views-slideshow-block .banner-description-holder h3 a[rel~='external']:not(.no-style)::after, #block-views-slideshow-block .banner-description-holder .field a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-footer a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, #block-menu-menu-quick-links ul.menu li a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a[rel~='external']:not(.no-style)::after {
+.hero-med a[rel~='external']:not(.no-style)::after, .header__inner .header__secondary-menu a[rel~='external']:not(.no-style)::after, .content-body .content a[rel~='external']:not(.no-style)::after, .more-link a[rel~='external']:not(.no-style)::after, .region-footer .block-menu .content ul.menu > li a[rel~='external']:not(.no-style)::after, .region-footer .block-menu-block .content ul.menu > li a[rel~='external']:not(.no-style)::after, .content-header .breadcrumbs ul li a[rel~='external']:not(.no-style)::after, .bean-basic-content > .content a[rel~='external']:not(.no-style)::after, #block-views-slideshow-block .banner-description-holder h3 a[rel~='external']:not(.no-style)::after, #block-views-slideshow-block .banner-description-holder .field a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-footer a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, #block-menu-menu-quick-links ul.menu li a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .content-body .content .toc-filter-content ul > li a[rel~='external']:not(.no-style)::after {
   content: '';
   position: absolute;
   display: inline;
@@ -3115,7 +3115,7 @@ Style guide: Navigation.6 Footer navigation
   width: 100%;
   margin: 0;
   background-color: #f0f3f5;
-  color: #00787E;
+  color: #313131;
 }
 
 [class^='breadcrumbs'] a:not(.no-style) {
@@ -5199,7 +5199,7 @@ We may change:
 Style guide: Typography.3 Spacing
 */
 html {
-  color: #00787E;
+  color: #313131;
   line-height: 1.6;
   font-family: "Open Sans", Verdana, "Bitstream Vera Sans", sans-serif;
   font-weight: 400;
@@ -5969,7 +5969,7 @@ blockquote cite::before {
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: 1px;
-  color: #00787E;
+  color: #313131;
 }
 
 blockquote blockquote {
@@ -6786,18 +6786,14 @@ html.large-fonts {
 }
 
 body.not-front #content .content-header {
-  background-color: #ce4a02;
   padding-top: 1.1875rem;
-  padding-bottom: 1.5625rem;
   margin-bottom: 1.5625rem;
 }
 
 @media (min-width: 768px) {
   body.not-front #content .content-header {
-    height: 14.6875rem;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    margin-bottom: 5rem;
+    padding-top: 4rem;
+    margin-bottom: 3.75rem;
   }
 }
 
@@ -6815,7 +6811,6 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
 .hero-sml body.not-front #content .content-header .content-header-inner .site-title, body.not-front #content .content-header .content-header-inner
 .hero-med .site-title,
 .hero-med body.not-front #content .content-header .content-header-inner .site-title {
-  color: white;
   font-weight: 300;
   font-size: 2rem;
 }
@@ -6987,7 +6982,7 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
   }
 }
 
-.sidebar-first {
+.content-sidebar-first {
   -webkit-order: -1;
       -ms-flex-order: -1;
           order: -1;
@@ -6995,19 +6990,19 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
 }
 
 @media (min-width: 1024px) {
-  .sidebar-first {
+  .content-sidebar-first {
     width: 20.625rem;
     min-width: 20.625rem;
     padding-right: 3.75rem;
   }
 }
 
-.content-body-inner.has-sidebar .region-content {
+.content-body-inner.has-sidebar .content-body-inner-pane {
   width: 100%;
 }
 
 @media (min-width: 1024px) {
-  .content-body-inner.has-sidebar .region-content {
+  .content-body-inner.has-sidebar .content-body-inner-pane {
     max-width: 48.75rem;
   }
 }
@@ -7075,7 +7070,7 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
   }
 }
 
-.page-node .content-body-inner.no-sidebar .region-content .node > .submitted {
+.page-node .content-body-inner.no-sidebar .content-body-inner-pane .page__title {
   max-width: 48.75rem;
   margin-left: auto;
   margin-right: auto;
@@ -7084,7 +7079,7 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
   box-sizing: content-box;
 }
 
-.page-node .content-body-inner.no-sidebar .region-content .node > .content {
+.page-node .content-body-inner.no-sidebar .content-body-inner-pane .node > .submitted {
   max-width: 48.75rem;
   margin-left: auto;
   margin-right: auto;
@@ -7093,11 +7088,20 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
   box-sizing: content-box;
 }
 
-.page-node .content-body-inner.no-sidebar .region-content .node-webform > .submitted {
+.page-node .content-body-inner.no-sidebar .content-body-inner-pane .node > .content {
+  max-width: 48.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  box-sizing: content-box;
+}
+
+.page-node .content-body-inner.no-sidebar .content-body-inner-pane .node-webform > .submitted {
   max-width: 33.75rem;
 }
 
-.page-node .content-body-inner.no-sidebar .region-content .node-webform > .content {
+.page-node .content-body-inner.no-sidebar .content-body-inner-pane .node-webform > .content {
   max-width: 33.75rem;
 }
 
@@ -7395,6 +7399,12 @@ h1, .hero .site-title,
   font-size: 4rem;
 }
 
+h1:first-of-type, .hero .site-title:first-of-type,
+.hero-sml .site-title:first-of-type,
+.hero-med .site-title:first-of-type {
+  margin-top: 0;
+}
+
 h2, .display {
   font-size: 3rem;
 }
@@ -7458,7 +7468,7 @@ a[rel~='external']::after {
   background-image: url(../images/svg/external-link--orange.svg) !important;
 }
 
-.page-node .region-content .field {
+.page-node .content-body-inner-pane .field {
   margin-top: 1.375rem;
   margin-bottom: 1.375rem;
 }
@@ -8085,32 +8095,154 @@ ul.tabs.primary {
   margin-bottom: 1.375rem;
 }
 
-.content-header .breadcrumbs--inverted {
+.content-header .breadcrumbs {
   display: block;
   background-color: transparent;
 }
 
-.content-header .breadcrumbs--inverted ul {
+.content-header .breadcrumbs ul {
   padding-top: 0.5rem;
   padding-bottom: 0;
 }
 
-.content-header .breadcrumbs--inverted ul li {
+.content-header .breadcrumbs ul li {
+  color: #ce4a02;
+  /*
+  See more link
+
+  Use see more links at the end of [lists](section-list-styles.html),
+  to take the user to a index page of all items.
+
+  Markup: <a class="see-more" href="#">See more</a>
+
+  <details open data-label="placeholder-link-accessibility" aria-expanded="false">
+    <summary>Accessibility &amp; browser testing</summary>
+    <div class="accordion-panel">
+    <strong>Passed</strong>:
+      <ul>
+        <li>HTML5 validation (<a href="http://validator.github.io/validator/" rel="external">Nu Html Checker</a>)</li>
+        <li>WCAG:AA automated (<a href="http://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/" rel="external">HTML_CodeSniffer</a>)</li>
+      </ul>
+    <strong>Untested</strong>:
+      <ul>
+        <li>WCAG:AA manual</li>
+        <li>Browser support &mdash; automated and manual</li>
+      </ul>
+    </div>
+  </details>
+
+  Style guide: Link styles.2 See more link
+  */
+  /*
+  Placeholder links (prototyping)
+
+  Use placeholder links (greyed out links) to show actions that users can't currently take.
+
+  Your content should explain why the action isn't available and when it will be.
+
+  <p class="callout">Placeholders only work in `<span>` tags; not `<a>`.</p>
+
+  Markup: <p><span class="placeholder-link">Draft news item</span></p>
+  <p><a href="#">News item</a><p>
+
+  <details open data-label="placeholder-links-accessibility" aria-expanded="false">
+    <summary>Accessibility &amp; browser testing</summary>
+    <div class="accordion-panel">
+    <strong>Passed</strong>:
+      <ul>
+        <li>HTML5 validation (<a href="http://validator.github.io/validator/" rel="external">Nu Html Checker</a>)</li>
+        <li>WCAG:AA automated (<a href="http://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/" rel="external">HTML_CodeSniffer</a>)</li>
+      </ul>
+    <strong>Untested</strong>:
+      <ul>
+        <li>WCAG:AA manual</li>
+        <li>Browser support &mdash; automated and manual</li>
+      </ul>
+    </div>
+  </details>
+
+  Style guide: Link styles.3 Placeholder links
+  */
   font-size: 1rem;
   height: 1.875rem;
 }
 
-.content-header .breadcrumbs--inverted ul li a {
-  white-space: nowrap;
+.content-header .breadcrumbs ul li a:not(.no-style) {
+  color: #ce4a02;
+  text-decoration: none;
+  outline: none;
+  border-bottom: solid 1px #ce4a02;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.1s;
+  transition-property: background-color, border-color, color;
 }
 
-.content-header .breadcrumbs--inverted ul li:not(:last-child) {
-  background-image: url("../../vendor/gov-au-ui-kit/assets/img/icons/arrow-right--white.svg");
+.content-header .breadcrumbs ul li a:not(.no-style):hover, .content-header .breadcrumbs ul li a:not(.no-style):focus {
+  background-color: #A33591;
+  color: #F0F3F5;
+  border-bottom-color: #A33591;
+}
+
+.content-header .breadcrumbs ul li a:not(.no-style)[rel~='external'] {
+  display: inline;
+  position: relative;
+  margin-right: 1.6em;
+}
+
+.content-header .breadcrumbs ul li a:not(.no-style)[rel~='external']:hover {
+  border-color: transparent;
+}
+
+.content-header .breadcrumbs ul li a:not(.no-style)[rel~='external']::after {
+  background-size: 0.9em auto;
+}
+
+.content-header .breadcrumbs ul li .see-more {
+  display: inline-block;
+  position: relative;
+  margin-right: 1.6em;
+  font-weight: 700;
+  color: #00787E;
+}
+
+.content-header .breadcrumbs ul li .see-more::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -1.2em;
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  background-repeat: no-repeat;
+  background-position: right 0.4em;
+  background-size: 0.64em auto;
+}
+
+.content-header .breadcrumbs ul li .see-more:hover, .content-header .breadcrumbs ul li .see-more:focus {
+  color: #F0F3F5;
+}
+
+.content-header .breadcrumbs ul li span.placeholder-link {
+  color: rgba(206, 74, 2, 0.7);
+  border-bottom: none;
+  cursor: not-allowed;
+}
+
+.content-header .breadcrumbs ul li span.placeholder-link:hover {
+  cursor: not-allowed;
+}
+
+.content-header .breadcrumbs ul li:not(:last-child) {
+  background-image: url("../images/svg/arrow-right--grey.svg");
   background-position: right top 7px;
 }
 
-.content-header .breadcrumbs--inverted ul li:last-child {
-  font-weight: 600;
+.content-header .breadcrumbs ul li:last-child {
+  color: #00787E;
+}
+
+.content-header .breadcrumbs ul li a {
+  white-space: nowrap;
 }
 
 .front .page__title {
@@ -10636,6 +10768,162 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
 
 #block-govcms-social-links-services .inner-wrapper .content a img {
   float: left;
+}
+
+.content-body .content .toc-filter-content {
+  background-color: #E6F8F9;
+  border: 2px solid #CCE4E5;
+  border-radius: 4px;
+  color: #313131;
+  padding: 1.6875rem 1.8125rem;
+}
+
+.content-body .content .toc-filter-content h2, .content-body .content .toc-filter-content .display {
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.125rem;
+  color: #014E51;
+  letter-spacing: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.content-body .content .toc-filter-content h2:after, .content-body .content .toc-filter-content .display:after {
+  content: '...';
+}
+
+.content-body .content .toc-filter-content ul {
+  padding: 0;
+}
+
+.content-body .content .toc-filter-content ul > li {
+  margin: 0;
+  list-style: none;
+  padding-left: 1.875rem;
+  background-image: url(../images/svg/check--green.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: #444449;
+  /*
+  See more link
+
+  Use see more links at the end of [lists](section-list-styles.html),
+  to take the user to a index page of all items.
+
+  Markup: <a class="see-more" href="#">See more</a>
+
+  <details open data-label="placeholder-link-accessibility" aria-expanded="false">
+    <summary>Accessibility &amp; browser testing</summary>
+    <div class="accordion-panel">
+    <strong>Passed</strong>:
+      <ul>
+        <li>HTML5 validation (<a href="http://validator.github.io/validator/" rel="external">Nu Html Checker</a>)</li>
+        <li>WCAG:AA automated (<a href="http://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/" rel="external">HTML_CodeSniffer</a>)</li>
+      </ul>
+    <strong>Untested</strong>:
+      <ul>
+        <li>WCAG:AA manual</li>
+        <li>Browser support &mdash; automated and manual</li>
+      </ul>
+    </div>
+  </details>
+
+  Style guide: Link styles.2 See more link
+  */
+  /*
+  Placeholder links (prototyping)
+
+  Use placeholder links (greyed out links) to show actions that users can't currently take.
+
+  Your content should explain why the action isn't available and when it will be.
+
+  <p class="callout">Placeholders only work in `<span>` tags; not `<a>`.</p>
+
+  Markup: <p><span class="placeholder-link">Draft news item</span></p>
+  <p><a href="#">News item</a><p>
+
+  <details open data-label="placeholder-links-accessibility" aria-expanded="false">
+    <summary>Accessibility &amp; browser testing</summary>
+    <div class="accordion-panel">
+    <strong>Passed</strong>:
+      <ul>
+        <li>HTML5 validation (<a href="http://validator.github.io/validator/" rel="external">Nu Html Checker</a>)</li>
+        <li>WCAG:AA automated (<a href="http://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/" rel="external">HTML_CodeSniffer</a>)</li>
+      </ul>
+    <strong>Untested</strong>:
+      <ul>
+        <li>WCAG:AA manual</li>
+        <li>Browser support &mdash; automated and manual</li>
+      </ul>
+    </div>
+  </details>
+
+  Style guide: Link styles.3 Placeholder links
+  */
+}
+
+.content-body .content .toc-filter-content ul > li a:not(.no-style) {
+  color: #444449;
+  text-decoration: none;
+  outline: none;
+  border-bottom: solid 1px #444449;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.1s;
+  transition-property: background-color, border-color, color;
+}
+
+.content-body .content .toc-filter-content ul > li a:not(.no-style):hover, .content-body .content .toc-filter-content ul > li a:not(.no-style):focus {
+  background-color: #A33591;
+  color: #fff;
+  border-bottom-color: #A33591;
+}
+
+.content-body .content .toc-filter-content ul > li a:not(.no-style)[rel~='external'] {
+  display: inline;
+  position: relative;
+  margin-right: 1.6em;
+}
+
+.content-body .content .toc-filter-content ul > li a:not(.no-style)[rel~='external']:hover {
+  border-color: transparent;
+}
+
+.content-body .content .toc-filter-content ul > li a:not(.no-style)[rel~='external']::after {
+  background-size: 0.9em auto;
+}
+
+.content-body .content .toc-filter-content ul > li .see-more {
+  display: inline-block;
+  position: relative;
+  margin-right: 1.6em;
+  font-weight: 700;
+  color: #00787E;
+}
+
+.content-body .content .toc-filter-content ul > li .see-more::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -1.2em;
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  background-repeat: no-repeat;
+  background-position: right 0.4em;
+  background-size: 0.64em auto;
+}
+
+.content-body .content .toc-filter-content ul > li .see-more:hover, .content-body .content .toc-filter-content ul > li .see-more:focus {
+  color: #fff;
+}
+
+.content-body .content .toc-filter-content ul > li span.placeholder-link {
+  color: rgba(68, 68, 73, 0.7);
+  border-bottom: none;
+  cursor: not-allowed;
+}
+
+.content-body .content .toc-filter-content ul > li span.placeholder-link:hover {
+  cursor: not-allowed;
 }
 
 #content .search-form {

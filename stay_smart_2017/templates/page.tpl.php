@@ -92,11 +92,6 @@
           <?php print $breadcrumb; ?>
           <a href="#skip-link" id="skip-content" class="element-invisible" tabindex="-1">Go to top of page</a>
           <a id="main-content"></a>
-          <?php print render($title_prefix); ?>
-          <?php if ($title): ?>
-            <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
-          <?php endif; ?>
-          <?php print render($title_suffix); ?>
         </div>
       </div>
       <div class="content-body">
@@ -107,10 +102,17 @@
           <ul class="action-links"><?php print render($action_links); ?></ul>
         <?php endif; ?>
         <div class="content-body-inner<?php print $sidebar_first ? ' has-sidebar' : ' no-sidebar'; ?>">
-          <?php print render($page['content']); ?>
-          <?php print $feed_icons; ?>
+          <div class="content-body-inner-pane">
+            <?php print render($title_prefix); ?>
+            <?php if ($title): ?>
+              <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
+            <?php endif; ?>
+            <?php print render($title_suffix); ?>
+            <?php print render($page['content']); ?>
+            <?php print $feed_icons; ?>
+          </div>
           <?php if ($sidebar_first): ?>
-            <aside class="sidebar-first">
+            <aside class="content-sidebar-first">
               <?php print $sidebar_first; ?>
             </aside>
           <?php endif; ?>
@@ -120,7 +122,7 @@
   </div>
 
   <?php if ($sidebar_second): ?>
-    <aside class="sidebar-second" role="complementary">
+    <aside class="content-sidebar-second" role="complementary">
       <?php print $sidebar_second; ?>
     </aside>
   <?php endif; ?>
