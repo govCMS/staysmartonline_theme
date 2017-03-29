@@ -1,3 +1,11 @@
+.header {
+  @include breakpoint(tablet) {
+    background-image: url('../images/png/header-background.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+}
+
 .header__inner {
   @include center-column($desktop_column);
   padding-top: rem(16px);
@@ -5,7 +13,7 @@
   .header__secondary-menu {
     display: none;
     @include breakpoint(tablet) {
-      @include link-colours($primary_1, $secondary_3, $neutral_1);
+      @include link-colours($secondary_1, $secondary_3, $neutral_4);
       display: block;
       text-align: right;
     }
@@ -27,6 +35,14 @@
     .logo-wrapper {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      html.no-flexbox & {
+        @include breakpoint(tablet) {
+          display: inline-block;
+          width: auto;
+        }
+      }
       a {
         display: inline-block;
         vertical-align: middle;
@@ -36,6 +52,18 @@
           @include breakpoint(tablet) {
             max-height: 100%;
           }
+        }
+      }
+      #logo {
+        display: none;
+        @include breakpoint(tablet) {
+          display: inline-block;
+        }
+      }
+      #logo-mobile {
+        display: inline-block;
+        @include breakpoint(tablet) {
+          display: none;
         }
       }
       .header-title {
@@ -110,10 +138,29 @@
   .region-header {
     display: flex;
     align-items: center;
+    html.no-flexbox & {
+      display: inline-block;
+      float: right;
+      @include breakpoint(desktop) {
+        width: 500px;
+      }
+    }
+    .block-govcms-text-resize {
+      html.no-flexbox & {
+        @include breakpoint(tablet) {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
     .block-search-api-page {
       width: 100%;
       @include breakpoint(tablet) {
         width: auto;
+      }
+      html.no-flexbox & {
+        display: inline-block;
+        vertical-align: middle;
       }
     }
     .search-form-widget {
@@ -144,17 +191,26 @@
       &>div {
         display: flex;
         justify-content: flex-start;
+        html.no-flexbox & {
+          display: table;
+        }
         .form-item {
           margin: 0;
           width: 100%;
           box-sizing: border-box;
           flex: 1;
+          html.no-flexbox & {
+            display: table-cell;
+          }
           input {
             @include search-text-field;
           }
         }
         input[type="submit"] {
           @include search-submit-button;
+          html.no-flexbox & {
+            display: table-cell;
+          }
         }
       }
     }
@@ -173,9 +229,11 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  outline: inherit;
   background-image: url(../images/svg/mobile_search_open.svg);
   margin-right: $mobile_expand_search_width;
+  html.no-flexbox & {
+    float: right;
+  }
   &:hover, &:focus {
     background-image: url(../images/svg/mobile_search_open_hover.svg);
   }
@@ -196,7 +254,6 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  outline: inherit;
   background-image: url(../images/svg/mobile_menu_open.svg);
   position: absolute;
   z-index: 1;

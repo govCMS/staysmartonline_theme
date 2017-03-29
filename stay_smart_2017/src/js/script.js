@@ -13,7 +13,7 @@ var desktop_column = 1170;
  */
 (function($, Drupal, window, document, undefined) {
 
-  Drupal.behaviors.govcms_ui_kit = {
+  Drupal.behaviors.stay_smart_2017 = {
     attach: function(context, settings) {
       // Object Fit Polyfill for IE. Used on News Teaser Images.
       objectFitImages();

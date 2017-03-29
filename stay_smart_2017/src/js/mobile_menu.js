@@ -41,7 +41,7 @@
     return false;
   }
 
-  Drupal.behaviors.govcms_ui_kit_menu = {
+  Drupal.behaviors.stay_smart_2017_menu = {
     attach: function(context, settings) {
       $widget = $('#mobile-nav', context);
       if ($widget.length > 0) {
@@ -50,6 +50,14 @@
         $button.unbind('click', toggle_menu).bind('click', toggle_menu);
         $(window).unbind('resize', menu_bar_resize).bind('resize', menu_bar_resize);
         menu_bar_resize();
+
+        // Adding Secondary nav to mobile menu.
+        var $secondary_links = $($('.header__secondary-menu > ul.links', context).html());
+        var $widget_list = $widget.children('ul');
+        $widget_list.children('li:last-child').removeClass('last');
+        $secondary_links.removeClass('first').removeClass('last');
+        $widget_list.append($secondary_links);
+        $widget_list.children('li:last-child').addClass('last');
       }
     }
   };

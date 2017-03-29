@@ -23,7 +23,7 @@
     }
   }
 
-  Drupal.behaviors.govcms_ui_kit_webform = {
+  Drupal.behaviors.stay_smart_2017_webform = {
     attach: function(context, settings) {
       // Flip the order of radio checkboxes with labels.
       // UI Kit styling only works if the label appears after.

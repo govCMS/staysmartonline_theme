@@ -1,17 +1,28 @@
 #block-govcms-social-links-services {
-  background-color: $primary_2;
+  background-color: $sso_neutral_7;
   .inner-wrapper {
     @include center-column($desktop_column);
-    display: flex;
-    align-items: center;
     color: white;
     padding-top: rem(38px);
     padding-bottom: rem(38px);
+    @include breakpoint(tablet) {
+      display: flex;
+      align-items: center;
+    }
     h2 {
+      font-family: $varela_round;
+      color: $sso_neutral_6;
+      font-size: rem(24px);
       margin: 0;
       margin-right: rem(10px);
-      display: inline;
-      font-size: rem(16px);
+      margin-bottom: 10px;
+      @include breakpoint(tablet) {
+        display: inline;
+        margin-bottom: 0;
+      }
+      &:after {
+        content: ':';
+      }
     }
     .content {
       display: inline;

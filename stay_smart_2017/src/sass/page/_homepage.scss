@@ -27,7 +27,7 @@
 // INTRODUCTION BEAN
 // =========================================================
 .bean-basic-content {
-  background-color: $neutral_4;
+  background-color: $sso_neutral_7;
   &>.content {
     @include center-column($desktop_column);
     @include link-colours($primary_1, $secondary_3, $neutral_1);
@@ -38,11 +38,14 @@
       padding-top: $default_padding * 2;
       padding-bottom: rem(50px);
     }
-    @include breakpoint(desktop) {
-      text-align: center;
-    }
     p {
+      text-align: center;
       margin-bottom: 0;
+      color: $primary_1;
+      font-size: rem(16px);
+      @include breakpoint(tablet) {
+        font-size: rem(24px);
+      }
     }
   }
 }
@@ -54,10 +57,7 @@
 // =========================================================
 // SLIDER
 // =========================================================
-#block-views-slideshow-block {
-  &>h2 {
-    @include visually-hidden;
-  }
+.view-slideshow {
   .view-content {
     position: relative;
     background-color: #0B3B46;
@@ -100,6 +100,12 @@
         height: 100%;
       }
     }
+    a {
+      margin: 0 !important;
+      &:after {
+        display: none !important;
+      }
+    }
     img {
       height: rem(225px);
       object-fit: cover;
@@ -132,14 +138,16 @@
       }
     }
     .field {
-      @include link-colours(white, $neutral_4, $neutral_1);
+      a {
+        @include listing-component-button;
+      }
     }
   }
   .banner-description-panel {
     @include breakpoint(tablet) {
       position: relative;
       box-sizing: border-box;
-      background-color: #0B3B46;
+      background-color: rgba(0, 0, 0, 0.55);
       padding: rem(45px);
       padding-top: rem(85px);
       max-width: rem(524px);
@@ -153,7 +161,7 @@
     padding-top: rem(34px);
     padding-left: rem(37px);
     button {
-      color: $secondary_3;
+      color: $white !important;
       border: 0;
       margin: 0;
       display: inline;
@@ -162,16 +170,19 @@
       overflow: hidden;
       padding: 0;
       vertical-align: top;
-      background-color: transparent;
+      background-color: transparent !important;
       background-repeat: no-repeat;
       background-position: center;
-      border-bottom: 1px solid transparent;
+      border-bottom: 1px solid transparent !important;
+      border-radius: 0 !important;
       &:hover, &:focus {
-        color: white;
-        border-bottom-color: white;
+        border-bottom-color: $primary_1 !important;
       }
       &.active {
-        color: white;
+        border-bottom-color: $white !important;
+        &:hover, &:focus {
+          border-bottom-color: $primary_1 !important;
+        }
       }
       &.slider-prev {
         @include hide-text;
@@ -215,7 +226,7 @@
 // =========================================================
 // HOMEPAGE BLOGS AND NEWS LISTSING
 // =========================================================
-.view-home-page-blog-articles, .view-latest-news {
+.view-home-page-blog-articles, .view-latest-news, .view-whats-new-grid {
   .view-content {
     @include breakpoint(tablet) {
       @include outer-container(100%);
@@ -246,7 +257,7 @@
         @include listing-component-wrapper;
         &.has-thumbnail {
           padding-top: $listing_component_image_height;
-          .field-type-image {
+          .field-type-image, .field-name-field-feature-image {
             @include listing-component-image;
           }
           h2 {
@@ -263,6 +274,205 @@
       }
       .field-name-body {
         @include listing-component-body;
+      }
+    }
+  }
+}
+
+// =========================================================
+// WHAT'S NEW LISTING
+// =========================================================
+.pane-whats-new-grid {
+  background-color: #E9E7E3;
+  padding-top: rem(55px);
+  padding-bottom: rem(43px);
+}
+
+.view-whats-new-grid {
+  @include center-column($desktop_column);
+  .view-header {
+    h2 {
+      @include large-block-heading;
+    }
+  }
+  .view-content {
+    .views-row {
+      .node-readmore {
+        padding: 0;
+        a {
+          @include listing-component-button;
+        }
+      }
+    }
+  }
+  .view-footer {
+    text-align: right;
+    @include link-colours($sso_neutral_6, $secondary_3, $white);
+  }
+}
+
+// =========================================================
+// HOMEPAGE VIEW ONLINE ALERTS
+// =========================================================
+.view-online-alerts {
+  .view-content {
+    @include breakpoint(tablet) {
+      @include outer-container(100%);
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .views-row {
+      @include breakpoint(tablet) {
+        @include span-columns(4 of 12);
+      }
+      &:nth-child(2n) {
+        @include breakpoint(tablet) {
+          @include omega();
+        }
+        @include breakpoint(large_tablet) {
+          margin-right: flex-gutter(12);
+        }
+      }
+      &:nth-child(3n) {
+        @include breakpoint(large_tablet) {
+          @include omega();
+        }
+      }
+      .node {
+        position: relative;
+        padding-right: rem(11px);
+        margin-bottom: rem(22px);
+        padding-top: rem(16px);
+        padding-bottom: rem(22px);
+        padding-left: rem(35px);
+        @include breakpoint(tablet) {
+          padding-left: rem(11px);
+        }
+        @include breakpoint(large_tablet) {
+          padding-left: rem(47px);
+          padding-top: rem(38px);
+          padding-bottom: rem(46px);
+        }
+        &:before {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          width: 2px;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: auto;
+        }
+        &.priority-level-high {
+          &:before {
+            background-color: $alert_priority_high;
+          }
+          .alert-and-date {
+            background-image: url('../images/png/icon-alerts-priority-high.png');
+          }
+          .field-name-field-priority-level {
+            .field-items {
+              color: $alert_priority_high;
+            }
+          }
+        }
+        &.priority-level-moderate {
+          &:before {
+            background-color: $alert_priority_medium;
+          }
+          .alert-and-date {
+            background-image: url('../images/png/icon-alerts-priority-moderate.png');
+          }
+          .field-name-field-priority-level {
+            .field-items {
+              color: $alert_priority_medium;
+            }
+          }
+        }
+        &.priority-level-low {
+          &:before {
+            background-color: $alert_priority_low;
+          }
+          .alert-and-date {
+            background-image: url('../images/png/icon-alerts-priority-low.png');
+          }
+          .field-name-field-priority-level {
+            .field-items {
+              color: $alert_priority_low;
+            }
+          }
+        }
+      }
+      h2 {
+        @include listing-component-heading;
+        margin-top: 0;
+        font-family: $varela_round;
+        font-size: rem(18px);
+        @include breakpoint(large_tablet) {
+          font-size: rem(24px);
+        }
+      }
+      .alert-and-date {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding-left: rem(48px);
+        @include breakpoint(large_tablet) {
+          padding-left: rem(57px);
+        }
+      }
+      .field-name-field-priority-level {
+        margin-right: rem(10px);
+        @include breakpoint(large_tablet) {
+          margin-right: rem(13px);
+        }
+        .field-label {
+          @include visually-hidden;
+        }
+        .field-items {
+          height: rem(30px);
+          font-family: $varela_round;
+          font-size: rem(16px);
+          @include breakpoint(large_tablet) {
+            font-size: rem(18px);
+          }
+          .field-item {
+            line-height: 1.9em;
+            @include breakpoint(tablet) {
+              line-height: 1.8em;
+            }
+            @include breakpoint(large_tablet) {
+              line-height: 1.6em;
+            }
+          }
+        }
+      }
+      .field-name-field-alert-date {
+        color: #878787;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: rem(14px);
+        white-space: nowrap;
+        @include breakpoint(large_tablet) {
+          font-size: rem(16px);
+        }
+      }
+      .field-name-body {
+        color: #333333;
+        letter-spacing: 0px;
+        font-size: rem(14px);
+        line-height: 1.2em;
+        @include breakpoint(large_tablet) {
+          font-size: rem(16px);
+        }
+      }
+      .node-readmore {
+        padding: 0;
+        a {
+          @include listing-component-button;
+        }
       }
     }
   }

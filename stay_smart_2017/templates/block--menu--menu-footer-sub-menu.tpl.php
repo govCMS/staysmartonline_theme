@@ -55,10 +55,13 @@
   <div class="content"<?php print $content_attributes; ?>>
     <?php print $content ?>
       <div class="footer-copyright">
-      <?php if (theme_get_setting('govcms_ui_kit_footer_copyright')): ?>
-        <?php print decode_entities(theme_get_setting('govcms_ui_kit_footer_copyright')); ?>
+      <?php if ($agency_legal_name = theme_get_setting('stay_smart_2017_agency_legal_name')): ?>
+        <strong><?php print $agency_legal_name; ?></strong><br />
+      <?php endif; ?>
+      <?php if (theme_get_setting('stay_smart_2017_footer_copyright')): ?>
+        <?php print decode_entities(theme_get_setting('stay_smart_2017_footer_copyright')); ?>
       <?php else: ?>
-        &copy; <?php print date('Y'); ?>. <?php print variable_get('site_name', 'Home'); ?>. All rights reserved.
+        &copy; <?php print date('Y'); ?>. All rights reserved.
       <?php endif; ?>
       </div>
   </div>

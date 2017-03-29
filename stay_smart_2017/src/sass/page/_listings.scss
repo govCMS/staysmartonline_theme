@@ -2,7 +2,9 @@
 // LISTING
 // The default style for content views.
 // =========================================================
-body.not-front #content {
+// A generic view layout for sidebar / no sidebar types.
+// This should be applied to the body of pages you wish to show a generic view on.
+@mixin generic-view-layout() {
   .no-sidebar {
     .view {
       @include center-column($desktop_column);
@@ -79,5 +81,12 @@ body.not-front #content {
       margin-top: $default_padding;
       margin-bottom: $default_padding;
     }
+  }
+}
+
+// Implementations of the generic view.
+body.page-events, body.page-publications, body.page-news-media {
+  #content {
+    @include generic-view-layout;
   }
 }

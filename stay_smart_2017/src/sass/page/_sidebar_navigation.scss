@@ -29,7 +29,7 @@
       font-weight: 400;
       border: 1px solid $neutral_3;
       text-align: left;
-      background-color: #F4F4F4;
+      background-color: $sso_neutral_5;
       color: $neutral_1;
       &:hover, &:focus {
         color: $neutral_1;
@@ -62,7 +62,7 @@
     }
     &.showing {
       display: block;
-      background-color: #FAFAFA;
+      background-color: $sso_neutral_7;
       padding: rem(26px) rem(15px);
     }
   }

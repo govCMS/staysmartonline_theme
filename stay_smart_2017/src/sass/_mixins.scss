@@ -98,6 +98,9 @@
   margin-bottom: rem(30px);
   height: calc(100% - #{rem(30px)});
   background-color: white;
+  max-width: rem(370px);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @mixin listing-component-image() {
@@ -128,7 +131,7 @@
 @mixin listing-component-heading() {
   font-size: rem(24px);
   line-height: 1.5em;
-  @include link-colours($secondary_1, $secondary_3, $neutral_1);
+  @include link-colours($sso_neutral_6, $secondary_3, $white);
 }
 
 @mixin listing-component-subtext() {
@@ -141,6 +144,13 @@
 
 @mixin listing-component-body() {
   color: $neutral_1;
+}
+
+@mixin listing-component-button() {
+  @extend %base-button;
+  @include button-colours-no-selector($secondary_2, #A33591, #891642, $white, $white);
+  display: inline-block;
+  height: auto;
 }
 
 // =========================================================
@@ -171,6 +181,16 @@
   margin-top: 0;
 }
 
+@mixin large-block-heading() {
+  font-family: $varela_round;
+  font-size: rem(36px);
+  font-weight: 400;
+  margin-top: 0;
+  color: $sso_neutral_6;
+  margin-top: 0;
+  margin-bottom: rem(33px);
+}
+
 @mixin block-heading() {
   color: $neutral_1;
   font-size: rem(18px);
@@ -186,10 +206,13 @@
 @mixin search-text-field() {
   margin: 0;
   height: rem(52px);
-  background-color: $neutral_4;
-  border: 1px solid $neutral_3;
+  background-color: $white;
+  border: 1px solid $sso_neutral_5;
+  color: #4D4D4D;
+  border-right: 0;
   z-index: 1;
   position: relative;
+  color: #4D4D4D;
 }
 
 @mixin search-submit-button() {
@@ -200,8 +223,8 @@
   width: rem(52px);
   height: rem(52px);
   box-sizing: border-box;
-  background-color: $neutral_4;
-  border: 1px solid $neutral_3;
+  background-color: $white;
+  border: 1px solid $sso_neutral_5;
   border-left: 0;
   border-radius: 0;
   background-repeat: no-repeat;
@@ -209,6 +232,9 @@
   background-image: url(../images/svg/magnifying_glass.svg);
   &:hover, &:focus {
     background-image: url(../images/svg/magnifying_glass_hover.svg);
+  }
+  &:focus {
+    z-index: 1;
   }
 }
 
@@ -231,16 +257,14 @@
     @include breakpoint($breakpoint) {
       @include omega();
     }
-  }
-  // Two Columns (50 50)
+  } // Two Columns (50 50)
   &.panel-2col, &.panel-2col-bricks, &.panel-2col-stacked {
     .panel-col-first, .panel-col-last {
       @include breakpoint($breakpoint) {
         @include span-columns(6 of 12);
       }
     }
-  }
-  // Three Columns (25 50 25)
+  } // Three Columns (25 50 25)
   &.panel-3col, &.panel-3col-stacked {
     .panel-col-first, .panel-col-last {
       @include breakpoint($breakpoint) {
@@ -252,8 +276,7 @@
         @include span-columns(6 of 12);
       }
     }
-  }
-  // Three Columns (33 33 33)
+  } // Three Columns (33 33 33)
   &.panel-3col-33, &.panel-3col-33-stacked {
     .panel-col-first, .panel-col-last, .panel-col {
       @include breakpoint($breakpoint) {

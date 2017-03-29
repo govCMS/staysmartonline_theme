@@ -21,28 +21,30 @@
     $('head', doc).append($link);
   };
 
-  Drupal.behaviors.govcms_ui_kit_twitter_theme = {
+  Drupal.behaviors.stay_smart_2017_twitter_theme = {
     attach: function(context, settings) {
       // Wait for twitter to load, then apply a custom style.
       var url = settings.basePath + settings.pathToTheme + "/dist/css/custom_twitter_theme.css";
 
-      twttr.ready(function() {
-        twttr.events.bind('loaded', function(event) {
-          // Inject a custom stylesheet into the twitter frame.
-          for (var i = 0; i < frames.length; i++) {
-            var frame = frames[i];
-            try {
-              if (frame.frameElement.id.indexOf('twitter-widget') >= 0) {
-                embedCss(frame, frame.document, url);
+      if (typeof twttr !== 'undefined') {
+        twttr.ready(function() {
+          twttr.events.bind('loaded', function(event) {
+            // Inject a custom stylesheet into the twitter frame.
+            for (var i = 0; i < frames.length; i++) {
+              var frame = frames[i];
+              try {
+                if (frame.frameElement.id.indexOf('twitter-widget') >= 0) {
+                  embedCss(frame, frame.document, url);
+                }
+              }
+              catch (e) {
+                console.log("caught an error");
+                console.log(e);
               }
             }
-            catch (e) {
-              console.log("caught an error");
-              console.log(e);
-            }
-          }
+          });
         });
-      });
+      }
     }
   };
 

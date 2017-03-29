@@ -34,7 +34,7 @@
       <div class="logo-wrapper">
         <?php if ($logo): ?>
           <?php
-            $logo_alt = theme_get_setting('govcms_ui_kit_header_logo_alt');
+            $logo_alt = theme_get_setting('stay_smart_2017_header_logo_alt');
             $logo_alt = !empty($logo_alt) ? $logo_alt : variable_get('site_name', 'Home');
             $logo_img = theme_image(array(
               'path' => $logo,
@@ -55,10 +55,9 @@
                 'class' => $logo_class,
               ),
             ));
+
+            print $logo_mobile;
           ?>
-        <?php endif; ?>
-        <?php if (theme_get_setting('govcms_ui_kit_header_title')): ?>
-          <div class="header-title"><?php print decode_entities(theme_get_setting('govcms_ui_kit_header_title')); ?></div>
         <?php endif; ?>
       </div>
       <?php print render($page['header']); ?>

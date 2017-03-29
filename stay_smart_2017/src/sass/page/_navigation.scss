@@ -10,13 +10,20 @@
       display: block;
     }
     ul.sf-menu {
-      display: table;
       width: 100%;
       position: relative;
-      @include breakpoint(desktop) {
-        table-layout: fixed;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      html.no-flexbox & {
+        display: table;
       }
-      // If JS is enabled - hide sub nav menus until superfish finishes loading.
+      @include breakpoint(desktop) {
+        html.no-flexbox & {
+          table-layout: fixed;
+        }
+      } // If JS is enabled - hide sub nav menus until superfish finishes loading.
       &:not(.superfish-processed) {
         &>li>ul {
           html:not(.no-js) & {
@@ -25,13 +32,20 @@
         }
       }
       li.sfHover {
-        &>a {
-          background-color: $main_menu_hover;
+        &>a:before {
+          background-color: $secondary_1;
         }
       }
       &>li {
-        display: table-cell;
+        position: relative;
+        vertical-align: top;
         float: none;
+        display: inline-block;
+        width: 100%;
+        html.no-flexbox & {
+          display: table-cell;
+          width: auto;
+        }
         &.menuparent {
           &>a:after {
             content: '';
@@ -46,26 +60,41 @@
           }
         }
         &.active-trail {
-          &>a {
+          &>a:before {
             background-color: $main_menu_active;
           }
         }
         &>a {
+          position: static;
           display: inline-block;
           padding-top: $default_padding;
           padding-bottom: rem(($default_padding_px - 4px));
-          box-sizing: content-box;
+          box-sizing: border-box;
           width: 100%;
           height: 100%;
           color: white;
-          vertical-align: top;
           text-align: center;
           text-decoration: none;
           font-weight: 600;
           border-bottom: 4px solid transparent;
+          padding-left: rem(2px);
+          padding-right: rem(2px);
           &:hover, &:focus {
-            background-color: $main_menu_hover;
-            border-bottom-color: white;
+            &:before {
+              background-color: $main_menu_hover;
+            }
+          }
+          &:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: auto;
+            border-bottom: 4px solid transparent;
           }
         }
         &>ul {
@@ -81,7 +110,7 @@
               }
             }
             a {
-              background-color: $primary_1;
+              background-color: $secondary_1;
               color: white;
               text-decoration: none;
               padding-left: rem(30px);
@@ -91,7 +120,6 @@
               border-bottom: 1px solid transparent;
               &:hover, &:focus {
                 background-color: $main_menu_hover;
-                border-bottom-color: white;
               }
             }
             &.active-trail {
@@ -126,8 +154,8 @@
   ul.links {
     border-top: 1px solid $neutral_3;
     padding-left: 0;
-    padding-top: $default_padding;
-    padding-bottom: $default_padding;
+    padding-top: 0;
+    padding-bottom: 0;
     text-align: center;
     li {
       list-style-type: none;
@@ -137,23 +165,23 @@
         display: block;
         font-weight: 600;
         font-size: rem(18);
-        text-transform: uppercase;
         text-decoration: none;
         padding-top: $default_padding / 2;
         padding-bottom: $default_padding / 2;
-        color: $neutral_1;
+        color: white;
+        background-color: $secondary_1;
         &:hover, &:focus {
           color: white;
-          background-color: $secondary_1;
+          background-color: $main_menu_hover;
         }
       }
       &.active {
         a {
           color: white;
-          background-color: $main_menu_active;
+          background-color: $primary_1;
           &:hover, &:focus {
             color: white;
-            background-color: $secondary_1;
+            background-color: $main_menu_hover;
           }
         }
       }

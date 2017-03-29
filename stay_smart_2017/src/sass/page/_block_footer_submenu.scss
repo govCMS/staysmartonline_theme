@@ -1,7 +1,8 @@
 #block-menu-menu-footer-sub-menu {
-  border-top: 1px solid darken($primary_1, 10%);
+  // border-top: 1px solid darken($primary_1, 10%);
+  background-color: #014E51;
   .content {
-    @include breakpoint(tablet) {
+    @include breakpoint(large_tablet) {
       padding-top: rem(38px);
       padding-bottom: rem(38px);
       display: flex;
@@ -10,14 +11,21 @@
     }
     ul.menu {
       @include breakpoint(tablet) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: rem(15px);
+      }
+      @include breakpoint(large_tablet) {
         order: 2;
         text-align: right;
         width: auto;
         display: block;
+        margin-bottom: 0;
       }
       &>li {
         margin-bottom: rem(15px);
-        @include breakpoint(tablet) {
+        @include breakpoint(large_tablet) {
           display: inline-block;
           margin-left: rem(15px);
         }
@@ -30,7 +38,7 @@
       }
     }
     .footer-copyright {
-      @include breakpoint(tablet) {
+      @include breakpoint(large_tablet) {
         order: 1;
       }
     }

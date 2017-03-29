@@ -20,7 +20,7 @@
       // Mobile.
       search_toggle_enabled = true;
       $widget.addClass('search-toggle');
-      $logo_wrapper.after($button);
+      $logo_wrapper.append($button);
     }
   }
 
@@ -41,12 +41,12 @@
     return false;
   }
 
-  Drupal.behaviors.govcms_ui_kit_search = {
+  Drupal.behaviors.stay_smart_2017_search = {
     attach: function(context, settings) {
       $widget = $('header .search-form-widget', context);
       if ($widget.length > 0) {
         $button = $('<button class="mobile-expand-search" aria-controls="' + $widget.attr('id') + '" aria-expanded="false">Toggle search form</button>');
-        $logo_wrapper = $('.logo-wrapper .header-title');
+        $logo_wrapper = $('.logo-wrapper');
         $button.unbind('click', toggle_search).bind('click', toggle_search);
         $(window).unbind('resize', search_bar_resize).bind('resize', search_bar_resize);
         search_bar_resize();

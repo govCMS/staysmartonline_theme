@@ -15,7 +15,7 @@
     return current_domain !== domain(url);
   }
 
-  Drupal.behaviors.govcms_ui_kit_external_links = {
+  Drupal.behaviors.stay_smart_2017_external_links = {
     attach: function(context, settings) {
       // Get current domain.
       current_domain = domain(location.href);
@@ -76,7 +76,7 @@
     return false;
   }
 
-  Drupal.behaviors.govcms_ui_kit_menu = {
+  Drupal.behaviors.stay_smart_2017_menu = {
     attach: function(context, settings) {
       $widget = $('#mobile-nav', context);
       if ($widget.length > 0) {
@@ -85,6 +85,14 @@
         $button.unbind('click', toggle_menu).bind('click', toggle_menu);
         $(window).unbind('resize', menu_bar_resize).bind('resize', menu_bar_resize);
         menu_bar_resize();
+
+        // Adding Secondary nav to mobile menu.
+        var $secondary_links = $($('.header__secondary-menu > ul.links', context).html());
+        var $widget_list = $widget.children('ul');
+        $widget_list.children('li:last-child').removeClass('last');
+        $secondary_links.removeClass('first').removeClass('last');
+        $widget_list.append($secondary_links);
+        $widget_list.children('li:last-child').addClass('last');
       }
     }
   };
@@ -107,7 +115,7 @@ var desktop_column = 1170;
  */
 (function($, Drupal, window, document, undefined) {
 
-  Drupal.behaviors.govcms_ui_kit = {
+  Drupal.behaviors.stay_smart_2017 = {
     attach: function(context, settings) {
       // Object Fit Polyfill for IE. Used on News Teaser Images.
       objectFitImages();
@@ -139,7 +147,7 @@ var desktop_column = 1170;
       // Mobile.
       search_toggle_enabled = true;
       $widget.addClass('search-toggle');
-      $logo_wrapper.after($button);
+      $logo_wrapper.append($button);
     }
   }
 
@@ -160,12 +168,12 @@ var desktop_column = 1170;
     return false;
   }
 
-  Drupal.behaviors.govcms_ui_kit_search = {
+  Drupal.behaviors.stay_smart_2017_search = {
     attach: function(context, settings) {
       $widget = $('header .search-form-widget', context);
       if ($widget.length > 0) {
         $button = $('<button class="mobile-expand-search" aria-controls="' + $widget.attr('id') + '" aria-expanded="false">Toggle search form</button>');
-        $logo_wrapper = $('.logo-wrapper .header-title');
+        $logo_wrapper = $('.logo-wrapper');
         $button.unbind('click', toggle_search).bind('click', toggle_search);
         $(window).unbind('resize', search_bar_resize).bind('resize', search_bar_resize);
         search_bar_resize();
@@ -274,7 +282,7 @@ var desktop_column = 1170;
     }
   }
 
-  Drupal.behaviors.govcms_ui_kit_sidebar = {
+  Drupal.behaviors.stay_smart_2017_sidebar = {
     attach: function(context, settings) {
       $widget = $('#block-menu-block-govcms-menu-block-sidebar', context);
       if ($widget.length > 0) {
@@ -293,6 +301,10 @@ var desktop_column = 1170;
  * An implementation of the Owl Carousel with custom controls.
  */
 (function($, Drupal, window, document, undefined) {
+
+  var $html = null;
+  var $slider_controls = null;
+  var $owl_carousel = null;
 
   function slider_responsive() {
     var w = window.innerWidth || document.documentElement.clientWidth;
@@ -332,7 +344,8 @@ var desktop_column = 1170;
     html += '<button class="slider-next" title="Next slide">Next Slide</button>';
     html += '<button class="slider-play paused" title="Play slideshow">Play</button>';
     html += '</div>';
-    $slider.after(html);
+    $slider_controls = $(html);
+    $slider.after($slider_controls);
 
     // Apply listeners.
     $('.slider-prev').bind('click', previous_button_click);
@@ -358,11 +371,11 @@ var desktop_column = 1170;
 
   function position_custom_controls() {
     // Positioning must also cater for html text_resize functionality.
-    var base_scale = parseInt($('html').css('font-size'));
+    var base_scale = parseInt($html.css('font-size'));
     var scale_perc = base_scale / 16;
-    var left = ($(window).width() * 0.5) - ((desktop_column * 0.5) * scale_perc);
+    var left = ($owl_carousel.width() * 0.5) - ((desktop_column * 0.5) * scale_perc);
     left = (left < 20) ? '20px' : (left / base_scale) + 'rem';
-    $('.slider-controls').css('left', left);
+    $slider_controls.css('left', left);
   }
 
   function previous_button_click(e) {
@@ -414,22 +427,24 @@ var desktop_column = 1170;
     afterUpdate: position_custom_controls
   };
 
-  Drupal.behaviors.govcms_ui_kit_slider = {
+  Drupal.behaviors.stay_smart_2017_slider = {
     attach: function(context, settings) {
       $slider = $('.view-slideshow > div > ul', context);
       if ($slider.length > 0) {
         // Slider only initialized if more than 1 item present.
         if ($slider.children().length > 1) {
+          $html = $('html');
           $slider.owlCarousel(banner_settings).removeClass('mobile');
           owl = $slider.data('owlCarousel');
           owl.stop();
+          $owl_carousel = $('.owl-carousel');
           create_custom_controls();
           $(window).unbind('resize', slider_responsive).bind('resize', slider_responsive);
           slider_responsive();
           objectFitImages($slider.find('img'));
 
           // Add support for text resize widget.
-          $('html').on('font-size-change', position_custom_controls);
+          $html.on('font-size-change', position_custom_controls);
         }
       }
     }
@@ -453,7 +468,7 @@ var desktop_column = 1170;
     return false;
   }
 
-  Drupal.behaviors.govcms_ui_kit_text_resize = {
+  Drupal.behaviors.stay_smart_2017_text_resize = {
     attach: function(context, settings) {
       $widget = $('.block-govcms-text-resize', context);
       if ($widget.length > 0) {
@@ -489,28 +504,30 @@ var desktop_column = 1170;
     $('head', doc).append($link);
   };
 
-  Drupal.behaviors.govcms_ui_kit_twitter_theme = {
+  Drupal.behaviors.stay_smart_2017_twitter_theme = {
     attach: function(context, settings) {
       // Wait for twitter to load, then apply a custom style.
       var url = settings.basePath + settings.pathToTheme + "/dist/css/custom_twitter_theme.css";
 
-      twttr.ready(function() {
-        twttr.events.bind('loaded', function(event) {
-          // Inject a custom stylesheet into the twitter frame.
-          for (var i = 0; i < frames.length; i++) {
-            var frame = frames[i];
-            try {
-              if (frame.frameElement.id.indexOf('twitter-widget') >= 0) {
-                embedCss(frame, frame.document, url);
+      if (typeof twttr !== 'undefined') {
+        twttr.ready(function() {
+          twttr.events.bind('loaded', function(event) {
+            // Inject a custom stylesheet into the twitter frame.
+            for (var i = 0; i < frames.length; i++) {
+              var frame = frames[i];
+              try {
+                if (frame.frameElement.id.indexOf('twitter-widget') >= 0) {
+                  embedCss(frame, frame.document, url);
+                }
+              }
+              catch (e) {
+                console.log("caught an error");
+                console.log(e);
               }
             }
-            catch (e) {
-              console.log("caught an error");
-              console.log(e);
-            }
-          }
+          });
         });
-      });
+      }
     }
   };
 
@@ -542,7 +559,7 @@ var desktop_column = 1170;
     }
   }
 
-  Drupal.behaviors.govcms_ui_kit_webform = {
+  Drupal.behaviors.stay_smart_2017_webform = {
     attach: function(context, settings) {
       // Flip the order of radio checkboxes with labels.
       // UI Kit styling only works if the label appears after.

@@ -11,7 +11,7 @@ html {
 // GENERAL HEADING LAYOUT
 // =========================================================
 #content {
-  @include button-colours($secondary_1, darken($secondary_1, 20%), #fff, darken($secondary_1, 40%), darken($secondary_1, 40%));
+  @include button-colours($secondary_2, #A33591, #891642, #fff, #fff);
   body.not-front & {
     .content-header {
       background-color: $secondary_1;
@@ -51,7 +51,8 @@ html {
     margin-bottom: $default_padding;
   }
   .content {
-    @include link-colours($primary_1, $secondary_3, $neutral_1);
+    @include link-colours($secondary_1, $secondary_3, $neutral_4);
+    color: $neutral_1;
   }
 }
 
@@ -97,8 +98,7 @@ html {
           &>.content {
             @include center-column($desktop_content_column);
           }
-        }
-        // Node Webforms
+        } // Node Webforms
         .node-webform {
           &>.submitted {
             max-width: $form_width;
@@ -110,16 +110,13 @@ html {
       }
     }
     .panel-display {
-      @include panel-display-layouts(tablet);
-      // All Columns - Over 2 panels columns to use full column.
-      @include center-column($desktop_column);
-      // One Column (100)
+      @include panel-display-layouts(tablet); // All Columns - Over 2 panels columns to use full column.
+      @include center-column($desktop_column); // One Column (100)
       &.panel-1col, &.panel-1col-stacked {
-        @include center-column($desktop_content_column);
-      }
-      // Two Columns (50 50)
+        @include center-column($desktop_column);
+      } // Two Columns (50 50)
       &.panel-2col, &.panel-2col-bricks, &.panel-2col-stacked {
-        @include center-column($desktop_content_column);
+        @include center-column($desktop_column);
       }
     }
     #site-map {
@@ -143,6 +140,14 @@ html {
         @include center-column($desktop_content_column);
       }
     }
+  }
+}
+
+// Home page needs full width.
+body.front .content-body-inner.no-sidebar {
+  .panel-display {
+    max-width: none;
+    padding: 0;
   }
 }
 
@@ -171,6 +176,59 @@ html {
   @include link-colours($primary_1, $secondary_3, $neutral_1);
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: $varela_round;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: rem(64px);
+}
+
+h2 {
+  font-size: rem(48px);
+}
+
+h3 {
+  font-size: rem(36px);
+}
+
+h4 {
+  font-size: rem(24px);
+}
+
+h5 {
+  font-size: rem(18px);
+}
+
+h6 {
+  font-size: rem(16px);
+}
+
+blockquote {
+  position: relative;
+  background-color: transparent;
+  padding: rem(30px) rem(40px);
+  box-sizing: border-box;
+  font-size: rem(18px);
+  font-family: $base-sans-serif;
+  &:before {
+    content: ' ';
+    background-color: $primary_1;
+    width: rem(5px);
+    height: auto;
+    left: rem(16px);
+    top: rem(30px);
+    right: auto;
+    bottom: rem(30px);
+    position: absolute;
+    margin: auto;
+  }
+  &:after {
+    display: none;
+  }
+}
+
 ul, ol, dl, p, dt, dd {
   // Global override for 16px font-size on tablet.
   @include breakpoint(tablet) {
@@ -184,7 +242,7 @@ ul, ol, dl, p, dt, dd {
 }
 
 a[rel~='external']::after {
-  background-image: ui-kit-icon("external-link--aqua.svg") !important;
+  background-image: url(../images/svg/external-link--orange.svg) !important;
 }
 
 .page-node {
@@ -196,6 +254,18 @@ a[rel~='external']::after {
   }
 }
 
+.skip-to a:not(.no-style) {
+  &:hover, &:focus {
+    color: white;
+  }
+}
+
 #content {
-  @include button-colours($secondary_1, #10505F, #0C3C47, white);
+  @include button-colours($secondary_2, #A33591, #891642, $white, $white);
+}
+
+body {
+  max-width: 1650px;
+  margin-left: auto;
+  margin-right: auto;
 }
