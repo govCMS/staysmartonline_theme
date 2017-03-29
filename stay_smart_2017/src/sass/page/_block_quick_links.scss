@@ -3,7 +3,7 @@
   padding-bottom: $default_padding * 2;
   h2 {
     @include center-column($desktop_column);
-    @include medium-title;
+    @include large-block-heading;
   }
   &>.content {
     @include center-column($desktop_column);
@@ -17,7 +17,7 @@
     li {
       list-style: none;
       margin: 0;
-      background-color: $secondary_1;
+      background-color: $primary_1;
       padding: rem(30px);
       box-sizing: border-box;
       margin-bottom: $default_padding;

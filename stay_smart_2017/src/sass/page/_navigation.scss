@@ -41,8 +41,10 @@
         vertical-align: top;
         float: none;
         display: inline-block;
+        width: 100%;
         html.no-flexbox & {
           display: table-cell;
+          width: auto;
         }
         &.menuparent {
           &>a:after {
@@ -80,7 +82,6 @@
           &:hover, &:focus {
             &:before {
               background-color: $main_menu_hover;
-              border-bottom-color: white;
             }
           }
           &:before {
@@ -119,7 +120,6 @@
               border-bottom: 1px solid transparent;
               &:hover, &:focus {
                 background-color: $main_menu_hover;
-                border-bottom-color: white;
               }
             }
             &.active-trail {

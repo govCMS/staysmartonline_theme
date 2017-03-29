@@ -27,7 +27,7 @@
 // INTRODUCTION BEAN
 // =========================================================
 .bean-basic-content {
-  background-color: $neutral_4;
+  background-color: $sso_neutral_7;
   &>.content {
     @include center-column($desktop_column);
     @include link-colours($primary_1, $secondary_3, $neutral_1);
@@ -38,11 +38,14 @@
       padding-top: $default_padding * 2;
       padding-bottom: rem(50px);
     }
-    @include breakpoint(desktop) {
-      text-align: center;
-    }
     p {
+      text-align: center;
       margin-bottom: 0;
+      color: $primary_1;
+      font-size: rem(16px);
+      @include breakpoint(tablet) {
+        font-size: rem(24px);
+      }
     }
   }
 }
@@ -54,10 +57,7 @@
 // =========================================================
 // SLIDER
 // =========================================================
-#block-views-slideshow-block {
-  &>h2 {
-    @include visually-hidden;
-  }
+.view-slideshow {
   .view-content {
     position: relative;
     background-color: #0B3B46;
@@ -100,6 +100,12 @@
         height: 100%;
       }
     }
+    a {
+      margin: 0 !important;
+      &:after {
+        display: none !important;
+      }
+    }
     img {
       height: rem(225px);
       object-fit: cover;
@@ -132,14 +138,16 @@
       }
     }
     .field {
-      @include link-colours(white, $neutral_4, $neutral_1);
+      a {
+        @include listing-component-button;
+      }
     }
   }
   .banner-description-panel {
     @include breakpoint(tablet) {
       position: relative;
       box-sizing: border-box;
-      background-color: #0B3B46;
+      background-color: rgba(0, 0, 0, 0.55);
       padding: rem(45px);
       padding-top: rem(85px);
       max-width: rem(524px);
@@ -153,7 +161,7 @@
     padding-top: rem(34px);
     padding-left: rem(37px);
     button {
-      color: $secondary_3;
+      color: $white !important;
       border: 0;
       margin: 0;
       display: inline;
@@ -162,16 +170,19 @@
       overflow: hidden;
       padding: 0;
       vertical-align: top;
-      background-color: transparent;
+      background-color: transparent !important;
       background-repeat: no-repeat;
       background-position: center;
-      border-bottom: 1px solid transparent;
+      border-bottom: 1px solid transparent !important;
+      border-radius: 0 !important;
       &:hover, &:focus {
-        color: white;
-        border-bottom-color: white;
+        border-bottom-color: $primary_1 !important;
       }
       &.active {
-        color: white;
+        border-bottom-color: $white !important;
+        &:hover, &:focus {
+          border-bottom-color: $primary_1 !important;
+        }
       }
       &.slider-prev {
         @include hide-text;

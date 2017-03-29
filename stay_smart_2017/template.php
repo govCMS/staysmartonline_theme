@@ -127,16 +127,48 @@ function stay_smart_2017_preprocess_node(&$variables) {
  * Implements template_preprocess_block().
  */
 function stay_smart_2017_preprocess_block(&$variables) {
-  if ($variables['block_html_id'] == 'block-menu-block-2') {
-    $child_content = array();
-    foreach ($variables['elements']['#content'] as $key => $content) {
-      if (is_numeric($key)) {
-        if ($node = node_load(str_replace('node/', '', $content['#href']))) {
-          $child_content[] = node_view($node, 'landing_page_teaser');
+  switch($variables['block_html_id']) {
+    case 'block-menu-block-land-pg-child-list-2':
+      $child_content = array();
+      foreach ($variables['elements']['#content'] as $key => $content) {
+        if (is_numeric($key)) {
+          if ($node = node_load(str_replace('node/', '', $content['#href']))) {
+            $child_content[] = node_view($node, 'landing_page_teaser');
+          }
         }
       }
-    }
-    $variables['children_contents'] = $child_content;
+      $variables['children_contents'] = $child_content;
+      break;
+
+    case 'block-bean-sso-related-content':
+      $node = menu_get_object();
+      $hide = FALSE;
+
+      if (isset($node->field_hide_related_content)) {
+        try {
+          $wrapped_entity = entity_metadata_wrapper('node', $node);
+          $hide = $wrapped_entity->field_hide_related_content->value();
+        }
+        catch (Exception $e) {
+          watchdog_exception('stay_smart_2017', $e);
+        }
+      }
+
+      if (!$hide) {
+        $related_content_links = _stay_smart_2017_return_related_content($node);
+        if (empty($related_content_links)) {
+          $variables = array();
+        }
+        else {
+          $variables['content'] = theme('item_list', array(
+            'items' => $related_content_links,
+          ));
+        }
+      }
+      else {
+        $variables = array();
+      }
+      break;
   }
 }
 
@@ -203,4 +235,72 @@ function stay_smart_2017_preprocess_search_result(&$variables) {
   $variables['snippet'] = strip_tags($variables['snippet']);
   // Remove the author / date from the result display (404 page).
   $variables['info'] = '';
+}
+
+/**
+ * Helper function: Return related content links for a given node.
+ *
+ * @param object $node
+ *   A fully formed node object.
+ *
+ * @return array
+ *   An array of related content links. Will be an empty array if none are found.
+ */
+function _stay_smart_2017_return_related_content($node) {
+  $related_content_links = $field_related_content = array();
+
+  if (!empty($node->field_related_content) || !empty($node->field_tags)) {
+    try {
+      $wrapped_entity = entity_metadata_wrapper('node', $node);
+      $field_info_field = field_info_field('field_related_content');
+      $limit = $field_info_field['cardinality'];
+
+      if (!empty($node->field_related_content)) {
+        $field_related_content = $wrapped_entity->field_related_content->value();
+      }
+      $field_related_content_count = count($field_related_content);
+
+
+      if (!empty($node->field_tags) && $field_related_content_count < $limit) {
+        $total_wanted = $limit - $field_related_content_count;
+        $tag_tids = array();
+
+        $field_tags = $wrapped_entity->field_tags->value();
+        foreach ($field_tags as $field_tag) {
+          $tag_tids[] = $field_tag->tid;
+        }
+
+        $tagged_bundles = array(
+          'alert',
+          'news_article',
+          'page',
+        );
+
+        $query = new EntityFieldQuery();
+        $query->entityCondition('entity_type', 'node')
+          ->entityCondition('bundle', $tagged_bundles, 'IN')
+          ->propertyCondition('nid', $node->nid, '!=')
+          ->propertyCondition('status', NODE_PUBLISHED)
+          ->fieldCondition('field_tags', 'tid', $tag_tids, 'IN')
+          ->range(0, $total_wanted)
+          ->addMetaData('account', user_load(1));;
+
+        $result = $query->execute();
+        if (isset($result['node'])) {
+          $related_content_nids = array_keys($result['node']);
+          $related_content_nodes = entity_load('node', $related_content_nids);
+          $field_related_content = array_merge($field_related_content, $related_content_nodes);
+        }
+      }
+
+      foreach ($field_related_content as $related) {
+        $related_content_links[] = l($related->title, 'node/' . $related->nid);
+      }
+    }
+    catch (Exception $e) {
+      watchdog_exception('stay_smart_2017', $e);
+    }
+  }
+
+  return $related_content_links;
 }
