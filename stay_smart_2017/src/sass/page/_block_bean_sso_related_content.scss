@@ -1,4 +1,5 @@
 #block-bean-sso-related-content {
+  margin-top: $default_padding;
   @include page-structure-list-wraper;
   h2 {
     @include page-structure-list-title;

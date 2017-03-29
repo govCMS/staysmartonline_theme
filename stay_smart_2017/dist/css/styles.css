@@ -7396,7 +7396,8 @@ h1, .hero .site-title,
 h1, .hero .site-title,
 .hero-sml .site-title,
 .hero-med .site-title {
-  font-size: 4rem;
+  margin-bottom: 1.0625rem;
+  font-size: 1.5rem;
 }
 
 h1:first-of-type, .hero .site-title:first-of-type,
@@ -7405,24 +7406,88 @@ h1:first-of-type, .hero .site-title:first-of-type,
   margin-top: 0;
 }
 
+@media (min-width: 768px) {
+  h1, .hero .site-title,
+  .hero-sml .site-title,
+  .hero-med .site-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1, .hero .site-title,
+  .hero-sml .site-title,
+  .hero-med .site-title {
+    font-size: 4rem;
+  }
+}
+
 h2, .display {
-  font-size: 3rem;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  h2, .display {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h2, .display {
+    font-size: 3rem;
+  }
 }
 
 h3 {
-  font-size: 2.25rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
   font-size: 1.125rem;
 }
 
-h6 {
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 2.25rem;
+  }
+}
+
+h4 {
   font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  h5 {
+    font-size: 1.125rem;
+  }
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  h6 {
+    font-size: 1rem;
+  }
 }
 
 blockquote {
@@ -11012,6 +11077,7 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
 }
 
 #block-bean-sso-related-content {
+  margin-top: 1.375rem;
   background-color: #E6F8F9;
   border: 2px solid #CCE4E5;
   border-radius: 4px;
