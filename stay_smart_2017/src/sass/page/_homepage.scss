@@ -363,45 +363,6 @@
           left: 0;
           right: auto;
         }
-        &.priority-level-high {
-          &:before {
-            background-color: $alert_priority_high;
-          }
-          .alert-and-date {
-            background-image: url('../images/png/icon-alerts-priority-high.png');
-          }
-          .field-name-field-priority-level {
-            .field-items {
-              color: $alert_priority_high;
-            }
-          }
-        }
-        &.priority-level-moderate {
-          &:before {
-            background-color: $alert_priority_medium;
-          }
-          .alert-and-date {
-            background-image: url('../images/png/icon-alerts-priority-moderate.png');
-          }
-          .field-name-field-priority-level {
-            .field-items {
-              color: $alert_priority_medium;
-            }
-          }
-        }
-        &.priority-level-low {
-          &:before {
-            background-color: $alert_priority_low;
-          }
-          .alert-and-date {
-            background-image: url('../images/png/icon-alerts-priority-low.png');
-          }
-          .field-name-field-priority-level {
-            .field-items {
-              color: $alert_priority_low;
-            }
-          }
-        }
       }
       h2 {
         @include listing-component-heading;
@@ -410,53 +371,6 @@
         font-size: rem(18px);
         @include breakpoint(large_tablet) {
           font-size: rem(24px);
-        }
-      }
-      .alert-and-date {
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
-        background-position: left center;
-        background-repeat: no-repeat;
-        padding-left: rem(48px);
-        @include breakpoint(large_tablet) {
-          padding-left: rem(57px);
-        }
-      }
-      .field-name-field-priority-level {
-        margin-right: rem(10px);
-        @include breakpoint(large_tablet) {
-          margin-right: rem(13px);
-        }
-        .field-label {
-          @include visually-hidden;
-        }
-        .field-items {
-          height: rem(30px);
-          font-family: $varela_round;
-          font-size: rem(16px);
-          @include breakpoint(large_tablet) {
-            font-size: rem(18px);
-          }
-          .field-item {
-            line-height: 1.9em;
-            @include breakpoint(tablet) {
-              line-height: 1.8em;
-            }
-            @include breakpoint(large_tablet) {
-              line-height: 1.6em;
-            }
-          }
-        }
-      }
-      .field-name-field-alert-date {
-        color: #878787;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: rem(14px);
-        white-space: nowrap;
-        @include breakpoint(large_tablet) {
-          font-size: rem(16px);
         }
       }
       .field-name-body {
@@ -472,6 +386,61 @@
         padding: 0;
         a {
           @include listing-component-button;
+        }
+      }
+    }
+  }
+}
+
+// =========================================================
+// HOMEPAGE PARTNERS BLOCK
+// =========================================================
+.view-partners.view-display-id-home_block {
+  &:after {
+    @include clearfix;
+  }
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    .views-row {
+      max-width: 29%;
+      width: 29%;
+      margin-left: 2%;
+      margin-right: 2%;
+      text-align: center;
+      .no-flexbox & {
+        display: inline-block;
+        min-height: rem(130px);
+      }
+      &:first-child, &:nth-child(3n+1) {
+        margin-left: auto;
+      }
+      &:nth-child(3n), &:last-child {
+        margin-right: auto;
+      }
+      @include breakpoint(tablet) {
+        max-width: 16%;
+        width: 16%;
+        &:first-child, &:nth-child(5n+1) {
+          margin-left: auto;
+        }
+        &:nth-child(5n), &:last-child {
+          margin-right: auto;
+        }
+      }
+      a {
+        border-bottom: none;
+        img {
+          height: auto;
+          width: auto;
+          max-height: rem(130px);
+        }
+        &:hover {
+          background: none;
         }
       }
     }

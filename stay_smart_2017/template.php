@@ -101,7 +101,8 @@ function stay_smart_2017_preprocess_field(&$variables) {
  * Implements hook_preprocess_node().
  */
 function stay_smart_2017_preprocess_node(&$variables) {
-  if ($variables['view_mode'] === 'teaser' || $variables['view_mode'] === 'compact') {
+  $view_mode = $variables['view_mode'];
+  if ($view_mode === 'teaser' || $view_mode === 'compact' || $view_mode === 'landing_page_teaser') {
     // Apply thumbnail class to node teaser view if image exists.
     $has_thumb = !empty($variables['content']['field_thumbnail']);
     $has_image = !empty($variables['content']['field_image']);
