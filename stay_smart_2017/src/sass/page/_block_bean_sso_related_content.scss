@@ -1,0 +1,16 @@
+#block-bean-sso-related-content {
+  margin-top: $default_padding;
+  @include page-structure-list-wraper;
+  h2 {
+    @include page-structure-list-title;
+    margin-bottom: rem(24px);
+  }
+  ul {
+    @include page-structure-list-listing;
+    &>li {
+      background-position: 10px center;
+      background-image: url(../images/svg/related_content_arrow.svg);
+      @include link-colours($primary_1, $secondary_3, $white);
+    }
+  }
+}

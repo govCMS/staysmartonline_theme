@@ -181,7 +181,7 @@ function stay_smart_2017_breadcrumb($variables) {
 
   if (!empty($breadcrumb)) {
     // Build the breadcrumb trail.
-    $output = '<nav class="breadcrumbs--inverted" role="navigation" aria-label="breadcrumb">';
+    $output = '<nav class="breadcrumbs" role="navigation" aria-label="breadcrumb">';
     $output .= '<ul><li>' . implode('</li><li>', $breadcrumb) . '</li></ul>';
     $output .= '</nav>';
   }

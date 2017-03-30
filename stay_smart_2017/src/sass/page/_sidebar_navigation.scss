@@ -5,9 +5,12 @@
   .block {
     margin-bottom: $default_padding;
     &>h2 {
-      @include block-heading;
-      margin-top: 0;
-      margin-bottom: 0;
+      @include large-block-heading;
+      margin: 0;
+      @include breakpoint(large_tablet) {
+        margin-top: rem(33px);
+        margin-bottom: rem(33px);
+      }
     }
   }
 }
@@ -15,25 +18,34 @@
 // =========================================================
 // SIDEBAR MENU
 // =========================================================
-#block-menu-block-govcms-menu-block-sidebar {
+#block-menu-block-second-nav-menu {
   margin-bottom: $default_padding;
+  &>.content {
+    background-color: $sso_neutral_9;
+    @include breakpoint(large_tablet) {
+      background-color: transparent;
+      border-left: rem(5px) solid $primary_1;
+    }
+  }
   h2 {
     // Button is only on mobile.
     button {
       @include transition-fade;
       padding: rem(13px) rem(50px) rem(13px) rem(15px);
+      font-size: rem(18px);
       position: relative;
       width: 100%;
       margin: 0;
       box-sizing: border-box;
       font-weight: 400;
-      border: 1px solid $neutral_3;
       text-align: left;
-      background-color: $sso_neutral_5;
+      border-radius: 0;
+      background-color: $sso_neutral_10;
       color: $neutral_1;
       &:hover, &:focus {
         color: $neutral_1;
         background-color: $neutral_3;
+        box-shadow: none;
       }
       &:after {
         content: '';
@@ -62,27 +74,32 @@
     }
     &.showing {
       display: block;
-      background-color: $sso_neutral_7;
-      padding: rem(26px) rem(15px);
+      background-color: $sso_neutral_9;
+      padding: 0;
     }
   }
   .menu-block-wrapper {
     &>ul {
-      border-bottom: 1px solid #bbbbbb;
       &>li {
         &>a {
           font-weight: 600;
           padding-left: $small-spacing;
+          border-bottom: 2px solid $sso_neutral_8;
         }
         &>ul {
           &>li {
             &>a {
               padding-left: $small-spacing * 2;
+              border-bottom: 0;
+              background-color: $sso_neutral_5;
+              color: $sso_access_secondary_1;
             }
             &>ul {
               &>li {
                 &>a {
                   padding-left: $small-spacing * 3;
+                  border-bottom: 0;
+                  color: $sso_access_secondary_1;
                 }
               }
             }
@@ -102,10 +119,6 @@
       margin: 0;
       padding: 0;
       list-style: none;
-      border-bottom: 1px solid #bbbbbb;
-      &:first-child {
-        border-top: 1px solid #bbbbbb;
-      }
       &:last-child {
         border-bottom: 0;
       }
@@ -117,11 +130,16 @@
         padding-top: rem(13px);
         padding-bottom: rem(13px);
         padding-right: rem(35px);
-        border-left: 4px solid transparent;
-        border-bottom: 0;
         &:hover, &:focus {
-          border-left-color: $primary_1;
-          background-color: #def4f9;
+          background-color: $primary_1;
+          color: $white;
+        }
+        &.active {
+          background-color: $main_menu_active;
+          color: $white;
+          &:hover, &:focus {
+            background-color: $primary_1;
+          }
         }
       }
       button.sidebar-toggle-menu {
@@ -141,9 +159,12 @@
         position: absolute;
         right: 0;
         top: 0;
+        background-color: $white;
+        border-radius: 0;
         &:hover, &:focus {
           background-image: url(../images/svg/sidebar-arrow-down-hover.svg);
-          background-color: #def4f9;
+          background-color: $primary_1;
+          box-shadow: none;
         }
         &.menu-closed {
           transform: rotate(0deg);
