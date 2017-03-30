@@ -9570,6 +9570,79 @@ ul.tabs.primary {
   border: 0;
 }
 
+.view-partners.view-display-id-home_block:after::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.view-partners.view-display-id-home_block .view-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  text-align: center;
+}
+
+.view-partners.view-display-id-home_block .view-content .views-row {
+  max-width: 29%;
+  width: 29%;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+}
+
+.no-flexbox .view-partners.view-display-id-home_block .view-content .views-row {
+  display: inline-block;
+  min-height: 8.125rem;
+}
+
+.view-partners.view-display-id-home_block .view-content .views-row:first-child, .view-partners.view-display-id-home_block .view-content .views-row:nth-child(3n+1) {
+  margin-left: auto;
+}
+
+.view-partners.view-display-id-home_block .view-content .views-row:nth-child(3n), .view-partners.view-display-id-home_block .view-content .views-row:last-child {
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .view-partners.view-display-id-home_block .view-content .views-row {
+    max-width: 16%;
+    width: 16%;
+  }
+  .view-partners.view-display-id-home_block .view-content .views-row:first-child, .view-partners.view-display-id-home_block .view-content .views-row:nth-child(5n+1) {
+    margin-left: auto;
+  }
+  .view-partners.view-display-id-home_block .view-content .views-row:nth-child(5n), .view-partners.view-display-id-home_block .view-content .views-row:last-child {
+    margin-right: auto;
+  }
+}
+
+.view-partners.view-display-id-home_block .view-content .views-row a {
+  border-bottom: none;
+}
+
+.view-partners.view-display-id-home_block .view-content .views-row a img {
+  height: auto;
+  width: auto;
+  max-height: 8.125rem;
+}
+
+.view-partners.view-display-id-home_block .view-content .views-row a:hover {
+  background: none;
+}
+
 body.page-events #content .no-sidebar .view, body.page-publications #content .no-sidebar .view, body.page-news-media #content .no-sidebar .view {
   max-width: 73.125rem;
   margin-left: auto;

@@ -391,3 +391,58 @@
     }
   }
 }
+
+// =========================================================
+// HOMEPAGE PARTNERS BLOCK
+// =========================================================
+.view-partners.view-display-id-home_block {
+  &:after {
+    @include clearfix;
+  }
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    .views-row {
+      max-width: 29%;
+      width: 29%;
+      margin-left: 2%;
+      margin-right: 2%;
+      text-align: center;
+      .no-flexbox & {
+        display: inline-block;
+        min-height: rem(130px);
+      }
+      &:first-child, &:nth-child(3n+1) {
+        margin-left: auto;
+      }
+      &:nth-child(3n), &:last-child {
+        margin-right: auto;
+      }
+      @include breakpoint(tablet) {
+        max-width: 16%;
+        width: 16%;
+        &:first-child, &:nth-child(5n+1) {
+          margin-left: auto;
+        }
+        &:nth-child(5n), &:last-child {
+          margin-right: auto;
+        }
+      }
+      a {
+        border-bottom: none;
+        img {
+          height: auto;
+          width: auto;
+          max-height: rem(130px);
+        }
+        &:hover {
+          background: none;
+        }
+      }
+    }
+  }
+}
