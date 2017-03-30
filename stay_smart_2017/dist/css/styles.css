@@ -11078,8 +11078,8 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
 
 #block-bean-sso-related-content {
   margin-top: 1.375rem;
-  background-color: #E6F8F9;
-  border: 2px solid #CCE4E5;
+  background-color: #FAFAFA;
+  border: 2px solid #C3C3C3;
   border-radius: 4px;
   color: #313131;
   padding: 1.6875rem 1.8125rem;
@@ -11092,6 +11092,7 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
   letter-spacing: 0;
   margin-top: 0;
   margin-bottom: 0;
+  color: #313131;
   margin-bottom: 1.5rem;
 }
 
@@ -11234,7 +11235,7 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
 #block-bean-sso-related-content ul > li {
   background-position: 10px center;
   background-image: url(../images/svg/related_content_arrow.svg);
-  color: #00787E;
+  color: #ce4a02;
   /*
   See more link
 
@@ -11294,10 +11295,10 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
 }
 
 #block-bean-sso-related-content ul > li a:not(.no-style) {
-  color: #00787E;
+  color: #ce4a02;
   text-decoration: none;
   outline: none;
-  border-bottom: solid 1px #00787E;
+  border-bottom: solid 1px #ce4a02;
   transition-timing-function: ease-in-out;
   transition-duration: 0.1s;
   transition-property: background-color, border-color, color;
@@ -11349,7 +11350,7 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
 }
 
 #block-bean-sso-related-content ul > li span.placeholder-link {
-  color: rgba(0, 120, 126, 0.7);
+  color: rgba(206, 74, 2, 0.7);
   border-bottom: none;
   cursor: not-allowed;
 }
