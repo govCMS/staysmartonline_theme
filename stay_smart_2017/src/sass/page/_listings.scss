@@ -6,6 +6,11 @@
 // This should be applied to the body of pages you wish to show a generic view on.
 @mixin generic-view-layout() {
   .no-sidebar {
+    .content-body-inner-pane {
+      .page__title {
+        @include center-column($desktop_column);
+      }
+    }
     .view {
       @include center-column($desktop_column);
     }
@@ -85,7 +90,7 @@
 }
 
 // Implementations of the generic view.
-body.page-events, body.page-publications, body.page-news-media {
+body.page-events, body.page-publications, body.page-news-media, body.page-news {
   #content {
     @include generic-view-layout;
   }

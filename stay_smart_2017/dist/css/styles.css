@@ -693,7 +693,7 @@ Style guide: Grid.4 Helpers.2 Debugging
 .list-horizontal .tags .see-more::after, .list-vertical .tags .see-more::after, .list-vertical--thirds .tags .see-more::after, .list-vertical--fourths .tags .see-more::after, footer[role='contentinfo'] .footer-top nav .tags .see-more::after, .list-small .tags .see-more::after, .list-highlighted .tags .see-more::after, .primary-nav ul .see-more::after,
 .local-nav ul .see-more::after, [class^='breadcrumbs'] .see-more::after, [class^='breadcrumbs'][class$='--inverted'] .see-more::after, .skip-to .see-more::after, [class^='controls'] .see-more::after, .govau--header .see-more::after, .prerelease-govau--header .see-more::after, .hero .see-more::after,
 .hero-sml .see-more::after,
-.hero-med .see-more::after, .header__inner .header__secondary-menu .see-more::after, .content-body .content .see-more::after, .more-link .see-more::after, .region-footer .block-menu .content ul.menu > li .see-more::after, .region-footer .block-menu-block .content ul.menu > li .see-more::after, .content-header .breadcrumbs ul li .see-more::after, .bean-basic-content > .content .see-more::after, .view-slideshow .banner-description-holder h3 .see-more::after, .view-home-page-blog-articles .view-content .views-row h2 .see-more::after, .view-home-page-blog-articles .view-content .views-row .display .see-more::after, .view-latest-news .view-content .views-row h2 .see-more::after, .view-latest-news .view-content .views-row .display .see-more::after, .view-whats-new-grid .view-content .views-row h2 .see-more::after, .view-whats-new-grid .view-content .views-row .display .see-more::after, .view-whats-new-grid .view-footer .see-more::after, .view-online-alerts .view-content .views-row h2 .see-more::after, .view-online-alerts .view-content .views-row .display .see-more::after, body.page-events #content .view .view-content .views-row h2 .see-more::after, body.page-events #content .view .view-content .views-row .display .see-more::after, body.page-publications #content .view .view-content .views-row h2 .see-more::after, body.page-publications #content .view .view-content .views-row .display .see-more::after, body.page-news-media #content .view .view-content .views-row h2 .see-more::after, body.page-news-media #content .view .view-content .views-row .display .see-more::after, #block-menu-menu-quick-links ul.menu li .see-more::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 .see-more::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display .see-more::after, .content-body .content .toc-filter-content ul > li .see-more::after, #block-bean-sso-related-content ul > li .see-more::after {
+.hero-med .see-more::after, .header__inner .header__secondary-menu .see-more::after, .content-body .content .see-more::after, .more-link .see-more::after, .region-footer .block-menu .content ul.menu > li .see-more::after, .region-footer .block-menu-block .content ul.menu > li .see-more::after, .content-header .breadcrumbs ul li .see-more::after, .bean-basic-content > .content .see-more::after, .view-slideshow .banner-description-holder h3 .see-more::after, .view-home-page-blog-articles .view-content .views-row h2 .see-more::after, .view-home-page-blog-articles .view-content .views-row .display .see-more::after, .view-latest-news .view-content .views-row h2 .see-more::after, .view-latest-news .view-content .views-row .display .see-more::after, .view-whats-new-grid .view-content .views-row h2 .see-more::after, .view-whats-new-grid .view-content .views-row .display .see-more::after, .view-whats-new-grid .view-footer .see-more::after, .view-online-alerts .view-content .views-row h2 .see-more::after, .view-online-alerts .view-content .views-row .display .see-more::after, body.page-events #content .view .view-content .views-row h2 .see-more::after, body.page-events #content .view .view-content .views-row .display .see-more::after, body.page-publications #content .view .view-content .views-row h2 .see-more::after, body.page-publications #content .view .view-content .views-row .display .see-more::after, body.page-news-media #content .view .view-content .views-row h2 .see-more::after, body.page-news-media #content .view .view-content .views-row .display .see-more::after, body.page-news #content .view .view-content .views-row h2 .see-more::after, body.page-news #content .view .view-content .views-row .display .see-more::after, #block-menu-menu-quick-links ul.menu li .see-more::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 .see-more::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display .see-more::after, .content-body .content .toc-filter-content ul > li .see-more::after, #block-bean-sso-related-content ul > li .see-more::after {
   background-image: url("../latest/img/icons/arrow-right--aqua.svg");
 }
 
@@ -713,7 +713,7 @@ summary::before, .accordion--controls summary::before, .nav-toggle::before {
 .list-horizontal .tags a[rel~='external']:not(.no-style)::after, .list-vertical .tags a[rel~='external']:not(.no-style)::after, .list-vertical--thirds .tags a[rel~='external']:not(.no-style)::after, .list-vertical--fourths .tags a[rel~='external']:not(.no-style)::after, footer[role='contentinfo'] .footer-top nav .tags a[rel~='external']:not(.no-style)::after, .list-small .tags a[rel~='external']:not(.no-style)::after, .list-highlighted .tags a[rel~='external']:not(.no-style)::after, .primary-nav ul a[rel~='external']:not(.no-style)::after,
 .local-nav ul a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'] a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'][class$='--inverted'] a[rel~='external']:not(.no-style)::after, .skip-to a[rel~='external']:not(.no-style)::after, [class^='controls'] a[rel~='external']:not(.no-style)::after, .govau--header a[rel~='external']:not(.no-style)::after, .prerelease-govau--header a[rel~='external']:not(.no-style)::after, .hero a[rel~='external']:not(.no-style)::after,
 .hero-sml a[rel~='external']:not(.no-style)::after,
-.hero-med a[rel~='external']:not(.no-style)::after, .header__inner .header__secondary-menu a[rel~='external']:not(.no-style)::after, .content-body .content a[rel~='external']:not(.no-style)::after, .more-link a[rel~='external']:not(.no-style)::after, .region-footer .block-menu .content ul.menu > li a[rel~='external']:not(.no-style)::after, .region-footer .block-menu-block .content ul.menu > li a[rel~='external']:not(.no-style)::after, .content-header .breadcrumbs ul li a[rel~='external']:not(.no-style)::after, .bean-basic-content > .content a[rel~='external']:not(.no-style)::after, .view-slideshow .banner-description-holder h3 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-footer a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, #block-menu-menu-quick-links ul.menu li a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .content-body .content .toc-filter-content ul > li a[rel~='external']:not(.no-style)::after, #block-bean-sso-related-content ul > li a[rel~='external']:not(.no-style)::after {
+.hero-med a[rel~='external']:not(.no-style)::after, .header__inner .header__secondary-menu a[rel~='external']:not(.no-style)::after, .content-body .content a[rel~='external']:not(.no-style)::after, .more-link a[rel~='external']:not(.no-style)::after, .region-footer .block-menu .content ul.menu > li a[rel~='external']:not(.no-style)::after, .region-footer .block-menu-block .content ul.menu > li a[rel~='external']:not(.no-style)::after, .content-header .breadcrumbs ul li a[rel~='external']:not(.no-style)::after, .bean-basic-content > .content a[rel~='external']:not(.no-style)::after, .view-slideshow .banner-description-holder h3 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-footer a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, #block-menu-menu-quick-links ul.menu li a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .content-body .content .toc-filter-content ul > li a[rel~='external']:not(.no-style)::after, #block-bean-sso-related-content ul > li a[rel~='external']:not(.no-style)::after {
   background-image: url("../latest/img/icons/external-link--aqua.svg");
 }
 
@@ -1849,7 +1849,7 @@ Link styles
 .list-horizontal .tags a[rel~='external']:not(.no-style)::after, .list-vertical .tags a[rel~='external']:not(.no-style)::after, .list-vertical--thirds .tags a[rel~='external']:not(.no-style)::after, .list-vertical--fourths .tags a[rel~='external']:not(.no-style)::after, footer[role='contentinfo'] .footer-top nav .tags a[rel~='external']:not(.no-style)::after, .list-small .tags a[rel~='external']:not(.no-style)::after, .list-highlighted .tags a[rel~='external']:not(.no-style)::after, .primary-nav ul a[rel~='external']:not(.no-style)::after,
 .local-nav ul a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'] a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'][class$='--inverted'] a[rel~='external']:not(.no-style)::after, .skip-to a[rel~='external']:not(.no-style)::after, [class^='controls'] a[rel~='external']:not(.no-style)::after, .govau--header a[rel~='external']:not(.no-style)::after, .prerelease-govau--header a[rel~='external']:not(.no-style)::after, .hero a[rel~='external']:not(.no-style)::after,
 .hero-sml a[rel~='external']:not(.no-style)::after,
-.hero-med a[rel~='external']:not(.no-style)::after, .header__inner .header__secondary-menu a[rel~='external']:not(.no-style)::after, .content-body .content a[rel~='external']:not(.no-style)::after, .more-link a[rel~='external']:not(.no-style)::after, .region-footer .block-menu .content ul.menu > li a[rel~='external']:not(.no-style)::after, .region-footer .block-menu-block .content ul.menu > li a[rel~='external']:not(.no-style)::after, .content-header .breadcrumbs ul li a[rel~='external']:not(.no-style)::after, .bean-basic-content > .content a[rel~='external']:not(.no-style)::after, .view-slideshow .banner-description-holder h3 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-footer a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, #block-menu-menu-quick-links ul.menu li a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .content-body .content .toc-filter-content ul > li a[rel~='external']:not(.no-style)::after, #block-bean-sso-related-content ul > li a[rel~='external']:not(.no-style)::after {
+.hero-med a[rel~='external']:not(.no-style)::after, .header__inner .header__secondary-menu a[rel~='external']:not(.no-style)::after, .content-body .content a[rel~='external']:not(.no-style)::after, .more-link a[rel~='external']:not(.no-style)::after, .region-footer .block-menu .content ul.menu > li a[rel~='external']:not(.no-style)::after, .region-footer .block-menu-block .content ul.menu > li a[rel~='external']:not(.no-style)::after, .content-header .breadcrumbs ul li a[rel~='external']:not(.no-style)::after, .bean-basic-content > .content a[rel~='external']:not(.no-style)::after, .view-slideshow .banner-description-holder h3 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-footer a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, #block-menu-menu-quick-links ul.menu li a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .content-body .content .toc-filter-content ul > li a[rel~='external']:not(.no-style)::after, #block-bean-sso-related-content ul > li a[rel~='external']:not(.no-style)::after {
   content: '';
   position: absolute;
   display: inline;
@@ -9688,7 +9688,16 @@ ul.tabs.primary {
   border: 0;
 }
 
-body.page-events #content .no-sidebar .view, body.page-publications #content .no-sidebar .view, body.page-news-media #content .no-sidebar .view {
+body.page-events #content .no-sidebar .content-body-inner-pane .page__title, body.page-publications #content .no-sidebar .content-body-inner-pane .page__title, body.page-news-media #content .no-sidebar .content-body-inner-pane .page__title, body.page-news #content .no-sidebar .content-body-inner-pane .page__title {
+  max-width: 73.125rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  box-sizing: content-box;
+}
+
+body.page-events #content .no-sidebar .view, body.page-publications #content .no-sidebar .view, body.page-news-media #content .no-sidebar .view, body.page-news #content .no-sidebar .view {
   max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
@@ -9698,47 +9707,47 @@ body.page-events #content .no-sidebar .view, body.page-publications #content .no
 }
 
 @media (min-width: 768px) {
-  body.page-events #content .no-sidebar .views-row, body.page-publications #content .no-sidebar .views-row, body.page-news-media #content .no-sidebar .views-row {
+  body.page-events #content .no-sidebar .views-row, body.page-publications #content .no-sidebar .views-row, body.page-news-media #content .no-sidebar .views-row, body.page-news #content .no-sidebar .views-row {
     float: left;
     display: block;
     margin-right: 2.7461357194%;
     width: 31.502576187%;
   }
-  body.page-events #content .no-sidebar .views-row:last-child, body.page-publications #content .no-sidebar .views-row:last-child, body.page-news-media #content .no-sidebar .views-row:last-child {
+  body.page-events #content .no-sidebar .views-row:last-child, body.page-publications #content .no-sidebar .views-row:last-child, body.page-news-media #content .no-sidebar .views-row:last-child, body.page-news #content .no-sidebar .views-row:last-child {
     margin-right: 0;
   }
 }
 
 @media (min-width: 768px) {
-  body.page-events #content .no-sidebar .views-row:nth-child(3n), body.page-publications #content .no-sidebar .views-row:nth-child(3n), body.page-news-media #content .no-sidebar .views-row:nth-child(3n) {
+  body.page-events #content .no-sidebar .views-row:nth-child(3n), body.page-publications #content .no-sidebar .views-row:nth-child(3n), body.page-news-media #content .no-sidebar .views-row:nth-child(3n), body.page-news #content .no-sidebar .views-row:nth-child(3n) {
     margin-right: 0;
   }
 }
 
-body.page-events #content .has-sidebar .view, body.page-publications #content .has-sidebar .view, body.page-news-media #content .has-sidebar .view {
+body.page-events #content .has-sidebar .view, body.page-publications #content .has-sidebar .view, body.page-news-media #content .has-sidebar .view, body.page-news #content .has-sidebar .view {
   max-width: 48.75rem;
 }
 
 @media (min-width: 768px) {
-  body.page-events #content .has-sidebar .views-row, body.page-publications #content .has-sidebar .views-row, body.page-news-media #content .has-sidebar .views-row {
+  body.page-events #content .has-sidebar .views-row, body.page-publications #content .has-sidebar .views-row, body.page-news-media #content .has-sidebar .views-row, body.page-news #content .has-sidebar .views-row {
     float: left;
     display: block;
     margin-right: 2.7461357194%;
     width: 48.6269321403%;
   }
-  body.page-events #content .has-sidebar .views-row:last-child, body.page-publications #content .has-sidebar .views-row:last-child, body.page-news-media #content .has-sidebar .views-row:last-child {
+  body.page-events #content .has-sidebar .views-row:last-child, body.page-publications #content .has-sidebar .views-row:last-child, body.page-news-media #content .has-sidebar .views-row:last-child, body.page-news #content .has-sidebar .views-row:last-child {
     margin-right: 0;
   }
 }
 
 @media (min-width: 768px) {
-  body.page-events #content .has-sidebar .views-row:nth-child(2n), body.page-publications #content .has-sidebar .views-row:nth-child(2n), body.page-news-media #content .has-sidebar .views-row:nth-child(2n) {
+  body.page-events #content .has-sidebar .views-row:nth-child(2n), body.page-publications #content .has-sidebar .views-row:nth-child(2n), body.page-news-media #content .has-sidebar .views-row:nth-child(2n), body.page-news #content .has-sidebar .views-row:nth-child(2n) {
     margin-right: 0;
   }
 }
 
 @media (min-width: 768px) {
-  body.page-events #content .view .view-content, body.page-publications #content .view .view-content, body.page-news-media #content .view .view-content {
+  body.page-events #content .view .view-content, body.page-publications #content .view .view-content, body.page-news-media #content .view .view-content, body.page-news #content .view .view-content {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -9749,14 +9758,14 @@ body.page-events #content .has-sidebar .view, body.page-publications #content .h
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  body.page-events #content .view .view-content::after, body.page-publications #content .view .view-content::after, body.page-news-media #content .view .view-content::after {
+  body.page-events #content .view .view-content::after, body.page-publications #content .view .view-content::after, body.page-news-media #content .view .view-content::after, body.page-news #content .view .view-content::after {
     clear: both;
     content: "";
     display: table;
   }
 }
 
-body.page-events #content .view .view-content .views-row .node, body.page-publications #content .view .view-content .views-row .node, body.page-news-media #content .view .view-content .views-row .node {
+body.page-events #content .view .view-content .views-row .node, body.page-publications #content .view .view-content .views-row .node, body.page-news-media #content .view .view-content .views-row .node, body.page-news #content .view .view-content .views-row .node {
   box-sizing: border-box;
   position: relative;
   padding: 1.875rem;
@@ -9770,32 +9779,32 @@ body.page-events #content .view .view-content .views-row .node, body.page-public
   padding-right: 0;
 }
 
-body.page-events #content .view .view-content .views-row .node.has-thumbnail, body.page-publications #content .view .view-content .views-row .node.has-thumbnail, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail {
+body.page-events #content .view .view-content .views-row .node.has-thumbnail, body.page-publications #content .view .view-content .views-row .node.has-thumbnail, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail, body.page-news #content .view .view-content .views-row .node.has-thumbnail {
   padding-top: 17.1875rem;
 }
 
-body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image {
+body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image, body.page-news #content .view .view-content .views-row .node.has-thumbnail .field-type-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a {
+body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a, body.page-news #content .view .view-content .views-row .node.has-thumbnail .field-type-image a {
   display: block;
   border-bottom: 0;
   transition: none;
 }
 
-body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus {
+body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus, body.page-news #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-news #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus {
   background-color: black;
 }
 
-body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img {
+body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img, body.page-news #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-news #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img {
   opacity: 0.6;
 }
 
-body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image img, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image img, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image img {
+body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image img, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image img, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image img, body.page-news #content .view .view-content .views-row .node.has-thumbnail .field-type-image img {
   display: table;
   font-family: "object-fit:cover;object-position:center";
   object-fit: cover;
@@ -9804,19 +9813,19 @@ body.page-events #content .view .view-content .views-row .node.has-thumbnail .fi
   width: 100%;
 }
 
-body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2), body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2), body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2) {
+body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2), body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2), body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2), body.page-news #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2) {
   display: none;
 }
 
-body.page-events #content .view .view-content .views-row .node.has-thumbnail h2, body.page-events #content .view .view-content .views-row .node.has-thumbnail .display, body.page-publications #content .view .view-content .views-row .node.has-thumbnail h2, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .display, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail h2, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .display {
+body.page-events #content .view .view-content .views-row .node.has-thumbnail h2, body.page-events #content .view .view-content .views-row .node.has-thumbnail .display, body.page-publications #content .view .view-content .views-row .node.has-thumbnail h2, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .display, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail h2, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .display, body.page-news #content .view .view-content .views-row .node.has-thumbnail h2, body.page-news #content .view .view-content .views-row .node.has-thumbnail .display {
   margin-top: 1.875rem;
 }
 
-body.page-events #content .view .view-content .views-row .node > .links li, body.page-publications #content .view .view-content .views-row .node > .links li, body.page-news-media #content .view .view-content .views-row .node > .links li {
+body.page-events #content .view .view-content .views-row .node > .links li, body.page-publications #content .view .view-content .views-row .node > .links li, body.page-news-media #content .view .view-content .views-row .node > .links li, body.page-news #content .view .view-content .views-row .node > .links li {
   padding-left: 0;
 }
 
-body.page-events #content .view .view-content .views-row h2, body.page-events #content .view .view-content .views-row .display, body.page-publications #content .view .view-content .views-row h2, body.page-publications #content .view .view-content .views-row .display, body.page-news-media #content .view .view-content .views-row h2, body.page-news-media #content .view .view-content .views-row .display {
+body.page-events #content .view .view-content .views-row h2, body.page-events #content .view .view-content .views-row .display, body.page-publications #content .view .view-content .views-row h2, body.page-publications #content .view .view-content .views-row .display, body.page-news-media #content .view .view-content .views-row h2, body.page-news-media #content .view .view-content .views-row .display, body.page-news #content .view .view-content .views-row h2, body.page-news #content .view .view-content .views-row .display {
   font-size: 1.5rem;
   line-height: 1.5em;
   color: #444449;
@@ -9879,7 +9888,7 @@ body.page-events #content .view .view-content .views-row h2, body.page-events #c
   margin-top: 0;
 }
 
-body.page-events #content .view .view-content .views-row h2 a:not(.no-style), body.page-events #content .view .view-content .views-row .display a:not(.no-style), body.page-publications #content .view .view-content .views-row h2 a:not(.no-style), body.page-publications #content .view .view-content .views-row .display a:not(.no-style), body.page-news-media #content .view .view-content .views-row h2 a:not(.no-style), body.page-news-media #content .view .view-content .views-row .display a:not(.no-style) {
+body.page-events #content .view .view-content .views-row h2 a:not(.no-style), body.page-events #content .view .view-content .views-row .display a:not(.no-style), body.page-publications #content .view .view-content .views-row h2 a:not(.no-style), body.page-publications #content .view .view-content .views-row .display a:not(.no-style), body.page-news-media #content .view .view-content .views-row h2 a:not(.no-style), body.page-news-media #content .view .view-content .views-row .display a:not(.no-style), body.page-news #content .view .view-content .views-row h2 a:not(.no-style), body.page-news #content .view .view-content .views-row .display a:not(.no-style) {
   color: #444449;
   text-decoration: none;
   outline: none;
@@ -9889,27 +9898,27 @@ body.page-events #content .view .view-content .views-row h2 a:not(.no-style), bo
   transition-property: background-color, border-color, color;
 }
 
-body.page-events #content .view .view-content .views-row h2 a:not(.no-style):hover, body.page-events #content .view .view-content .views-row .display a:not(.no-style):hover, body.page-events #content .view .view-content .views-row h2 a:not(.no-style):focus, body.page-events #content .view .view-content .views-row .display a:not(.no-style):focus, body.page-publications #content .view .view-content .views-row h2 a:not(.no-style):hover, body.page-publications #content .view .view-content .views-row .display a:not(.no-style):hover, body.page-publications #content .view .view-content .views-row h2 a:not(.no-style):focus, body.page-publications #content .view .view-content .views-row .display a:not(.no-style):focus, body.page-news-media #content .view .view-content .views-row h2 a:not(.no-style):hover, body.page-news-media #content .view .view-content .views-row .display a:not(.no-style):hover, body.page-news-media #content .view .view-content .views-row h2 a:not(.no-style):focus, body.page-news-media #content .view .view-content .views-row .display a:not(.no-style):focus {
+body.page-events #content .view .view-content .views-row h2 a:not(.no-style):hover, body.page-events #content .view .view-content .views-row .display a:not(.no-style):hover, body.page-events #content .view .view-content .views-row h2 a:not(.no-style):focus, body.page-events #content .view .view-content .views-row .display a:not(.no-style):focus, body.page-publications #content .view .view-content .views-row h2 a:not(.no-style):hover, body.page-publications #content .view .view-content .views-row .display a:not(.no-style):hover, body.page-publications #content .view .view-content .views-row h2 a:not(.no-style):focus, body.page-publications #content .view .view-content .views-row .display a:not(.no-style):focus, body.page-news-media #content .view .view-content .views-row h2 a:not(.no-style):hover, body.page-news-media #content .view .view-content .views-row .display a:not(.no-style):hover, body.page-news-media #content .view .view-content .views-row h2 a:not(.no-style):focus, body.page-news-media #content .view .view-content .views-row .display a:not(.no-style):focus, body.page-news #content .view .view-content .views-row h2 a:not(.no-style):hover, body.page-news #content .view .view-content .views-row .display a:not(.no-style):hover, body.page-news #content .view .view-content .views-row h2 a:not(.no-style):focus, body.page-news #content .view .view-content .views-row .display a:not(.no-style):focus {
   background-color: #A33591;
   color: #fff;
   border-bottom-color: #A33591;
 }
 
-body.page-events #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external'], body.page-events #content .view .view-content .views-row .display a:not(.no-style)[rel~='external'], body.page-publications #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external'], body.page-publications #content .view .view-content .views-row .display a:not(.no-style)[rel~='external'], body.page-news-media #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external'], body.page-news-media #content .view .view-content .views-row .display a:not(.no-style)[rel~='external'] {
+body.page-events #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external'], body.page-events #content .view .view-content .views-row .display a:not(.no-style)[rel~='external'], body.page-publications #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external'], body.page-publications #content .view .view-content .views-row .display a:not(.no-style)[rel~='external'], body.page-news-media #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external'], body.page-news-media #content .view .view-content .views-row .display a:not(.no-style)[rel~='external'], body.page-news #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external'], body.page-news #content .view .view-content .views-row .display a:not(.no-style)[rel~='external'] {
   display: inline;
   position: relative;
   margin-right: 1.6em;
 }
 
-body.page-events #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external']:hover, body.page-events #content .view .view-content .views-row .display a:not(.no-style)[rel~='external']:hover, body.page-publications #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external']:hover, body.page-publications #content .view .view-content .views-row .display a:not(.no-style)[rel~='external']:hover, body.page-news-media #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external']:hover, body.page-news-media #content .view .view-content .views-row .display a:not(.no-style)[rel~='external']:hover {
+body.page-events #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external']:hover, body.page-events #content .view .view-content .views-row .display a:not(.no-style)[rel~='external']:hover, body.page-publications #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external']:hover, body.page-publications #content .view .view-content .views-row .display a:not(.no-style)[rel~='external']:hover, body.page-news-media #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external']:hover, body.page-news-media #content .view .view-content .views-row .display a:not(.no-style)[rel~='external']:hover, body.page-news #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external']:hover, body.page-news #content .view .view-content .views-row .display a:not(.no-style)[rel~='external']:hover {
   border-color: transparent;
 }
 
-body.page-events #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, body.page-events #content .view .view-content .views-row .display a:not(.no-style)[rel~='external']::after, body.page-publications #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, body.page-publications #content .view .view-content .views-row .display a:not(.no-style)[rel~='external']::after, body.page-news-media #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, body.page-news-media #content .view .view-content .views-row .display a:not(.no-style)[rel~='external']::after {
+body.page-events #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, body.page-events #content .view .view-content .views-row .display a:not(.no-style)[rel~='external']::after, body.page-publications #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, body.page-publications #content .view .view-content .views-row .display a:not(.no-style)[rel~='external']::after, body.page-news-media #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, body.page-news-media #content .view .view-content .views-row .display a:not(.no-style)[rel~='external']::after, body.page-news #content .view .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, body.page-news #content .view .view-content .views-row .display a:not(.no-style)[rel~='external']::after {
   background-size: 0.9em auto;
 }
 
-body.page-events #content .view .view-content .views-row h2 .see-more, body.page-events #content .view .view-content .views-row .display .see-more, body.page-publications #content .view .view-content .views-row h2 .see-more, body.page-publications #content .view .view-content .views-row .display .see-more, body.page-news-media #content .view .view-content .views-row h2 .see-more, body.page-news-media #content .view .view-content .views-row .display .see-more {
+body.page-events #content .view .view-content .views-row h2 .see-more, body.page-events #content .view .view-content .views-row .display .see-more, body.page-publications #content .view .view-content .views-row h2 .see-more, body.page-publications #content .view .view-content .views-row .display .see-more, body.page-news-media #content .view .view-content .views-row h2 .see-more, body.page-news-media #content .view .view-content .views-row .display .see-more, body.page-news #content .view .view-content .views-row h2 .see-more, body.page-news #content .view .view-content .views-row .display .see-more {
   display: inline-block;
   position: relative;
   margin-right: 1.6em;
@@ -9917,7 +9926,7 @@ body.page-events #content .view .view-content .views-row h2 .see-more, body.page
   color: #00787E;
 }
 
-body.page-events #content .view .view-content .views-row h2 .see-more::after, body.page-events #content .view .view-content .views-row .display .see-more::after, body.page-publications #content .view .view-content .views-row h2 .see-more::after, body.page-publications #content .view .view-content .views-row .display .see-more::after, body.page-news-media #content .view .view-content .views-row h2 .see-more::after, body.page-news-media #content .view .view-content .views-row .display .see-more::after {
+body.page-events #content .view .view-content .views-row h2 .see-more::after, body.page-events #content .view .view-content .views-row .display .see-more::after, body.page-publications #content .view .view-content .views-row h2 .see-more::after, body.page-publications #content .view .view-content .views-row .display .see-more::after, body.page-news-media #content .view .view-content .views-row h2 .see-more::after, body.page-news-media #content .view .view-content .views-row .display .see-more::after, body.page-news #content .view .view-content .views-row h2 .see-more::after, body.page-news #content .view .view-content .views-row .display .see-more::after {
   content: '';
   position: absolute;
   top: 0;
@@ -9930,21 +9939,21 @@ body.page-events #content .view .view-content .views-row h2 .see-more::after, bo
   background-size: 0.64em auto;
 }
 
-body.page-events #content .view .view-content .views-row h2 .see-more:hover, body.page-events #content .view .view-content .views-row .display .see-more:hover, body.page-events #content .view .view-content .views-row h2 .see-more:focus, body.page-events #content .view .view-content .views-row .display .see-more:focus, body.page-publications #content .view .view-content .views-row h2 .see-more:hover, body.page-publications #content .view .view-content .views-row .display .see-more:hover, body.page-publications #content .view .view-content .views-row h2 .see-more:focus, body.page-publications #content .view .view-content .views-row .display .see-more:focus, body.page-news-media #content .view .view-content .views-row h2 .see-more:hover, body.page-news-media #content .view .view-content .views-row .display .see-more:hover, body.page-news-media #content .view .view-content .views-row h2 .see-more:focus, body.page-news-media #content .view .view-content .views-row .display .see-more:focus {
+body.page-events #content .view .view-content .views-row h2 .see-more:hover, body.page-events #content .view .view-content .views-row .display .see-more:hover, body.page-events #content .view .view-content .views-row h2 .see-more:focus, body.page-events #content .view .view-content .views-row .display .see-more:focus, body.page-publications #content .view .view-content .views-row h2 .see-more:hover, body.page-publications #content .view .view-content .views-row .display .see-more:hover, body.page-publications #content .view .view-content .views-row h2 .see-more:focus, body.page-publications #content .view .view-content .views-row .display .see-more:focus, body.page-news-media #content .view .view-content .views-row h2 .see-more:hover, body.page-news-media #content .view .view-content .views-row .display .see-more:hover, body.page-news-media #content .view .view-content .views-row h2 .see-more:focus, body.page-news-media #content .view .view-content .views-row .display .see-more:focus, body.page-news #content .view .view-content .views-row h2 .see-more:hover, body.page-news #content .view .view-content .views-row .display .see-more:hover, body.page-news #content .view .view-content .views-row h2 .see-more:focus, body.page-news #content .view .view-content .views-row .display .see-more:focus {
   color: #fff;
 }
 
-body.page-events #content .view .view-content .views-row h2 span.placeholder-link, body.page-events #content .view .view-content .views-row .display span.placeholder-link, body.page-publications #content .view .view-content .views-row h2 span.placeholder-link, body.page-publications #content .view .view-content .views-row .display span.placeholder-link, body.page-news-media #content .view .view-content .views-row h2 span.placeholder-link, body.page-news-media #content .view .view-content .views-row .display span.placeholder-link {
+body.page-events #content .view .view-content .views-row h2 span.placeholder-link, body.page-events #content .view .view-content .views-row .display span.placeholder-link, body.page-publications #content .view .view-content .views-row h2 span.placeholder-link, body.page-publications #content .view .view-content .views-row .display span.placeholder-link, body.page-news-media #content .view .view-content .views-row h2 span.placeholder-link, body.page-news-media #content .view .view-content .views-row .display span.placeholder-link, body.page-news #content .view .view-content .views-row h2 span.placeholder-link, body.page-news #content .view .view-content .views-row .display span.placeholder-link {
   color: rgba(68, 68, 73, 0.7);
   border-bottom: none;
   cursor: not-allowed;
 }
 
-body.page-events #content .view .view-content .views-row h2 span.placeholder-link:hover, body.page-events #content .view .view-content .views-row .display span.placeholder-link:hover, body.page-publications #content .view .view-content .views-row h2 span.placeholder-link:hover, body.page-publications #content .view .view-content .views-row .display span.placeholder-link:hover, body.page-news-media #content .view .view-content .views-row h2 span.placeholder-link:hover, body.page-news-media #content .view .view-content .views-row .display span.placeholder-link:hover {
+body.page-events #content .view .view-content .views-row h2 span.placeholder-link:hover, body.page-events #content .view .view-content .views-row .display span.placeholder-link:hover, body.page-publications #content .view .view-content .views-row h2 span.placeholder-link:hover, body.page-publications #content .view .view-content .views-row .display span.placeholder-link:hover, body.page-news-media #content .view .view-content .views-row h2 span.placeholder-link:hover, body.page-news-media #content .view .view-content .views-row .display span.placeholder-link:hover, body.page-news #content .view .view-content .views-row h2 span.placeholder-link:hover, body.page-news #content .view .view-content .views-row .display span.placeholder-link:hover {
   cursor: not-allowed;
 }
 
-body.page-events #content .view .view-content .views-row .field-name-field-date, body.page-events #content .view .view-content .views-row .submitted, body.page-events #content .view .view-content .views-row .field-type-datetime, body.page-publications #content .view .view-content .views-row .field-name-field-date, body.page-publications #content .view .view-content .views-row .submitted, body.page-publications #content .view .view-content .views-row .field-type-datetime, body.page-news-media #content .view .view-content .views-row .field-name-field-date, body.page-news-media #content .view .view-content .views-row .submitted, body.page-news-media #content .view .view-content .views-row .field-type-datetime {
+body.page-events #content .view .view-content .views-row .field-name-field-date, body.page-events #content .view .view-content .views-row .submitted, body.page-events #content .view .view-content .views-row .field-type-datetime, body.page-publications #content .view .view-content .views-row .field-name-field-date, body.page-publications #content .view .view-content .views-row .submitted, body.page-publications #content .view .view-content .views-row .field-type-datetime, body.page-news-media #content .view .view-content .views-row .field-name-field-date, body.page-news-media #content .view .view-content .views-row .submitted, body.page-news-media #content .view .view-content .views-row .field-type-datetime, body.page-news #content .view .view-content .views-row .field-name-field-date, body.page-news #content .view .view-content .views-row .submitted, body.page-news #content .view .view-content .views-row .field-type-datetime {
   font-size: 0.875rem;
   color: #717171;
   text-transform: uppercase;
@@ -9952,11 +9961,11 @@ body.page-events #content .view .view-content .views-row .field-name-field-date,
   margin-bottom: 1.375rem;
 }
 
-body.page-events #content .view .view-content .views-row .field-name-body, body.page-publications #content .view .view-content .views-row .field-name-body, body.page-news-media #content .view .view-content .views-row .field-name-body {
+body.page-events #content .view .view-content .views-row .field-name-body, body.page-publications #content .view .view-content .views-row .field-name-body, body.page-news-media #content .view .view-content .views-row .field-name-body, body.page-news #content .view .view-content .views-row .field-name-body {
   color: #313131;
 }
 
-body.page-events #content .view .pager, body.page-publications #content .view .pager, body.page-news-media #content .view .pager {
+body.page-events #content .view .pager, body.page-publications #content .view .pager, body.page-news-media #content .view .pager, body.page-news #content .view .pager {
   margin-top: 1.375rem;
   margin-bottom: 1.375rem;
 }
