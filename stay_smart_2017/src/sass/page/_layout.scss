@@ -88,8 +88,7 @@ html {
       .content-body-inner-pane {
         .page__title {
           @include center-column($desktop_content_column);
-        }
-        // Node Pages
+        } // Node Pages
         .node {
           &>.submitted {
             @include center-column($desktop_content_column);
