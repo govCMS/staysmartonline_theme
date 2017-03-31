@@ -122,13 +122,40 @@ function stay_smart_2017_preprocess_node(&$variables) {
     $variables['classes_array'][] = 'priority-level-' . strtolower($priority);
   }
 
+  // Social services links.
+  $variables['social_share_links'] = NULL;
+  if (!empty($variables['field_social_links'][LANGUAGE_NONE][0])) {
+    if ($variables['field_social_links'][LANGUAGE_NONE][0]['value'] == 0) {
+      if ($variables['view_mode'] === 'full') {
+        $variables['social_share_links'] = theme('share_row', array(
+          'title' => $variables['node']->title,
+          'url' => url('node/' . $variables['node']->nid, array('absolute' => TRUE)),
+        ));
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function stay_smart_2017_theme($existing, $type, $theme, $path) {
+  return array(
+    'share_row' => array(
+      'template' => 'templates/share-row',
+      'variables' => array(
+        'title' => NULL,
+        'url' => NULL,
+      ),
+    )
+  );
 }
 
 /**
  * Implements template_preprocess_block().
  */
 function stay_smart_2017_preprocess_block(&$variables) {
-  switch($variables['block_html_id']) {
+  switch ($variables['block_html_id']) {
     case 'block-menu-block-land-pg-child-list-2':
       $child_content = array();
       foreach ($variables['elements']['#content'] as $key => $content) {
@@ -260,7 +287,6 @@ function _stay_smart_2017_return_related_content($node) {
         $field_related_content = $wrapped_entity->field_related_content->value();
       }
       $field_related_content_count = count($field_related_content);
-
 
       if (!empty($node->field_tags) && $field_related_content_count < $limit) {
         $total_wanted = $limit - $field_related_content_count;

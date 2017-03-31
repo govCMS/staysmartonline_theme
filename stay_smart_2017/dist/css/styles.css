@@ -11603,4 +11603,72 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
 #block-bean-sso-related-content ul > li span.placeholder-link:hover {
   cursor: not-allowed;
 }
+
+.social-share-links h2, .social-share-links .display {
+  font-family: "Open Sans", Verdana, "Bitstream Vera Sans", sans-serif;
+  font-size: 0.875rem;
+  color: #333333;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.social-share-links h2:after, .social-share-links .display:after {
+  content: ':';
+}
+
+.social-share-links ul {
+  padding: 0;
+}
+
+.social-share-links li {
+  display: inline-block;
+  color: white;
+}
+
+.social-share-links li a {
+  display: block;
+  width: 2.0625rem;
+  height: 2.0625rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-share-links li a span {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.social-share-links li.facebook a {
+  background-color: #3557A1;
+  background-image: url(../images/svg/facebook.svg);
+}
+
+.social-share-links li.facebook a:hover, .social-share-links li.facebook a:focus {
+  background-color: #223867;
+}
+
+.social-share-links li.twitter a {
+  background-color: #57A7DF;
+  background-image: url(../images/svg/twitter.svg);
+}
+
+.social-share-links li.twitter a:hover, .social-share-links li.twitter a:focus {
+  background-color: #2583c4;
+}
+
+.social-share-links li.google-plus a {
+  background-color: #E44C30;
+  background-image: url(../images/svg/google_plus.svg);
+}
+
+.social-share-links li.google-plus a:hover, .social-share-links li.google-plus a:focus {
+  background-color: #b02f17;
+}
 /*# sourceMappingURL=styles.css.map */
