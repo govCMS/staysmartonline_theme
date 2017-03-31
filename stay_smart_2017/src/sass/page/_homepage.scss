@@ -395,52 +395,88 @@
 // =========================================================
 // HOMEPAGE PARTNERS BLOCK
 // =========================================================
+.pane-partners {
+  padding-top: rem(55px);
+  padding-bottom: rem(43px);
+  .pane-title {
+    @include center-column($desktop_column);
+    @include large-block-heading;
+  }
+}
+
 .view-partners.view-display-id-home_block {
+  @include center-column(370px);
+  @include breakpoint(tablet) {
+    @include center-column($desktop_column);
+  }
   &:after {
     @include clearfix;
   }
   .view-content {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
     flex-wrap: wrap;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    .no-flexbox & {
+      @include clearfix;
+    }
     .views-row {
-      max-width: 29%;
-      width: 29%;
-      margin-left: 2%;
-      margin-right: 2%;
+      margin: 0;
+      margin-bottom: rem(30px);
+      box-sizing: border-box;
       text-align: center;
+      padding-left: rem(16px);
+      padding-right: rem(16px);
+      width: 33.33%;
       .no-flexbox & {
         display: inline-block;
         min-height: rem(130px);
-      }
-      &:first-child, &:nth-child(3n+1) {
-        margin-left: auto;
-      }
-      &:nth-child(3n), &:last-child {
-        margin-right: auto;
+        float: left;
       }
       @include breakpoint(tablet) {
-        max-width: 16%;
-        width: 16%;
-        &:first-child, &:nth-child(5n+1) {
-          margin-left: auto;
+        width: 20%;
+        padding-left: rem(25px);
+        padding-right: rem(25px);
+      }
+      @include breakpoint(desktop) {
+        padding-left: rem(42px);
+        padding-right: rem(42px);
+      }
+      &:first-child, &:nth-child(3n+1) {
+        padding-left: 0;
+      }
+      &:nth-child(3n), &:last-child {
+        padding-right: 0;
+      }
+      &:nth-child(3n+1), &:nth-child(3n) {
+        @include breakpoint(tablet) {
+          padding-left: rem(25px);
+          padding-right: rem(25px);
         }
-        &:nth-child(5n), &:last-child {
-          margin-right: auto;
+        @include breakpoint(desktop) {
+          padding-left: rem(42px);
+          padding-right: rem(42px);
+        }
+      }
+      &:first-child, &:nth-child(5n+1) {
+        @include breakpoint(tablet) {
+          padding-left: 0;
+        }
+      }
+      &:nth-child(5n), &:last-child {
+        @include breakpoint(tablet) {
+          padding-right: 0;
         }
       }
       a {
-        border-bottom: none;
+        display: inline-block;
         img {
           height: auto;
           width: auto;
-          max-height: rem(130px);
-        }
-        &:hover {
-          background: none;
+          max-height: rem(100px);
+          .no-flexbox & {
+            width: 100%;
+          }
         }
       }
     }
