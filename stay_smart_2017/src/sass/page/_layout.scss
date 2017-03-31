@@ -120,6 +120,9 @@ html {
     #site-map {
       @include center-column($desktop_content_column);
     }
+    .page__title {
+      @include center-column($desktop_content_column);
+    }
     .search-api-page-results {
       @include center-column($desktop_content_column);
     }
@@ -296,8 +299,6 @@ a[rel~='external']::after {
   @include button-colours($secondary_2, #A33591, #891642, $white, $white);
 }
 
-body {
-  max-width: 1650px;
-  margin-left: auto;
-  margin-right: auto;
+#page {
+  @include body-column;
 }
