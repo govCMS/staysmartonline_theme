@@ -2,7 +2,7 @@
   h2 {
     font-family: $base-sans-serif;
     font-size: rem(14px);
-    color: #333333;
+    color: $neutral_1;
     font-weight: 600;
     text-transform: uppercase;
     &:after {
@@ -29,28 +29,31 @@
   }
   li.facebook {
     a {
-      background-color: #3557A1;
+      $fb_blue: #3557A1;
+      background-color: $fb_blue;
       background-image: url(../images/svg/facebook.svg);
       &:hover, &:focus {
-        background-color: darken(#3557A1, 15%);
+        background-color: darken($fb_blue, 15%);
       }
     }
   }
   li.twitter {
     a {
-      background-color: #57A7DF;
+      $twitter_blue: #57A7DF;
+      background-color: $twitter_blue;
       background-image: url(../images/svg/twitter.svg);
       &:hover, &:focus {
-        background-color: darken(#57A7DF, 15%);
+        background-color: darken($twitter_blue, 15%);
       }
     }
   }
   li.google-plus {
     a {
-      background-color: #E44C30;
+      $gplus_orange: #E44C30;
+      background-color: $gplus_orange;
       background-image: url(../images/svg/google_plus.svg);
       &:hover, &:focus {
-        background-color: darken(#E44C30, 15%);
+        background-color: darken($gplus_orange, 15%);
       }
     }
   }
