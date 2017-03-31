@@ -1,4 +1,4 @@
-#block-webform-client-block-8903 {
+#block-webform-client-block-8912 {
   background-color: $white;
   max-width: none;
   padding: rem(1px) 0;
@@ -10,9 +10,13 @@
       font-family: $varela_round;
       color: $sso_neutral_6;
       font-size: rem(16px);
+      line-height: 1em;
       font-weight: 400;
       @include breakpoint(tablet) {
         font-size: rem(24px);
+      }
+      .form-required {
+        font-size: rem(14px);
       }
     }
   }
