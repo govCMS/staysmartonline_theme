@@ -1,0 +1,83 @@
+#block-webform-client-block-8903 {
+  background-color: $white;
+  max-width: none;
+  padding: rem(1px) 0;
+  &>.content {
+    @include center-column(rem(279px));
+  }
+  .webform-component--page-helpful {
+    &>label {
+      font-family: $varela_round;
+      color: $sso_neutral_6;
+      font-size: rem(16px);
+      font-weight: 400;
+      @include breakpoint(tablet) {
+        font-size: rem(24px);
+      }
+    }
+  }
+  .form-item-submitted-page-helpful {
+    label {
+      font-weight: 700;
+      margin: 0;
+      padding: rem(6px) rem(28px);
+      &:before {
+        width: rem(20px);
+        height: rem(20px);
+        left: rem(1px);
+        top: rem(9px);
+      }
+      &:after {
+        width: rem(20px);
+        height: rem(20px);
+        left: rem(1px);
+        top: rem(9px);
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    &:nth-child(1) {
+      label {
+        color: $feedback_yes;
+        &:before {
+          border-color: $feedback_yes;
+        }
+        &:after {
+          background-image: url('../images/svg/check_circle_tick.svg');
+        }
+      }
+    }
+    &:nth-child(2) {
+      label {
+        color: $feedback_no;
+        &:before {
+          border-color: $feedback_no;
+        }
+        &:after {
+          background-image: url('../images/svg/delete_circle_cross.svg');
+        }
+      }
+    }
+  }
+  .webform-component--comments {
+    &>label {
+      font-weight: 400;
+      font-size: rem(14px);
+      @include breakpoint(tablet) {
+        font-size: rem(16px);
+      }
+    }
+    textarea {
+      background: #F9F9F9;
+      border: 1px solid #D3D3D3;
+      border-radius: 4px;
+    }
+  }
+  .form-actions {
+    margin: 0;
+    .webform-submit {
+      @include listing-component-button;
+    }
+  }
+}
