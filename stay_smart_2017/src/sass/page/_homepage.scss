@@ -511,6 +511,10 @@
       @include breakpoint(tablet) {
         max-width: 16%;
         width: 16%;
+        &:nth-child(3n+1), &:nth-child(3n) {
+          margin-left: 2%;
+          margin-right: 2%;
+        }
         &:first-child, &:nth-child(5n+1) {
           margin-left: auto;
         }
