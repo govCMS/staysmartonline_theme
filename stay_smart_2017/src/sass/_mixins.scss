@@ -72,6 +72,14 @@
   @return url("../../vendor/gov-au-ui-kit/assets/img/icons/"+$filename);
 }
 
+@mixin body-column() {
+  max-width: rem(1650px);
+  min-width: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 // =========================================================
 // LISTING MIXINS
 // These mixins should be applied to in the following fashion:

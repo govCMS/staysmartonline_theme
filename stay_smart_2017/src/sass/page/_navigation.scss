@@ -2,6 +2,7 @@
 // TOP NAVIGATION
 // =========================================================
 .region-navigation {
+  @include body-column;
   background-color: $primary_1;
   .block-superfish {
     @include center-column($desktop_column);

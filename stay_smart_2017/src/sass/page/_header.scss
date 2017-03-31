@@ -1,4 +1,5 @@
-.header {
+.header[role='banner'] {
+  @include body-column;
   @include breakpoint(tablet) {
     background-image: url('../images/png/header-background.png');
     background-position: right center;

@@ -118,8 +118,10 @@ function stay_smart_2017_preprocess_node(&$variables) {
   }
 
   if ($variables['type'] === 'alert') {
-    $priority = $variables['elements']['field_priority_level'][0]['#markup'];
-    $variables['classes_array'][] = 'priority-level-' . strtolower($priority);
+    if (!empty($variables['elements']['field_priority_level'])) {
+      $priority = $variables['elements']['field_priority_level'][0]['#markup'];
+      $variables['classes_array'][] = 'priority-level-' . strtolower($priority);
+    }
   }
 
   // Social services links.

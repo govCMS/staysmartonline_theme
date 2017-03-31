@@ -176,39 +176,25 @@
       border-bottom: 1px solid transparent !important;
       border-radius: 0 !important;
       &:hover, &:focus {
-        border-bottom-color: $primary_1 !important;
+        box-shadow: none !important;
+        background-color: $secondary_1 !important;
       }
       &.active {
         border-bottom-color: $white !important;
-        &:hover, &:focus {
-          border-bottom-color: $primary_1 !important;
-        }
       }
       &.slider-prev {
         @include hide-text;
         background-image: url(../images/svg/slider-prev.svg);
-        &:hover, &:focus {
-          background-image: url(../images/svg/slider-prev-hover.svg);
-        }
       }
       &.slider-next {
         @include hide-text;
         background-image: url(../images/svg/slider-next.svg);
-        &:hover, &:focus {
-          background-image: url(../images/svg/slider-next-hover.svg);
-        }
       }
       &.slider-play {
         @include hide-text;
         background-image: url(../images/svg/slider-pause.svg);
-        &:hover, &:focus {
-          background-image: url(../images/svg/slider-pause-hover.svg);
-        }
         &.paused {
           background-image: url(../images/svg/slider-play.svg);
-          &:hover, &:focus {
-            background-image: url(../images/svg/slider-play-hover.svg);
-          }
         }
       }
     }
@@ -314,6 +300,15 @@
 // =========================================================
 // HOMEPAGE VIEW ONLINE ALERTS
 // =========================================================
+.pane-online-alerts {
+  @include center-column($desktop_column);
+  padding-top: rem(55px);
+  padding-bottom: rem(43px);
+  .pane-title {
+    @include large-block-heading;
+  }
+}
+
 .view-online-alerts {
   .view-content {
     @include breakpoint(tablet) {
