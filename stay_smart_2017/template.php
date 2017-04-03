@@ -288,7 +288,13 @@ function _stay_smart_2017_return_related_content($node) {
       if (!empty($node->field_related_content)) {
         $field_related_content = $wrapped_entity->field_related_content->value();
       }
+
       $field_related_content_count = count($field_related_content);
+
+      $used = [];
+      for ($i = 0; $i < $field_related_content_count; $i++) {
+        $used[] = $field_related_content[$i]->nid;
+      }
 
       if (!empty($node->field_tags) && $field_related_content_count < $limit) {
         $total_wanted = $limit - $field_related_content_count;
@@ -310,6 +316,7 @@ function _stay_smart_2017_return_related_content($node) {
           ->entityCondition('bundle', $tagged_bundles, 'IN')
           ->propertyCondition('nid', $node->nid, '!=')
           ->propertyCondition('status', NODE_PUBLISHED)
+          ->propertyCondition('nid', $used, 'NOT IN')
           ->fieldCondition('field_tags', 'tid', $tag_tids, 'IN')
           ->range(0, $total_wanted)
           ->addMetaData('account', user_load(1));;
