@@ -102,6 +102,8 @@
     ?>
   </div>
 
+  <?php $readmore_title = $content['links']['node']['#links']['node-readmore']['title']; ?>
+  <?php $content['links']['node']['#links']['node-readmore']['title'] = str_replace("Read more", "Learn more", $readmore_title); ?>
   <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>
