@@ -59,6 +59,11 @@ html {
   @include breakpoint(large_tablet) {
     flex-wrap: nowrap;
   }
+  .no-flexbox & {
+    @include breakpoint(large_tablet) {
+      @include clearfix;
+    }
+  }
 }
 
 .content-sidebar-first {
@@ -69,6 +74,12 @@ html {
     min-width: rem(330px);
     padding-right: rem(60px);
   }
+  .no-flexbox & {
+    @include breakpoint(large_tablet) {
+      float: left;
+      vertical-align: top;
+    }
+  }
 }
 
 .content-body-inner {
@@ -77,6 +88,16 @@ html {
       width: 100%;
       @include breakpoint(large_tablet) {
         max-width: $desktop_content_column;
+      }
+      .no-flexbox & {
+        @include breakpoint(large_tablet) {
+          float: right;
+          vertical-align: top;
+          width: 59%;
+        }
+        @include breakpoint(desktop) {
+          width: 66%;
+        }
       }
     }
     .panel-display {
