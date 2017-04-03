@@ -84,5 +84,11 @@
         font-size: rem(16px);
       }
     }
+    .field-name-field-priority-level, .field-name-field-alert-date {
+      .no-flexbox & {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
   }
 }
