@@ -124,15 +124,27 @@ function stay_smart_2017_preprocess_node(&$variables) {
     }
   }
 
+  $variables['header_level'] = '2';
+  if ($variables['view_mode'] === 'search_result') {
+    $variables['header_level'] = '3';
+    $variables['theme_hook_suggestions'][] = "node__{$variables['node']->type}__search_result";
+    $trimmed_length = 200;
+    $stripped = strip_tags($variables['body'][0]['safe_value']);
+    if (strlen($stripped) > $trimmed_length) {
+      $stripped = substr($stripped, 0, $trimmed_length) . '...';
+    }
+    $variables['content']['body'][0]['#markup'] = "<p>" . $stripped . "</p>";
+  }
+
   // Social services links.
   $variables['social_share_links'] = NULL;
   if (!empty($variables['field_social_links'][LANGUAGE_NONE][0])) {
     if ($variables['field_social_links'][LANGUAGE_NONE][0]['value'] == 0) {
       if ($variables['view_mode'] === 'full') {
-        $variables['social_share_links'] = theme('share_row', array(
+        $variables['social_share_links'] = theme('share_row', [
           'title' => $variables['node']->title,
-          'url' => url('node/' . $variables['node']->nid, array('absolute' => TRUE)),
-        ));
+          'url' => url('node/' . $variables['node']->nid, ['absolute' => TRUE]),
+        ]);
       }
     }
   }
@@ -144,7 +156,17 @@ function stay_smart_2017_preprocess_node(&$variables) {
     if (strlen($stripped) > $trimmed_length) {
       $stripped = substr($stripped, 0, $trimmed_length) . '...';
     }
-    $variables['content']['body'][0]['#markup'] =  "<p>" . $stripped . "</p>";
+    $variables['content']['body'][0]['#markup'] = "<p>" . $stripped . "</p>";
+  }
+
+  // Properly trim alert teasers (home page)
+  if ($variables['node']->type == 'alert' && $view_mode == 'teaser') {
+    $trimmed_length = 200;
+    $stripped = strip_tags($variables['body'][0]['safe_value']);
+    if (strlen($stripped) > $trimmed_length) {
+      $stripped = substr($stripped, 0, $trimmed_length) . '...';
+    }
+    $variables['content']['body'][0]['#markup'] = "<p>" . $stripped . "</p>";
   }
 }
 
