@@ -80,7 +80,7 @@
  * @ingroup themeable
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<li id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <div class="alert-and-date">
     <?php print render($content['field_priority_level']); ?>
@@ -108,4 +108,4 @@
 
   <?php print render($content['comments']); ?>
 
-</div>
+</li>
