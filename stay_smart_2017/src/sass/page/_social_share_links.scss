@@ -1,4 +1,5 @@
 .social-share-links {
+  @include center-column($desktop_content_column);
   h2 {
     font-family: $base-sans-serif;
     font-size: rem(14px);
