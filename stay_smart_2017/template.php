@@ -288,7 +288,6 @@ function _stay_smart_2017_return_related_content($node) {
       if (!empty($node->field_related_content)) {
         $field_related_content = $wrapped_entity->field_related_content->value();
       }
-
       $field_related_content_count = count($field_related_content);
 
       $used = [];
