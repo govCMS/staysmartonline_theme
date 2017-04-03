@@ -7016,7 +7016,7 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
 
 @media (min-width: 1024px) {
   .content-body-inner.has-sidebar .content-body-inner-pane {
-    max-width: 48.75rem;
+    max-width: 73.125rem;
   }
 }
 
@@ -7084,7 +7084,7 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
 }
 
 .page-node .content-body-inner.no-sidebar .content-body-inner-pane .page__title {
-  max-width: 48.75rem;
+  max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
@@ -7093,7 +7093,7 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
 }
 
 .page-node .content-body-inner.no-sidebar .content-body-inner-pane .node > .submitted {
-  max-width: 48.75rem;
+  max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
@@ -7102,7 +7102,7 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
 }
 
 .page-node .content-body-inner.no-sidebar .content-body-inner-pane .node > .content {
-  max-width: 48.75rem;
+  max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
@@ -7209,7 +7209,7 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
 }
 
 .content-body-inner.no-sidebar #site-map {
-  max-width: 48.75rem;
+  max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
@@ -7218,7 +7218,7 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
 }
 
 .content-body-inner.no-sidebar .page__title {
-  max-width: 48.75rem;
+  max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
@@ -7227,7 +7227,7 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
 }
 
 .content-body-inner.no-sidebar .search-api-page-results {
-  max-width: 48.75rem;
+  max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
@@ -7245,7 +7245,7 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
 }
 
 .page-search404 .content-body-inner.no-sidebar .block-system {
-  max-width: 48.75rem;
+  max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
@@ -7254,7 +7254,7 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
 }
 
 .page-node-done .content-body-inner.no-sidebar .block-system {
-  max-width: 48.75rem;
+  max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
@@ -7545,10 +7545,22 @@ blockquote:after {
   }
 }
 
+.field-name-body {
+  max-width: 48.75rem;
+}
+
 .field-name-body .introduction {
   font-weight: 300;
   font-size: 1.375rem;
   line-height: 2.25rem;
+}
+
+.field-name-field-introduction {
+  font-family: "Open Sans", Verdana, "Bitstream Vera Sans", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+  color: #00787E;
+  max-width: 48.75rem;
 }
 
 a[rel~='external']::after {
@@ -10986,7 +10998,7 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
 }
 
 #content .search-form {
-  max-width: 48.75rem;
+  max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
@@ -11019,6 +11031,7 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
+  max-width: 48.75rem;
 }
 
 #content .search-form .form-item {
@@ -11067,6 +11080,10 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
 
 .search-results {
   padding: 0;
+}
+
+.search-results .search-result {
+  max-width: 48.75rem;
 }
 
 .search-results .search-result h3 {
@@ -12018,7 +12035,7 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
 }
 
 #block-views-partners-block-1 h2, #block-views-partners-block-1 .display {
-  max-width: 48.75rem;
+  max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;
@@ -12027,7 +12044,7 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
 }
 
 .view-partners.view-display-id-block_1 {
-  max-width: 48.75rem;
+  max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.25rem;

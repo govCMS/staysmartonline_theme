@@ -1,11 +1,11 @@
 #block-views-partners-block-1 {
   h2 {
-    @include center-column($desktop_content_column);
+    @include center-column($desktop_column);
   }
 }
 
 .view-partners.view-display-id-block_1 {
-  @include center-column($desktop_content_column);
+  @include center-column($desktop_column);
   @include clearfix;
   .view-content {
     display: flex;
