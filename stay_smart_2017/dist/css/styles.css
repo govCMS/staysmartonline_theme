@@ -11704,6 +11704,15 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
   cursor: not-allowed;
 }
 
+.social-share-links {
+  max-width: 48.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  box-sizing: content-box;
+}
+
 .social-share-links h2, .social-share-links .display {
   font-family: "Open Sans", Verdana, "Bitstream Vera Sans", sans-serif;
   font-size: 0.875rem;
