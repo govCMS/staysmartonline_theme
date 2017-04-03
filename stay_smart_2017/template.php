@@ -136,6 +136,16 @@ function stay_smart_2017_preprocess_node(&$variables) {
       }
     }
   }
+
+  // Properly trim news article teasers (home page)
+  if ($variables['node']->type == 'news_article' && $view_mode == 'teaser') {
+    $trimmed_length = 150;
+    $stripped = strip_tags($variables['body'][0]['safe_value']);
+    if (strlen($stripped) > $trimmed_length) {
+      $stripped = substr($stripped, 0, $trimmed_length) . '...';
+    }
+    $variables['content']['body'][0]['#markup'] =  "<p>" . $stripped . "</p>";
+  }
 }
 
 /**
