@@ -1055,7 +1055,7 @@ Markup: templates/buttons-examples.hbs
 
 Style guide: Buttons.1 Creating buttons
 */
-button, .button, [role='button'], [type='submit'], [type='reset'], [type='button'], .nav-toggle, .view-slideshow .banner-description-holder .field a, .view-whats-new-grid .view-content .views-row .node-readmore a, .view-online-alerts.view-display-id-block_1 .view-content .views-row .node-readmore a, #block-webform-client-block-8912 .form-actions .webform-submit {
+button, .button, [role='button'], [type='submit'], [type='reset'], [type='button'], .nav-toggle, .view-slideshow .banner-description-holder .field a, .view-whats-new-grid .view-content .views-row .node-readmore a, .view-online-alerts.view-display-id-block_1 .view-content .views-row .node-readmore a, body.page-events #content .view .view-content .views-row .node-readmore a, body.page-publications #content .view .view-content .views-row .node-readmore a, body.page-news-media #content .view .view-content .views-row .node-readmore a, body.page-news #content .view .view-content .views-row .node-readmore a, #block-webform-client-block-8912 .form-actions .webform-submit {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
@@ -1072,7 +1072,7 @@ button, .button, [role='button'], [type='submit'], [type='reset'], [type='button
 }
 
 @media screen and (min-width: 768px) {
-  button, .button, [role='button'], [type='submit'], [type='reset'], [type='button'], .nav-toggle, .view-slideshow .banner-description-holder .field a, .view-whats-new-grid .view-content .views-row .node-readmore a, .view-online-alerts.view-display-id-block_1 .view-content .views-row .node-readmore a, #block-webform-client-block-8912 .form-actions .webform-submit {
+  button, .button, [role='button'], [type='submit'], [type='reset'], [type='button'], .nav-toggle, .view-slideshow .banner-description-holder .field a, .view-whats-new-grid .view-content .views-row .node-readmore a, .view-online-alerts.view-display-id-block_1 .view-content .views-row .node-readmore a, body.page-events #content .view .view-content .views-row .node-readmore a, body.page-publications #content .view .view-content .views-row .node-readmore a, body.page-news-media #content .view .view-content .views-row .node-readmore a, body.page-news #content .view .view-content .views-row .node-readmore a, #block-webform-client-block-8912 .form-actions .webform-submit {
     height: 2.8em;
     padding: 0.5em 1.2em;
   }
@@ -10049,6 +10049,36 @@ body.page-events #content .view .view-content .views-row .field-name-field-date,
 
 body.page-events #content .view .view-content .views-row .field-name-body, body.page-publications #content .view .view-content .views-row .field-name-body, body.page-news-media #content .view .view-content .views-row .field-name-body, body.page-news #content .view .view-content .views-row .field-name-body {
   color: #313131;
+}
+
+body.page-events #content .view .view-content .views-row .node-readmore, body.page-publications #content .view .view-content .views-row .node-readmore, body.page-news-media #content .view .view-content .views-row .node-readmore, body.page-news #content .view .view-content .views-row .node-readmore {
+  padding: 0;
+}
+
+body.page-events #content .view .view-content .views-row .node-readmore a, body.page-publications #content .view .view-content .views-row .node-readmore a, body.page-news-media #content .view .view-content .views-row .node-readmore a, body.page-news #content .view .view-content .views-row .node-readmore a {
+  background-color: #c92967;
+  color: #fff;
+  border-radius: 4px;
+  border: 0;
+  transition: box-shadow 0.2s;
+  box-shadow: 0px 0px 0px 0px transparent;
+  display: inline-block;
+  height: auto;
+}
+
+body.page-events #content .view .view-content .views-row .node-readmore a:hover, body.page-events #content .view .view-content .views-row .node-readmore a:focus, body.page-publications #content .view .view-content .views-row .node-readmore a:hover, body.page-publications #content .view .view-content .views-row .node-readmore a:focus, body.page-news-media #content .view .view-content .views-row .node-readmore a:hover, body.page-news-media #content .view .view-content .views-row .node-readmore a:focus, body.page-news #content .view .view-content .views-row .node-readmore a:hover, body.page-news #content .view .view-content .views-row .node-readmore a:focus {
+  background-color: #A33591;
+  color: #fff;
+  box-shadow: 0px 14px 14px 0px rgba(0, 0, 0, 0.25), 0px 10px 5px 0px rgba(0, 0, 0, 0.22);
+}
+
+body.page-events #content .view .view-content .views-row .node-readmore a:active, body.page-publications #content .view .view-content .views-row .node-readmore a:active, body.page-news-media #content .view .view-content .views-row .node-readmore a:active, body.page-news #content .view .view-content .views-row .node-readmore a:active {
+  background-color: #891642;
+}
+
+body.page-events #content .view .view-content .views-row .node-readmore a:disabled, body.page-publications #content .view .view-content .views-row .node-readmore a:disabled, body.page-news-media #content .view .view-content .views-row .node-readmore a:disabled, body.page-news #content .view .view-content .views-row .node-readmore a:disabled {
+  background-color: #C3C3C3;
+  border: 0;
 }
 
 body.page-events #content .view .pager, body.page-publications #content .view .pager, body.page-news-media #content .view .pager, body.page-news #content .view .pager {
