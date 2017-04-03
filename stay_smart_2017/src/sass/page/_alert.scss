@@ -92,3 +92,24 @@
     }
   }
 }
+
+.view-online-alerts {
+  @include center-column($desktop_column);
+  .view-content {
+    .views-row {
+      &:nth-child(3n+1) {
+        .no-flexbox & {
+          @include breakpoint(tablet) {
+            clear: both;
+          }
+        }
+      }
+      .node {
+        .content {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+      }
+    }
+  }
+}
