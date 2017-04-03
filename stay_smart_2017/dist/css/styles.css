@@ -10197,6 +10197,7 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
   padding-top: 0.8125rem;
   padding-bottom: 0.8125rem;
   padding-right: 2.1875rem;
+  margin-right: 0;
 }
 
 #block-menu-block-second-nav-menu ul.menu li a:hover, #block-menu-block-second-nav-menu ul.menu li a:focus {
