@@ -6477,6 +6477,7 @@ html.no-flexbox .header__inner .region-header .search-form-widget > div .form-it
 
 .header__inner .region-header .search-form-widget > div input[type="submit"]:hover, .header__inner .region-header .search-form-widget > div input[type="submit"]:focus {
   background-image: url(../images/svg/magnifying_glass_hover.svg);
+  box-shadow: none;
 }
 
 .header__inner .region-header .search-form-widget > div input[type="submit"]:focus {
@@ -11013,12 +11014,7 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
 }
 
 .page-search #content .search-form > div {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  position: relative;
 }
 
 #content .search-form .form-item {
@@ -11055,10 +11051,14 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../images/svg/magnifying_glass.svg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 #content .search-form input.form-submit:hover, #content .search-form input.form-submit:focus {
   background-image: url(../images/svg/magnifying_glass_hover.svg);
+  box-shadow: none;
 }
 
 #content .search-form input.form-submit:focus {

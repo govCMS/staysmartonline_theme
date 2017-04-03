@@ -274,6 +274,7 @@
   background-image: url(../images/svg/magnifying_glass.svg);
   &:hover, &:focus {
     background-image: url(../images/svg/magnifying_glass_hover.svg);
+    box-shadow: none;
   }
   &:focus {
     z-index: 1;
