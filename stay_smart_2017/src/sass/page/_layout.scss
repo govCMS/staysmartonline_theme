@@ -276,6 +276,13 @@ ul, ol, dl, p, dt, dd {
   @include wysiwyg;
 }
 
+.field-name-field-introduction {
+  font-family: $base-sans-serif;
+  font-size: rem(20px);
+  line-height: rem(22px);
+  color: $primary_1;
+}
+
 a[rel~='external']::after {
   background-image: url(../images/svg/external-link--orange.svg) !important;
 }

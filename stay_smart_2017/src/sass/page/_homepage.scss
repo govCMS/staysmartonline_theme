@@ -311,7 +311,7 @@
   }
 }
 
-.view-online-alerts.view-display-id-block_1 {
+.view-online-alerts {
   .view-content {
     @include breakpoint(tablet) {
       @include outer-container(100%);
