@@ -14,8 +14,7 @@
     }
     &>div {
       .page-search & {
-        display: flex;
-        align-items: flex-end;
+        position: relative;
       }
     }
     .form-item {
@@ -27,6 +26,9 @@
     }
     input.form-submit {
       @include search-submit-button;
+      position: absolute;
+      bottom: 0;
+      right: 0;
     }
   }
 }
