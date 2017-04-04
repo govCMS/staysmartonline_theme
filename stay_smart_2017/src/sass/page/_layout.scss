@@ -313,6 +313,19 @@ ul, ol, dl, p, dt, dd {
   color: $primary_1;
 }
 
+.paragraphs-item-image-with-caption {
+  margin-top: rem($default_padding_px);
+  margin-bottom: rem($default_padding_px);
+  .field-name-field-pbundle-image {
+    margin-bottom: 0 !important;
+  }
+  .field-name-field-pbundle-image-caption {
+    margin-top: 0 !important;
+    font-size: rem(14px);
+    color: $neutral_2;
+  }
+}
+
 a[rel~='external']::after {
   background-image: url(../images/svg/external-link--orange.svg) !important;
 }

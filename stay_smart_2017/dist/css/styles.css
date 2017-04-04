@@ -7598,6 +7598,21 @@ blockquote:after {
   color: #00787E;
 }
 
+.paragraphs-item-image-with-caption {
+  margin-top: 1.375rem;
+  margin-bottom: 1.375rem;
+}
+
+.paragraphs-item-image-with-caption .field-name-field-pbundle-image {
+  margin-bottom: 0 !important;
+}
+
+.paragraphs-item-image-with-caption .field-name-field-pbundle-image-caption {
+  margin-top: 0 !important;
+  font-size: 0.875rem;
+  color: #717171;
+}
+
 a[rel~='external']::after {
   background-image: url(../images/svg/external-link--orange.svg) !important;
 }
