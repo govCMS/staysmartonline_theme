@@ -80,6 +80,12 @@
         .field-name-body {
           @include listing-component-body;
         }
+        .node-readmore {
+          padding: 0;
+          a {
+            @include listing-component-button;
+          }
+        }
       }
     }
     .pager {

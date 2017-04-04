@@ -124,19 +124,51 @@ function stay_smart_2017_preprocess_node(&$variables) {
     }
   }
 
+  $variables['header_level'] = '2';
+  if ($variables['view_mode'] === 'search_result') {
+    $variables['header_level'] = '3';
+    $variables['theme_hook_suggestions'][] = "node__{$variables['node']->type}__search_result";
+    $trimmed_length = 200;
+    $stripped = strip_tags($variables['body'][0]['safe_value']);
+    if (strlen($stripped) > $trimmed_length) {
+      $stripped = substr($stripped, 0, $trimmed_length) . '...';
+    }
+    $variables['content']['body'][0]['#markup'] = "<p>" . $stripped . "</p>";
+  }
+
   // Social services links.
   $variables['social_share_links'] = NULL;
   if (!empty($variables['field_social_links'][LANGUAGE_NONE][0])) {
     if ($variables['field_social_links'][LANGUAGE_NONE][0]['value'] == 0) {
       if ($variables['view_mode'] === 'full') {
-        $variables['social_share_links'] = theme('share_row', array(
+        $variables['social_share_links'] = theme('share_row', [
           'title' => $variables['node']->title,
-          'url' => url('node/' . $variables['node']->nid, array('absolute' => TRUE)),
-        ));
+          'url' => url('node/' . $variables['node']->nid, ['absolute' => TRUE]),
+        ]);
       }
     }
   }
-}
+
+  // Properly trim news article teasers (home page)
+  if ($variables['node']->type == 'news_article' && $view_mode == 'teaser') {
+    $trimmed_length = 150;
+    $stripped = strip_tags($variables['body'][0]['safe_value']);
+    if (strlen($stripped) > $trimmed_length) {
+      $stripped = substr($stripped, 0, $trimmed_length) . '...';
+    }
+    $variables['content']['body'][0]['#markup'] = "<p>" . $stripped . "</p>";
+  }
+
+  // Properly trim alert teasers (home page)
+  if ($variables['node']->type == 'alert' && $view_mode == 'teaser') {
+    $trimmed_length = 200;
+    $stripped = strip_tags($variables['body'][0]['safe_value']);
+    if (strlen($stripped) > $trimmed_length) {
+      $stripped = substr($stripped, 0, $trimmed_length) . '...';
+    }
+    $variables['content']['body'][0]['#markup'] = "<p>" . $stripped . "</p>";
+  }
+} 
 
 /**
  * Implements hook_theme().
@@ -290,6 +322,11 @@ function _stay_smart_2017_return_related_content($node) {
       }
       $field_related_content_count = count($field_related_content);
 
+      $used = [];
+      for ($i = 0; $i < $field_related_content_count; $i++) {
+        $used[] = $field_related_content[$i]->nid;
+      }
+
       if (!empty($node->field_tags) && $field_related_content_count < $limit) {
         $total_wanted = $limit - $field_related_content_count;
         $tag_tids = array();
@@ -310,6 +347,7 @@ function _stay_smart_2017_return_related_content($node) {
           ->entityCondition('bundle', $tagged_bundles, 'IN')
           ->propertyCondition('nid', $node->nid, '!=')
           ->propertyCondition('status', NODE_PUBLISHED)
+          ->propertyCondition('nid', $used, 'NOT IN')
           ->fieldCondition('field_tags', 'tid', $tag_tids, 'IN')
           ->range(0, $total_wanted)
           ->addMetaData('account', user_load(1));;

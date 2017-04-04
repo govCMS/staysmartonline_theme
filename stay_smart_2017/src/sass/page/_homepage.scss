@@ -222,9 +222,11 @@
     .views-row {
       @include breakpoint(tablet) {
         @include span-columns(6 of 12);
+        display: flex; // Fixes a safari issue.
       }
       @include breakpoint(large_tablet) {
         @include span-columns(4 of 12);
+        display: flex; // Fixes a safari issue.
       }
       &:nth-child(2n) {
         @include breakpoint(tablet) {
@@ -309,7 +311,7 @@
   }
 }
 
-.view-online-alerts {
+.view-online-alerts.view-display-id-block_1 {
   .view-content {
     @include breakpoint(tablet) {
       @include outer-container(100%);

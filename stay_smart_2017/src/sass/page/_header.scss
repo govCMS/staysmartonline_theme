@@ -37,7 +37,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 100%;
       html.no-flexbox & {
         @include breakpoint(tablet) {
           display: inline-block;
@@ -92,24 +91,25 @@
   }
   .block-govcms-text-resize {
     display: none;
-    @include breakpoint(tablet) {
+    @include breakpoint(large_tablet) {
       display: block;
       margin-right: $default_padding;
     }
     ul.text-resize {
-      display: flex;
+      display: table;
       padding: 0;
       margin: 0;
       margin-left: rem(5px);
       li {
-        display: inline-block;
+        display: table-cell;
         vertical-align: middle;
         list-style: none;
         margin-bottom: 0;
         height: rem(30px);
         a {
           @include hide-text;
-          display: inline-block;
+          color: transparent;
+          display: block;
           background-repeat: no-repeat;
           background-position: center;
           width: rem(30px);

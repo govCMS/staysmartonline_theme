@@ -693,7 +693,7 @@ Style guide: Grid.4 Helpers.2 Debugging
 .list-horizontal .tags .see-more::after, .list-vertical .tags .see-more::after, .list-vertical--thirds .tags .see-more::after, .list-vertical--fourths .tags .see-more::after, footer[role='contentinfo'] .footer-top nav .tags .see-more::after, .list-small .tags .see-more::after, .list-highlighted .tags .see-more::after, .primary-nav ul .see-more::after,
 .local-nav ul .see-more::after, [class^='breadcrumbs'] .see-more::after, [class^='breadcrumbs'][class$='--inverted'] .see-more::after, .skip-to .see-more::after, [class^='controls'] .see-more::after, .govau--header .see-more::after, .prerelease-govau--header .see-more::after, .hero .see-more::after,
 .hero-sml .see-more::after,
-.hero-med .see-more::after, .header__inner .header__secondary-menu .see-more::after, .content-body .content .see-more::after, .more-link .see-more::after, .region-footer .block-menu .content ul.menu > li .see-more::after, .region-footer .block-menu-block .content ul.menu > li .see-more::after, .content-header .breadcrumbs ul li .see-more::after, .bean-basic-content > .content .see-more::after, .view-slideshow .banner-description-holder h3 .see-more::after, .view-home-page-blog-articles .view-content .views-row h2 .see-more::after, .view-home-page-blog-articles .view-content .views-row .display .see-more::after, .view-latest-news .view-content .views-row h2 .see-more::after, .view-latest-news .view-content .views-row .display .see-more::after, .view-whats-new-grid .view-content .views-row h2 .see-more::after, .view-whats-new-grid .view-content .views-row .display .see-more::after, .view-whats-new-grid .view-footer .see-more::after, .view-online-alerts .view-content .views-row h2 .see-more::after, .view-online-alerts .view-content .views-row .display .see-more::after, body.page-events #content .view .view-content .views-row h2 .see-more::after, body.page-events #content .view .view-content .views-row .display .see-more::after, body.page-publications #content .view .view-content .views-row h2 .see-more::after, body.page-publications #content .view .view-content .views-row .display .see-more::after, body.page-news-media #content .view .view-content .views-row h2 .see-more::after, body.page-news-media #content .view .view-content .views-row .display .see-more::after, body.page-news #content .view .view-content .views-row h2 .see-more::after, body.page-news #content .view .view-content .views-row .display .see-more::after, #block-menu-menu-quick-links ul.menu li .see-more::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 .see-more::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display .see-more::after, .content-body .content .toc-filter-content ul > li .see-more::after, #block-menu-block-land-pg-child-list-2 > .content .node h2 .see-more::after, #block-menu-block-land-pg-child-list-2 > .content .node .display .see-more::after, #block-bean-sso-related-content ul > li .see-more::after {
+.hero-med .see-more::after, .header__inner .header__secondary-menu .see-more::after, .content-body .content .see-more::after, .more-link .see-more::after, .region-footer .block-menu .content ul.menu > li .see-more::after, .region-footer .block-menu-block .content ul.menu > li .see-more::after, .content-header .breadcrumbs ul li .see-more::after, .bean-basic-content > .content .see-more::after, .view-slideshow .banner-description-holder h3 .see-more::after, .view-home-page-blog-articles .view-content .views-row h2 .see-more::after, .view-home-page-blog-articles .view-content .views-row .display .see-more::after, .view-latest-news .view-content .views-row h2 .see-more::after, .view-latest-news .view-content .views-row .display .see-more::after, .view-whats-new-grid .view-content .views-row h2 .see-more::after, .view-whats-new-grid .view-content .views-row .display .see-more::after, .view-whats-new-grid .view-footer .see-more::after, .view-online-alerts.view-display-id-block_1 .view-content .views-row h2 .see-more::after, .view-online-alerts.view-display-id-block_1 .view-content .views-row .display .see-more::after, body.page-events #content .view .view-content .views-row h2 .see-more::after, body.page-events #content .view .view-content .views-row .display .see-more::after, body.page-publications #content .view .view-content .views-row h2 .see-more::after, body.page-publications #content .view .view-content .views-row .display .see-more::after, body.page-news-media #content .view .view-content .views-row h2 .see-more::after, body.page-news-media #content .view .view-content .views-row .display .see-more::after, body.page-news #content .view .view-content .views-row h2 .see-more::after, body.page-news #content .view .view-content .views-row .display .see-more::after, #block-menu-menu-quick-links ul.menu li .see-more::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 .see-more::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display .see-more::after, .content-body .content .toc-filter-content ul > li .see-more::after, #block-menu-block-land-pg-child-list-2 > .content .node h2 .see-more::after, #block-menu-block-land-pg-child-list-2 > .content .node .display .see-more::after, #block-bean-sso-related-content ul > li .see-more::after {
   background-image: url("../latest/img/icons/arrow-right--aqua.svg");
 }
 
@@ -713,7 +713,7 @@ summary::before, .accordion--controls summary::before, .nav-toggle::before {
 .list-horizontal .tags a[rel~='external']:not(.no-style)::after, .list-vertical .tags a[rel~='external']:not(.no-style)::after, .list-vertical--thirds .tags a[rel~='external']:not(.no-style)::after, .list-vertical--fourths .tags a[rel~='external']:not(.no-style)::after, footer[role='contentinfo'] .footer-top nav .tags a[rel~='external']:not(.no-style)::after, .list-small .tags a[rel~='external']:not(.no-style)::after, .list-highlighted .tags a[rel~='external']:not(.no-style)::after, .primary-nav ul a[rel~='external']:not(.no-style)::after,
 .local-nav ul a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'] a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'][class$='--inverted'] a[rel~='external']:not(.no-style)::after, .skip-to a[rel~='external']:not(.no-style)::after, [class^='controls'] a[rel~='external']:not(.no-style)::after, .govau--header a[rel~='external']:not(.no-style)::after, .prerelease-govau--header a[rel~='external']:not(.no-style)::after, .hero a[rel~='external']:not(.no-style)::after,
 .hero-sml a[rel~='external']:not(.no-style)::after,
-.hero-med a[rel~='external']:not(.no-style)::after, .header__inner .header__secondary-menu a[rel~='external']:not(.no-style)::after, .content-body .content a[rel~='external']:not(.no-style)::after, .more-link a[rel~='external']:not(.no-style)::after, .region-footer .block-menu .content ul.menu > li a[rel~='external']:not(.no-style)::after, .region-footer .block-menu-block .content ul.menu > li a[rel~='external']:not(.no-style)::after, .content-header .breadcrumbs ul li a[rel~='external']:not(.no-style)::after, .bean-basic-content > .content a[rel~='external']:not(.no-style)::after, .view-slideshow .banner-description-holder h3 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-footer a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, #block-menu-menu-quick-links ul.menu li a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .content-body .content .toc-filter-content ul > li a[rel~='external']:not(.no-style)::after, #block-menu-block-land-pg-child-list-2 > .content .node h2 a[rel~='external']:not(.no-style)::after, #block-menu-block-land-pg-child-list-2 > .content .node .display a[rel~='external']:not(.no-style)::after, #block-bean-sso-related-content ul > li a[rel~='external']:not(.no-style)::after {
+.hero-med a[rel~='external']:not(.no-style)::after, .header__inner .header__secondary-menu a[rel~='external']:not(.no-style)::after, .content-body .content a[rel~='external']:not(.no-style)::after, .more-link a[rel~='external']:not(.no-style)::after, .region-footer .block-menu .content ul.menu > li a[rel~='external']:not(.no-style)::after, .region-footer .block-menu-block .content ul.menu > li a[rel~='external']:not(.no-style)::after, .content-header .breadcrumbs ul li a[rel~='external']:not(.no-style)::after, .bean-basic-content > .content a[rel~='external']:not(.no-style)::after, .view-slideshow .banner-description-holder h3 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-footer a[rel~='external']:not(.no-style)::after, .view-online-alerts.view-display-id-block_1 .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-online-alerts.view-display-id-block_1 .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, #block-menu-menu-quick-links ul.menu li a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .content-body .content .toc-filter-content ul > li a[rel~='external']:not(.no-style)::after, #block-menu-block-land-pg-child-list-2 > .content .node h2 a[rel~='external']:not(.no-style)::after, #block-menu-block-land-pg-child-list-2 > .content .node .display a[rel~='external']:not(.no-style)::after, #block-bean-sso-related-content ul > li a[rel~='external']:not(.no-style)::after {
   background-image: url("../latest/img/icons/external-link--aqua.svg");
 }
 
@@ -1055,7 +1055,7 @@ Markup: templates/buttons-examples.hbs
 
 Style guide: Buttons.1 Creating buttons
 */
-button, .button, [role='button'], [type='submit'], [type='reset'], [type='button'], .nav-toggle, .view-slideshow .banner-description-holder .field a, .view-whats-new-grid .view-content .views-row .node-readmore a, .view-online-alerts .view-content .views-row .node-readmore a, #block-webform-client-block-8912 .form-actions .webform-submit {
+button, .button, [role='button'], [type='submit'], [type='reset'], [type='button'], .nav-toggle, .view-slideshow .banner-description-holder .field a, .view-whats-new-grid .view-content .views-row .node-readmore a, .view-online-alerts.view-display-id-block_1 .view-content .views-row .node-readmore a, body.page-events #content .view .view-content .views-row .node-readmore a, body.page-publications #content .view .view-content .views-row .node-readmore a, body.page-news-media #content .view .view-content .views-row .node-readmore a, body.page-news #content .view .view-content .views-row .node-readmore a, #block-webform-client-block-8912 .form-actions .webform-submit {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
@@ -1072,7 +1072,7 @@ button, .button, [role='button'], [type='submit'], [type='reset'], [type='button
 }
 
 @media screen and (min-width: 768px) {
-  button, .button, [role='button'], [type='submit'], [type='reset'], [type='button'], .nav-toggle, .view-slideshow .banner-description-holder .field a, .view-whats-new-grid .view-content .views-row .node-readmore a, .view-online-alerts .view-content .views-row .node-readmore a, #block-webform-client-block-8912 .form-actions .webform-submit {
+  button, .button, [role='button'], [type='submit'], [type='reset'], [type='button'], .nav-toggle, .view-slideshow .banner-description-holder .field a, .view-whats-new-grid .view-content .views-row .node-readmore a, .view-online-alerts.view-display-id-block_1 .view-content .views-row .node-readmore a, body.page-events #content .view .view-content .views-row .node-readmore a, body.page-publications #content .view .view-content .views-row .node-readmore a, body.page-news-media #content .view .view-content .views-row .node-readmore a, body.page-news #content .view .view-content .views-row .node-readmore a, #block-webform-client-block-8912 .form-actions .webform-submit {
     height: 2.8em;
     padding: 0.5em 1.2em;
   }
@@ -1849,7 +1849,7 @@ Link styles
 .list-horizontal .tags a[rel~='external']:not(.no-style)::after, .list-vertical .tags a[rel~='external']:not(.no-style)::after, .list-vertical--thirds .tags a[rel~='external']:not(.no-style)::after, .list-vertical--fourths .tags a[rel~='external']:not(.no-style)::after, footer[role='contentinfo'] .footer-top nav .tags a[rel~='external']:not(.no-style)::after, .list-small .tags a[rel~='external']:not(.no-style)::after, .list-highlighted .tags a[rel~='external']:not(.no-style)::after, .primary-nav ul a[rel~='external']:not(.no-style)::after,
 .local-nav ul a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'] a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'][class$='--inverted'] a[rel~='external']:not(.no-style)::after, .skip-to a[rel~='external']:not(.no-style)::after, [class^='controls'] a[rel~='external']:not(.no-style)::after, .govau--header a[rel~='external']:not(.no-style)::after, .prerelease-govau--header a[rel~='external']:not(.no-style)::after, .hero a[rel~='external']:not(.no-style)::after,
 .hero-sml a[rel~='external']:not(.no-style)::after,
-.hero-med a[rel~='external']:not(.no-style)::after, .header__inner .header__secondary-menu a[rel~='external']:not(.no-style)::after, .content-body .content a[rel~='external']:not(.no-style)::after, .more-link a[rel~='external']:not(.no-style)::after, .region-footer .block-menu .content ul.menu > li a[rel~='external']:not(.no-style)::after, .region-footer .block-menu-block .content ul.menu > li a[rel~='external']:not(.no-style)::after, .content-header .breadcrumbs ul li a[rel~='external']:not(.no-style)::after, .bean-basic-content > .content a[rel~='external']:not(.no-style)::after, .view-slideshow .banner-description-holder h3 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-footer a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, #block-menu-menu-quick-links ul.menu li a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .content-body .content .toc-filter-content ul > li a[rel~='external']:not(.no-style)::after, #block-menu-block-land-pg-child-list-2 > .content .node h2 a[rel~='external']:not(.no-style)::after, #block-menu-block-land-pg-child-list-2 > .content .node .display a[rel~='external']:not(.no-style)::after, #block-bean-sso-related-content ul > li a[rel~='external']:not(.no-style)::after {
+.hero-med a[rel~='external']:not(.no-style)::after, .header__inner .header__secondary-menu a[rel~='external']:not(.no-style)::after, .content-body .content a[rel~='external']:not(.no-style)::after, .more-link a[rel~='external']:not(.no-style)::after, .region-footer .block-menu .content ul.menu > li a[rel~='external']:not(.no-style)::after, .region-footer .block-menu-block .content ul.menu > li a[rel~='external']:not(.no-style)::after, .content-header .breadcrumbs ul li a[rel~='external']:not(.no-style)::after, .bean-basic-content > .content a[rel~='external']:not(.no-style)::after, .view-slideshow .banner-description-holder h3 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-footer a[rel~='external']:not(.no-style)::after, .view-online-alerts.view-display-id-block_1 .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-online-alerts.view-display-id-block_1 .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-events #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news #content .view .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news #content .view .view-content .views-row .display a[rel~='external']:not(.no-style)::after, #block-menu-menu-quick-links ul.menu li a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .content-body .content .toc-filter-content ul > li a[rel~='external']:not(.no-style)::after, #block-menu-block-land-pg-child-list-2 > .content .node h2 a[rel~='external']:not(.no-style)::after, #block-menu-block-land-pg-child-list-2 > .content .node .display a[rel~='external']:not(.no-style)::after, #block-bean-sso-related-content ul > li a[rel~='external']:not(.no-style)::after {
   content: '';
   position: absolute;
   display: inline;
@@ -6198,7 +6198,6 @@ article h1:first-of-type, article .hero .site-title:first-of-type, .hero article
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -6275,7 +6274,7 @@ article h1:first-of-type, article .hero .site-title:first-of-type, .hero article
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .header__inner .block-govcms-text-resize {
     display: block;
     margin-right: 1.375rem;
@@ -6283,16 +6282,14 @@ article h1:first-of-type, article .hero .site-title:first-of-type, .hero article
 }
 
 .header__inner .block-govcms-text-resize ul.text-resize {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: table;
   padding: 0;
   margin: 0;
   margin-left: 0.3125rem;
 }
 
 .header__inner .block-govcms-text-resize ul.text-resize li {
-  display: inline-block;
+  display: table-cell;
   vertical-align: middle;
   list-style: none;
   margin-bottom: 0;
@@ -6303,7 +6300,8 @@ article h1:first-of-type, article .hero .site-title:first-of-type, .hero article
   overflow: hidden;
   text-indent: 101%;
   white-space: nowrap;
-  display: inline-block;
+  color: transparent;
+  display: block;
   background-repeat: no-repeat;
   background-position: center;
   width: 1.875rem;
@@ -6995,6 +6993,14 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
   }
 }
 
+@media (min-width: 1024px) {
+  .no-flexbox .content-body-inner.has-sidebar::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
 .content-sidebar-first {
   -webkit-order: -1;
       -ms-flex-order: -1;
@@ -7010,6 +7016,13 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
   }
 }
 
+@media (min-width: 1024px) {
+  .no-flexbox .content-sidebar-first {
+    float: left;
+    vertical-align: top;
+  }
+}
+
 .content-body-inner.has-sidebar .content-body-inner-pane {
   width: 100%;
 }
@@ -7017,6 +7030,20 @@ body.not-front #content .content-header .content-header-inner h1, body.not-front
 @media (min-width: 1024px) {
   .content-body-inner.has-sidebar .content-body-inner-pane {
     max-width: 48.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .no-flexbox .content-body-inner.has-sidebar .content-body-inner-pane {
+    float: right;
+    vertical-align: top;
+    width: 59%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .no-flexbox .content-body-inner.has-sidebar .content-body-inner-pane {
+    width: 66%;
   }
 }
 
@@ -8906,6 +8933,9 @@ ul.tabs.primary {
     display: block;
     margin-right: 2.7461357194%;
     width: 48.6269321403%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
   .view-home-page-blog-articles .view-content .views-row:last-child, .view-latest-news .view-content .views-row:last-child, .view-whats-new-grid .view-content .views-row:last-child {
     margin-right: 0;
@@ -8918,6 +8948,9 @@ ul.tabs.primary {
     display: block;
     margin-right: 2.7461357194%;
     width: 31.502576187%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
   .view-home-page-blog-articles .view-content .views-row:last-child, .view-latest-news .view-content .views-row:last-child, .view-whats-new-grid .view-content .views-row:last-child {
     margin-right: 0;
@@ -8947,7 +8980,6 @@ ul.tabs.primary {
   position: relative;
   padding: 1.875rem;
   margin-bottom: 1.875rem;
-  height: calc(100% - 1.875rem);
   background-color: white;
   max-width: 23.125rem;
   margin-left: auto;
@@ -9335,7 +9367,7 @@ ul.tabs.primary {
 }
 
 @media (min-width: 768px) {
-  .view-online-alerts .view-content {
+  .view-online-alerts.view-display-id-block_1 .view-content {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -9346,7 +9378,7 @@ ul.tabs.primary {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  .view-online-alerts .view-content::after {
+  .view-online-alerts.view-display-id-block_1 .view-content::after {
     clear: both;
     content: "";
     display: table;
@@ -9354,36 +9386,36 @@ ul.tabs.primary {
 }
 
 @media (min-width: 768px) {
-  .view-online-alerts .view-content .views-row {
+  .view-online-alerts.view-display-id-block_1 .view-content .views-row {
     float: left;
     display: block;
     margin-right: 2.7461357194%;
     width: 31.502576187%;
   }
-  .view-online-alerts .view-content .views-row:last-child {
+  .view-online-alerts.view-display-id-block_1 .view-content .views-row:last-child {
     margin-right: 0;
   }
 }
 
 @media (min-width: 768px) {
-  .view-online-alerts .view-content .views-row:nth-child(2n) {
+  .view-online-alerts.view-display-id-block_1 .view-content .views-row:nth-child(2n) {
     margin-right: 0;
   }
 }
 
 @media (min-width: 1024px) {
-  .view-online-alerts .view-content .views-row:nth-child(2n) {
+  .view-online-alerts.view-display-id-block_1 .view-content .views-row:nth-child(2n) {
     margin-right: 2.7461357194%;
   }
 }
 
 @media (min-width: 1024px) {
-  .view-online-alerts .view-content .views-row:nth-child(3n) {
+  .view-online-alerts.view-display-id-block_1 .view-content .views-row:nth-child(3n) {
     margin-right: 0;
   }
 }
 
-.view-online-alerts .view-content .views-row .node {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row .node {
   position: relative;
   padding-right: 0.6875rem;
   margin-bottom: 1.375rem;
@@ -9393,20 +9425,20 @@ ul.tabs.primary {
 }
 
 @media (min-width: 768px) {
-  .view-online-alerts .view-content .views-row .node {
+  .view-online-alerts.view-display-id-block_1 .view-content .views-row .node {
     padding-left: 0.6875rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .view-online-alerts .view-content .views-row .node {
+  .view-online-alerts.view-display-id-block_1 .view-content .views-row .node {
     padding-left: 2.9375rem;
     padding-top: 2.375rem;
     padding-bottom: 2.875rem;
   }
 }
 
-.view-online-alerts .view-content .views-row .node:before {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row .node:before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -9417,7 +9449,7 @@ ul.tabs.primary {
   right: auto;
 }
 
-.view-online-alerts .view-content .views-row h2, .view-online-alerts .view-content .views-row .display {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row h2, .view-online-alerts.view-display-id-block_1 .view-content .views-row .display {
   font-size: 1.5rem;
   line-height: 1.5em;
   color: #444449;
@@ -9482,7 +9514,7 @@ ul.tabs.primary {
   font-size: 1.125rem;
 }
 
-.view-online-alerts .view-content .views-row h2 a:not(.no-style), .view-online-alerts .view-content .views-row .display a:not(.no-style) {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row h2 a:not(.no-style), .view-online-alerts.view-display-id-block_1 .view-content .views-row .display a:not(.no-style) {
   color: #444449;
   text-decoration: none;
   outline: none;
@@ -9492,27 +9524,27 @@ ul.tabs.primary {
   transition-property: background-color, border-color, color;
 }
 
-.view-online-alerts .view-content .views-row h2 a:not(.no-style):hover, .view-online-alerts .view-content .views-row .display a:not(.no-style):hover, .view-online-alerts .view-content .views-row h2 a:not(.no-style):focus, .view-online-alerts .view-content .views-row .display a:not(.no-style):focus {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row h2 a:not(.no-style):hover, .view-online-alerts.view-display-id-block_1 .view-content .views-row .display a:not(.no-style):hover, .view-online-alerts.view-display-id-block_1 .view-content .views-row h2 a:not(.no-style):focus, .view-online-alerts.view-display-id-block_1 .view-content .views-row .display a:not(.no-style):focus {
   background-color: #A33591;
   color: #fff;
   border-bottom-color: #A33591;
 }
 
-.view-online-alerts .view-content .views-row h2 a:not(.no-style)[rel~='external'], .view-online-alerts .view-content .views-row .display a:not(.no-style)[rel~='external'] {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row h2 a:not(.no-style)[rel~='external'], .view-online-alerts.view-display-id-block_1 .view-content .views-row .display a:not(.no-style)[rel~='external'] {
   display: inline;
   position: relative;
   margin-right: 1.6em;
 }
 
-.view-online-alerts .view-content .views-row h2 a:not(.no-style)[rel~='external']:hover, .view-online-alerts .view-content .views-row .display a:not(.no-style)[rel~='external']:hover {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row h2 a:not(.no-style)[rel~='external']:hover, .view-online-alerts.view-display-id-block_1 .view-content .views-row .display a:not(.no-style)[rel~='external']:hover {
   border-color: transparent;
 }
 
-.view-online-alerts .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, .view-online-alerts .view-content .views-row .display a:not(.no-style)[rel~='external']::after {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, .view-online-alerts.view-display-id-block_1 .view-content .views-row .display a:not(.no-style)[rel~='external']::after {
   background-size: 0.9em auto;
 }
 
-.view-online-alerts .view-content .views-row h2 .see-more, .view-online-alerts .view-content .views-row .display .see-more {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row h2 .see-more, .view-online-alerts.view-display-id-block_1 .view-content .views-row .display .see-more {
   display: inline-block;
   position: relative;
   margin-right: 1.6em;
@@ -9520,7 +9552,7 @@ ul.tabs.primary {
   color: #00787E;
 }
 
-.view-online-alerts .view-content .views-row h2 .see-more::after, .view-online-alerts .view-content .views-row .display .see-more::after {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row h2 .see-more::after, .view-online-alerts.view-display-id-block_1 .view-content .views-row .display .see-more::after {
   content: '';
   position: absolute;
   top: 0;
@@ -9533,27 +9565,27 @@ ul.tabs.primary {
   background-size: 0.64em auto;
 }
 
-.view-online-alerts .view-content .views-row h2 .see-more:hover, .view-online-alerts .view-content .views-row .display .see-more:hover, .view-online-alerts .view-content .views-row h2 .see-more:focus, .view-online-alerts .view-content .views-row .display .see-more:focus {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row h2 .see-more:hover, .view-online-alerts.view-display-id-block_1 .view-content .views-row .display .see-more:hover, .view-online-alerts.view-display-id-block_1 .view-content .views-row h2 .see-more:focus, .view-online-alerts.view-display-id-block_1 .view-content .views-row .display .see-more:focus {
   color: #fff;
 }
 
-.view-online-alerts .view-content .views-row h2 span.placeholder-link, .view-online-alerts .view-content .views-row .display span.placeholder-link {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row h2 span.placeholder-link, .view-online-alerts.view-display-id-block_1 .view-content .views-row .display span.placeholder-link {
   color: rgba(68, 68, 73, 0.7);
   border-bottom: none;
   cursor: not-allowed;
 }
 
-.view-online-alerts .view-content .views-row h2 span.placeholder-link:hover, .view-online-alerts .view-content .views-row .display span.placeholder-link:hover {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row h2 span.placeholder-link:hover, .view-online-alerts.view-display-id-block_1 .view-content .views-row .display span.placeholder-link:hover {
   cursor: not-allowed;
 }
 
 @media (min-width: 1024px) {
-  .view-online-alerts .view-content .views-row h2, .view-online-alerts .view-content .views-row .display {
+  .view-online-alerts.view-display-id-block_1 .view-content .views-row h2, .view-online-alerts.view-display-id-block_1 .view-content .views-row .display {
     font-size: 1.5rem;
   }
 }
 
-.view-online-alerts .view-content .views-row .field-name-body {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row .field-name-body {
   color: #333333;
   letter-spacing: 0px;
   font-size: 0.875rem;
@@ -9561,16 +9593,16 @@ ul.tabs.primary {
 }
 
 @media (min-width: 1024px) {
-  .view-online-alerts .view-content .views-row .field-name-body {
+  .view-online-alerts.view-display-id-block_1 .view-content .views-row .field-name-body {
     font-size: 1rem;
   }
 }
 
-.view-online-alerts .view-content .views-row .node-readmore {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row .node-readmore {
   padding: 0;
 }
 
-.view-online-alerts .view-content .views-row .node-readmore a {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row .node-readmore a {
   background-color: #c92967;
   color: #fff;
   border-radius: 4px;
@@ -9581,17 +9613,17 @@ ul.tabs.primary {
   height: auto;
 }
 
-.view-online-alerts .view-content .views-row .node-readmore a:hover, .view-online-alerts .view-content .views-row .node-readmore a:focus {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row .node-readmore a:hover, .view-online-alerts.view-display-id-block_1 .view-content .views-row .node-readmore a:focus {
   background-color: #A33591;
   color: #fff;
   box-shadow: 0px 14px 14px 0px rgba(0, 0, 0, 0.25), 0px 10px 5px 0px rgba(0, 0, 0, 0.22);
 }
 
-.view-online-alerts .view-content .views-row .node-readmore a:active {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row .node-readmore a:active {
   background-color: #891642;
 }
 
-.view-online-alerts .view-content .views-row .node-readmore a:disabled {
+.view-online-alerts.view-display-id-block_1 .view-content .views-row .node-readmore a:disabled {
   background-color: #C3C3C3;
   border: 0;
 }
@@ -9825,7 +9857,6 @@ body.page-events #content .view .view-content .views-row .node, body.page-public
   position: relative;
   padding: 1.875rem;
   margin-bottom: 1.875rem;
-  height: calc(100% - 1.875rem);
   background-color: white;
   max-width: 23.125rem;
   margin-left: auto;
@@ -10020,6 +10051,36 @@ body.page-events #content .view .view-content .views-row .field-name-body, body.
   color: #313131;
 }
 
+body.page-events #content .view .view-content .views-row .node-readmore, body.page-publications #content .view .view-content .views-row .node-readmore, body.page-news-media #content .view .view-content .views-row .node-readmore, body.page-news #content .view .view-content .views-row .node-readmore {
+  padding: 0;
+}
+
+body.page-events #content .view .view-content .views-row .node-readmore a, body.page-publications #content .view .view-content .views-row .node-readmore a, body.page-news-media #content .view .view-content .views-row .node-readmore a, body.page-news #content .view .view-content .views-row .node-readmore a {
+  background-color: #c92967;
+  color: #fff;
+  border-radius: 4px;
+  border: 0;
+  transition: box-shadow 0.2s;
+  box-shadow: 0px 0px 0px 0px transparent;
+  display: inline-block;
+  height: auto;
+}
+
+body.page-events #content .view .view-content .views-row .node-readmore a:hover, body.page-events #content .view .view-content .views-row .node-readmore a:focus, body.page-publications #content .view .view-content .views-row .node-readmore a:hover, body.page-publications #content .view .view-content .views-row .node-readmore a:focus, body.page-news-media #content .view .view-content .views-row .node-readmore a:hover, body.page-news-media #content .view .view-content .views-row .node-readmore a:focus, body.page-news #content .view .view-content .views-row .node-readmore a:hover, body.page-news #content .view .view-content .views-row .node-readmore a:focus {
+  background-color: #A33591;
+  color: #fff;
+  box-shadow: 0px 14px 14px 0px rgba(0, 0, 0, 0.25), 0px 10px 5px 0px rgba(0, 0, 0, 0.22);
+}
+
+body.page-events #content .view .view-content .views-row .node-readmore a:active, body.page-publications #content .view .view-content .views-row .node-readmore a:active, body.page-news-media #content .view .view-content .views-row .node-readmore a:active, body.page-news #content .view .view-content .views-row .node-readmore a:active {
+  background-color: #891642;
+}
+
+body.page-events #content .view .view-content .views-row .node-readmore a:disabled, body.page-publications #content .view .view-content .views-row .node-readmore a:disabled, body.page-news-media #content .view .view-content .views-row .node-readmore a:disabled, body.page-news #content .view .view-content .views-row .node-readmore a:disabled {
+  background-color: #C3C3C3;
+  border: 0;
+}
+
 body.page-events #content .view .pager, body.page-publications #content .view .pager, body.page-news-media #content .view .pager, body.page-news #content .view .pager {
   margin-top: 1.375rem;
   margin-bottom: 1.375rem;
@@ -10168,6 +10229,7 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
   padding-top: 0.8125rem;
   padding-bottom: 0.8125rem;
   padding-right: 2.1875rem;
+  margin-right: 0;
 }
 
 #block-menu-block-second-nav-menu ul.menu li a:hover, #block-menu-block-second-nav-menu ul.menu li a:focus {
@@ -10534,7 +10596,6 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
   position: relative;
   padding: 1.875rem;
   margin-bottom: 1.875rem;
-  height: calc(100% - 1.875rem);
   background-color: white;
   max-width: 23.125rem;
   margin-left: auto;
@@ -11084,7 +11145,6 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
   position: relative;
   padding: 1.875rem;
   margin-bottom: 1.875rem;
-  height: calc(100% - 1.875rem);
   background-color: white;
   max-width: 23.125rem;
   margin-left: auto;
@@ -11228,7 +11288,6 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
   position: relative;
   padding: 1.875rem;
   margin-bottom: 1.875rem;
-  height: calc(100% - 1.875rem);
   background-color: white;
   max-width: 23.125rem;
   margin-left: auto;
@@ -11704,6 +11763,15 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
   cursor: not-allowed;
 }
 
+.social-share-links {
+  max-width: 48.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  box-sizing: content-box;
+}
+
 .social-share-links h2, .social-share-links .display {
   font-family: "Open Sans", Verdana, "Bitstream Vera Sans", sans-serif;
   font-size: 0.875rem;
@@ -12015,6 +12083,11 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
   .node-alert .alert-and-date .field-name-field-alert-date {
     font-size: 1rem;
   }
+}
+
+.no-flexbox .node-alert .alert-and-date .field-name-field-priority-level, .no-flexbox .node-alert .alert-and-date .field-name-field-alert-date {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 #block-views-partners-block-1 h2, #block-views-partners-block-1 .display {
