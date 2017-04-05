@@ -14,16 +14,11 @@ html {
   @include button-colours($secondary_2, #A33591, #891642, #fff, #fff);
   body.not-front & {
     .content-header {
-      padding-top: rem(19px);
-      margin-bottom: rem(25px);
-      @include breakpoint(tablet) {
-        padding-top: rem(64px);
-        margin-bottom: rem(60px);
-      }
+      padding-top: rem($default_padding_px);
+      margin-bottom: rem($default_padding_px);
       .content-header-inner {
         @include center-column($desktop_column);
         h1 {
-          // color: white;
           font-weight: 300;
           font-size: rem(32px);
           @include breakpoint(tablet) {
