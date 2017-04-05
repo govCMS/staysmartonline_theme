@@ -80,10 +80,12 @@ function stay_smart_2017_preprocess_page(&$variables) {
       }
     }
 
-    $related_content_links = _stay_smart_2017_return_related_content($node);
-    if (!$related_content_links ||
-      $wrapped_entity->field_hide_related_content->value()) {
-      unset($variables['page']['content']['bean_sso_related_content']);
+    if (isset($node->field_tags)) {
+      $related_content_links = _stay_smart_2017_return_related_content($node);
+      if ((!$related_content_links && !$wrapped_entity->field_tags->value()) ||
+        $wrapped_entity->field_hide_related_content->value()) {
+        unset($variables['page']['content']['bean_sso_related_content']);
+      }
     }
 
   }
@@ -270,14 +272,16 @@ function _stay_smart_2017_return_related_content($node) {
       $field_info_field = field_info_field('field_related_content');
       $limit = $field_info_field['cardinality'];
 
+      $used = [];
+      $field_related_content_count = 0;
+
       if (!empty($node->field_related_content)) {
         $field_related_content = $wrapped_entity->field_related_content->value();
-      }
-      $field_related_content_count = count($field_related_content);
+        $field_related_content_count = count($field_related_content);
 
-      $used = [];
-      for ($i = 0; $i < $field_related_content_count; $i++) {
-        $used[] = $field_related_content[$i]->nid;
+        for ($i = 0; $i < $field_related_content_count; $i++) {
+          $used[] = $field_related_content[$i]->nid;
+        }
       }
 
       if (!empty($node->field_tags) && $field_related_content_count < $limit) {
@@ -300,10 +304,13 @@ function _stay_smart_2017_return_related_content($node) {
           ->entityCondition('bundle', $tagged_bundles, 'IN')
           ->propertyCondition('nid', $node->nid, '!=')
           ->propertyCondition('status', NODE_PUBLISHED)
-          ->propertyCondition('nid', $used, 'NOT IN')
           ->fieldCondition('field_tags', 'tid', $tag_tids, 'IN')
           ->range(0, $total_wanted)
           ->addMetaData('account', user_load(1));;
+
+        if (!empty($used)) {
+          $query->propertyCondition('nid', $used, 'NOT IN');
+        }
 
         $result = $query->execute();
         if (isset($result['node'])) {
@@ -323,4 +330,19 @@ function _stay_smart_2017_return_related_content($node) {
   }
 
   return $related_content_links;
+}
+
+/**
+ * Implements hook_block_view_alter().
+ */
+function stay_smart_2017_block_view_alter(&$data, $block) {
+  if ($block->module == 'govcms_social_links' && $block->delta == 'services') {
+    // Replace social link icons.
+    foreach ($data['content'] as $service => $content) {
+      $icon = drupal_get_path('theme', 'stay_smart_2017') . '/dist/images/svg/social-' . $service . '.svg';
+      if (@file_exists($icon)) {
+        $data['content'][$service]['#icon'] = $icon;
+      }
+    }
+  }
 }
