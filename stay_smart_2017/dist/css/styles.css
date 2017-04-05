@@ -12241,6 +12241,7 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
 }
 
 .view-partners.view-display-id-block_1 .view-content .views-row a {
+  width: 100%;
   display: inline-block;
 }
 
