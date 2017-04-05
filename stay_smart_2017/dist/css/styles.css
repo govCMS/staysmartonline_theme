@@ -9426,18 +9426,6 @@ ul.tabs.primary {
 }
 
 @media (min-width: 768px) {
-  .view-online-alerts .view-content .views-row:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .view-online-alerts .view-content .views-row:nth-child(2n) {
-    margin-right: 2.7461357194%;
-  }
-}
-
-@media (min-width: 1024px) {
   .view-online-alerts .view-content .views-row:nth-child(3n) {
     margin-right: 0;
   }
