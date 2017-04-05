@@ -1,6 +1,12 @@
 .social-share-links {
-  @include center-column($desktop_content_column);
+  max-width: $desktop_content_column;
+  border-top: 1px solid $sso_neutral_11;
+  border-bottom: 1px solid $sso_neutral_11;
+  padding-top: rem(13px);
+  padding-bottom: rem(11px);
   h2 {
+    margin: 0;
+    margin-bottom: rem(7px);
     font-family: $base-sans-serif;
     font-size: rem(14px);
     color: $neutral_1;
@@ -12,10 +18,13 @@
   }
   ul {
     padding: 0;
+    margin: 0;
+    display: inline-block;
   }
   li {
     display: inline-block;
     color: white;
+    margin-bottom: 0;
     a {
       display: block;
       width: rem(33px);
