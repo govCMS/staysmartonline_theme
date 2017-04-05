@@ -68,9 +68,9 @@ function stay_smart_2017_preprocess_page(&$variables) {
 
   if (!empty($variables['node'])) {
     $node = $variables['node'];
+    $wrapped_entity = entity_metadata_wrapper('node', $node);
     if (isset($node->field_hide_sidebar_nav)) {
       try {
-        $wrapped_entity = entity_metadata_wrapper('node', $node);
         if ($wrapped_entity->field_hide_sidebar_nav->value()) {
           $variables['page']['sidebar_first'] = array();
         }
@@ -79,6 +79,13 @@ function stay_smart_2017_preprocess_page(&$variables) {
         watchdog_exception('stay_smart_2017', $e);
       }
     }
+
+    $related_content_links = _stay_smart_2017_return_related_content($node);
+    if (!$related_content_links ||
+      $wrapped_entity->field_hide_related_content->value()) {
+      unset($variables['page']['content']['bean_sso_related_content']);
+    }
+
   }
 }
 
@@ -173,32 +180,9 @@ function stay_smart_2017_preprocess_block(&$variables) {
 
     case 'block-bean-sso-related-content':
       $node = menu_get_object();
-      $hide = FALSE;
-
-      if (isset($node->field_hide_related_content)) {
-        try {
-          $wrapped_entity = entity_metadata_wrapper('node', $node);
-          $hide = $wrapped_entity->field_hide_related_content->value();
-        }
-        catch (Exception $e) {
-          watchdog_exception('stay_smart_2017', $e);
-        }
-      }
-
-      if (!$hide) {
-        $related_content_links = _stay_smart_2017_return_related_content($node);
-        if (empty($related_content_links)) {
-          $variables = array();
-        }
-        else {
-          $variables['content'] = theme('item_list', array(
-            'items' => $related_content_links,
-          ));
-        }
-      }
-      else {
-        $variables = array();
-      }
+      $related_content_links = _stay_smart_2017_return_related_content($node);
+      $variables['content'] = theme('item_list',
+        array('items' => $related_content_links));
       break;
   }
 }
