@@ -1,0 +1,115 @@
+.node-alert {
+  &.priority-level-high {
+    &:before {
+      background-color: $alert_priority_high;
+    }
+    .alert-and-date {
+      background-image: url('../images/png/icon-alerts-priority-high.png');
+    }
+    .field-name-field-priority-level {
+      .field-items {
+        color: $alert_priority_high;
+      }
+    }
+  }
+  &.priority-level-moderate {
+    &:before {
+      background-color: $alert_priority_medium;
+    }
+    .alert-and-date {
+      background-image: url('../images/png/icon-alerts-priority-moderate.png');
+    }
+    .field-name-field-priority-level {
+      .field-items {
+        color: $alert_priority_medium;
+      }
+    }
+  }
+  &.priority-level-low {
+    &:before {
+      background-color: $alert_priority_low;
+    }
+    .alert-and-date {
+      background-image: url('../images/png/icon-alerts-priority-low.png');
+    }
+    .field-name-field-priority-level {
+      .field-items {
+        color: $alert_priority_low;
+      }
+    }
+  }
+  .alert-and-date {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: rem(48px);
+    @include breakpoint(large_tablet) {
+      padding-left: rem(57px);
+    }
+    .field-name-field-priority-level {
+      margin-right: rem(10px);
+      @include breakpoint(large_tablet) {
+        margin-right: rem(13px);
+      }
+      .field-label {
+        @include visually-hidden;
+      }
+      .field-items {
+        height: rem(30px);
+        font-family: $varela_round;
+        font-size: rem(16px);
+        @include breakpoint(large_tablet) {
+          font-size: rem(18px);
+        }
+        .field-item {
+          line-height: 1.9em;
+          @include breakpoint(tablet) {
+            line-height: 1.8em;
+          }
+          @include breakpoint(large_tablet) {
+            line-height: 1.6em;
+          }
+        }
+      }
+    }
+    .field-name-field-alert-date {
+      color: #878787;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: rem(14px);
+      white-space: nowrap;
+      @include breakpoint(large_tablet) {
+        font-size: rem(16px);
+      }
+    }
+    .field-name-field-priority-level, .field-name-field-alert-date {
+      .no-flexbox & {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.view-online-alerts {
+  @include center-column($desktop_column);
+  .view-content {
+    .views-row {
+      &:nth-child(3n+1) {
+        .no-flexbox & {
+          @include breakpoint(tablet) {
+            clear: both;
+          }
+        }
+      }
+      .node {
+        .content {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+      }
+    }
+  }
+}

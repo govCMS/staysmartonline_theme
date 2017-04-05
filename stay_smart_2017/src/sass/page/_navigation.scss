@@ -1,0 +1,191 @@
+// =========================================================
+// TOP NAVIGATION
+// =========================================================
+.region-navigation {
+  @include body-column;
+  background-color: $primary_1;
+  .block-superfish {
+    @include center-column($desktop_column);
+    display: none;
+    @include breakpoint(tablet) {
+      display: block;
+    }
+    ul.sf-menu {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      html.no-flexbox & {
+        display: table;
+      }
+      @include breakpoint(desktop) {
+        html.no-flexbox & {
+          table-layout: fixed;
+        }
+      } // If JS is enabled - hide sub nav menus until superfish finishes loading.
+      &:not(.superfish-processed) {
+        &>li>ul {
+          html:not(.no-js) & {
+            visibility: hidden;
+          }
+        }
+      }
+      li.sfHover {
+        &>a:before {
+          background-color: $secondary_1;
+        }
+      }
+      &>li {
+        position: relative;
+        vertical-align: top;
+        float: none;
+        display: inline-block;
+        width: 100%;
+        html.no-flexbox & {
+          display: table-cell;
+          width: auto;
+        }
+        &.menuparent {
+          &>a:after {
+            content: '';
+            display: inline-block;
+            background-image: url(../images/svg/nav_down_arrow.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: rem(11px);
+            height: rem(7px);
+            margin-left: rem(5px);
+            vertical-align: middle;
+          }
+        }
+        &.active-trail {
+          &>a:before {
+            background-color: $main_menu_active;
+          }
+        }
+        &>a {
+          position: static;
+          display: inline-block;
+          padding-top: $default_padding;
+          padding-bottom: rem(($default_padding_px - 4px));
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          font-weight: 600;
+          border-bottom: 4px solid transparent;
+          padding-left: rem(2px);
+          padding-right: rem(2px);
+          &:hover, &:focus {
+            &:before {
+              background-color: $main_menu_hover;
+            }
+          }
+          &:before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: auto;
+            border-bottom: 4px solid transparent;
+          }
+        }
+        &>ul {
+          top: 100%;
+          padding: 0;
+          margin: 0;
+          li {
+            &.menuparent {
+              &>a {
+                background-image: url(../images/svg/nav_right_arrow.svg);
+                background-repeat: no-repeat;
+                background-position: right rem(22px) center;
+              }
+            }
+            a {
+              background-color: $secondary_1;
+              color: white;
+              text-decoration: none;
+              padding-left: rem(30px);
+              padding-right: rem(30px);
+              padding-top: rem(15px);
+              padding-bottom: rem((15px - 1px));
+              border-bottom: 1px solid transparent;
+              &:hover, &:focus {
+                background-color: $main_menu_hover;
+              }
+            }
+            &.active-trail {
+              &>a {
+                background-color: $main_menu_active;
+                &:hover, &:focus {
+                  background-color: $main_menu_hover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile-nav {
+  position: relative;
+  @include breakpoint(tablet) {
+    display: none;
+  }
+  .js & {
+    display: none;
+  }
+  &.menu-open {
+    display: block;
+    @include breakpoint(tablet) {
+      display: none;
+    }
+  }
+  ul.links {
+    border-top: 1px solid $neutral_3;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    li {
+      list-style-type: none;
+      margin: 0;
+      a {
+        outline: 0;
+        display: block;
+        font-weight: 600;
+        font-size: rem(18);
+        text-decoration: none;
+        padding-top: $default_padding / 2;
+        padding-bottom: $default_padding / 2;
+        color: white;
+        background-color: $secondary_1;
+        &:hover, &:focus {
+          color: white;
+          background-color: $main_menu_hover;
+        }
+      }
+      &.active {
+        a {
+          color: white;
+          background-color: $primary_1;
+          &:hover, &:focus {
+            color: white;
+            background-color: $main_menu_hover;
+          }
+        }
+      }
+    }
+  }
+}
