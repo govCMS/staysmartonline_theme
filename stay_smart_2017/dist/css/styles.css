@@ -6798,15 +6798,8 @@ html.large-fonts {
 }
 
 body.not-front #content .content-header {
-  padding-top: 1.1875rem;
-  margin-bottom: 1.5625rem;
-}
-
-@media (min-width: 768px) {
-  body.not-front #content .content-header {
-    padding-top: 4rem;
-    margin-bottom: 3.75rem;
-  }
+  padding-top: 1.375rem;
+  margin-bottom: 1.375rem;
 }
 
 body.not-front #content .content-header .content-header-inner {

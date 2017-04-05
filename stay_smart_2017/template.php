@@ -329,3 +329,18 @@ function _stay_smart_2017_return_related_content($node) {
 
   return $related_content_links;
 }
+
+/**
+ * Implements hook_block_view_alter().
+ */
+function stay_smart_2017_block_view_alter(&$data, $block) {
+  if ($block->module == 'govcms_social_links' && $block->delta == 'services') {
+    // Replace social link icons.
+    foreach ($data['content'] as $service => $content) {
+      $icon = drupal_get_path('theme', 'stay_smart_2017') . '/dist/images/svg/social-' . $service . '.svg';
+      if (@file_exists($icon)) {
+        $data['content'][$service]['#icon'] = $icon;
+      }
+    }
+  }
+}
