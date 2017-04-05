@@ -80,10 +80,12 @@ function stay_smart_2017_preprocess_page(&$variables) {
       }
     }
 
-    $related_content_links = _stay_smart_2017_return_related_content($node);
-    if ((!$related_content_links && !$wrapped_entity->field_tags->value()) ||
-      $wrapped_entity->field_hide_related_content->value()) {
-      unset($variables['page']['content']['bean_sso_related_content']);
+    if (isset($node->field_tags)) {
+      $related_content_links = _stay_smart_2017_return_related_content($node);
+      if ((!$related_content_links && !$wrapped_entity->field_tags->value()) ||
+        $wrapped_entity->field_hide_related_content->value()) {
+        unset($variables['page']['content']['bean_sso_related_content']);
+      }
     }
 
   }
