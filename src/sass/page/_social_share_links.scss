@@ -1,0 +1,70 @@
+.social-share-links {
+  max-width: $desktop_content_column;
+  border-top: 1px solid $sso_neutral_11;
+  border-bottom: 1px solid $sso_neutral_11;
+  padding-top: rem(13px);
+  padding-bottom: rem(11px);
+  h2 {
+    margin: 0;
+    margin-bottom: rem(7px);
+    font-family: $base-sans-serif;
+    font-size: rem(14px);
+    color: $neutral_1;
+    font-weight: 600;
+    text-transform: uppercase;
+    &:after {
+      content: ':';
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+  li {
+    display: inline-block;
+    color: white;
+    margin-bottom: 0;
+    a {
+      display: block;
+      width: rem(33px);
+      height: rem(33px);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      span {
+        @include visually-hidden;
+      }
+    }
+  }
+  li.facebook {
+    a {
+      $fb_blue: #3557A1;
+      background-color: $fb_blue;
+      background-image: url(../images/svg/facebook.svg);
+      &:hover, &:focus {
+        background-color: darken($fb_blue, 15%);
+      }
+    }
+  }
+  li.twitter {
+    a {
+      $twitter_blue: #57A7DF;
+      background-color: $twitter_blue;
+      background-image: url(../images/svg/twitter.svg);
+      &:hover, &:focus {
+        background-color: darken($twitter_blue, 15%);
+      }
+    }
+  }
+  li.google-plus {
+    a {
+      $gplus_orange: #E44C30;
+      background-color: $gplus_orange;
+      background-image: url(../images/svg/google_plus.svg);
+      &:hover, &:focus {
+        background-color: darken($gplus_orange, 15%);
+      }
+    }
+  }
+}

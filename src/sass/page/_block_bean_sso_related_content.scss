@@ -1,0 +1,21 @@
+#block-bean-sso-related-content {
+  margin-top: $default_padding;
+  background-color: $sso_neutral_9;
+  border: 2px solid #C3C3C3;
+  border-radius: 4px;
+  color: $neutral_1;
+  padding: rem(27px) rem(29px);
+  h2 {
+    @include page-structure-list-title;
+    color: $neutral_1;
+    margin-bottom: rem(24px);
+  }
+  ul {
+    @include page-structure-list-listing;
+    &>li {
+      background-position: 10px center;
+      background-image: url(../images/svg/related_content_arrow.svg);
+      @include link-colours($secondary_1, $secondary_3, $white);
+    }
+  }
+}
