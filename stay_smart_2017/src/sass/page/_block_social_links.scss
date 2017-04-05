@@ -1,0 +1,39 @@
+#block-govcms-social-links-services {
+  background-color: $sso_neutral_7;
+  .inner-wrapper {
+    @include center-column($desktop_column);
+    color: white;
+    padding-top: rem(38px);
+    padding-bottom: rem(38px);
+    @include breakpoint(tablet) {
+      display: flex;
+      align-items: center;
+    }
+    h2 {
+      font-family: $varela_round;
+      color: $sso_neutral_6;
+      font-size: rem(24px);
+      margin: 0;
+      margin-right: rem(10px);
+      margin-bottom: 10px;
+      @include breakpoint(tablet) {
+        display: inline;
+        margin-bottom: 0;
+      }
+      &:after {
+        content: ':';
+      }
+    }
+    .content {
+      display: inline;
+      a {
+        margin-right: rem(10px);
+        display: inline-block;
+        vertical-align: middle;
+        img {
+          float: left;
+        }
+      }
+    }
+  }
+}

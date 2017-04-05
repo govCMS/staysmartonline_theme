@@ -1,0 +1,176 @@
+// =========================================================
+// GENERIC SIDEBAR BLOCK
+// =========================================================
+.region-sidebar-first {
+  .block {
+    margin-bottom: $default_padding;
+    &>h2 {
+      @include large-block-heading;
+      margin: 0;
+      @include breakpoint(large_tablet) {
+        margin-top: rem(33px);
+        margin-bottom: rem(33px);
+      }
+    }
+  }
+}
+
+// =========================================================
+// SIDEBAR MENU
+// =========================================================
+#block-menu-block-second-nav-menu {
+  margin-bottom: $default_padding;
+  &>.content {
+    background-color: $sso_neutral_9;
+    @include breakpoint(large_tablet) {
+      background-color: transparent;
+      border-left: rem(5px) solid $primary_1;
+    }
+  }
+  h2 {
+    // Button is only on mobile.
+    button {
+      @include transition-fade;
+      padding: rem(13px) rem(50px) rem(13px) rem(15px);
+      font-size: rem(18px);
+      position: relative;
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+      font-weight: 400;
+      text-align: left;
+      border-radius: 0;
+      background-color: $sso_neutral_10;
+      color: $neutral_1;
+      &:hover, &:focus {
+        color: $neutral_1;
+        background-color: $neutral_3;
+        box-shadow: none;
+      }
+      &:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: rem(50px);
+        background-image: url(../images/svg/sidebar-mobile-arrow-down.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: rotate(0deg);
+      }
+      &.showing {
+        &:after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  .content {
+    display: none;
+    @include breakpoint(large_tablet) {
+      display: block;
+    }
+    &.showing {
+      display: block;
+      background-color: $sso_neutral_9;
+      padding: 0;
+    }
+  }
+  .menu-block-wrapper {
+    &>ul {
+      &>li {
+        &>a {
+          font-weight: 600;
+          padding-left: $small-spacing;
+          border-bottom: 2px solid $sso_neutral_8;
+        }
+        &>ul {
+          &>li {
+            &>a {
+              padding-left: $small-spacing * 2;
+              border-bottom: 0;
+              background-color: $sso_neutral_5;
+              color: $sso_access_secondary_1;
+            }
+            &>ul {
+              &>li {
+                &>a {
+                  padding-left: $small-spacing * 3;
+                  border-bottom: 0;
+                  color: $sso_access_secondary_1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  ul.menu {
+    margin: 0;
+    padding: 0;
+    &.menu-closed {
+      display: none;
+    }
+    li {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      &:last-child {
+        border-bottom: 0;
+      }
+      a {
+        color: $neutral_1;
+        width: 100%;
+        display: inline-block;
+        box-sizing: border-box;
+        padding-top: rem(13px);
+        padding-bottom: rem(13px);
+        padding-right: rem(35px);
+        margin-right: 0;
+        &:hover, &:focus {
+          background-color: $primary_1;
+          color: $white;
+        }
+        &.active {
+          background-color: $main_menu_active;
+          color: $white;
+          &:hover, &:focus {
+            background-color: $primary_1;
+          }
+        }
+      }
+      button.sidebar-toggle-menu {
+        @include transition-fade;
+        @include hide-text;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        width: rem(30px);
+        height: rem(56px);
+        box-sizing: border-box;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/svg/sidebar-arrow-down.svg);
+        transform: rotate(180deg);
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: $white;
+        border-radius: 0;
+        &:hover, &:focus {
+          background-image: url(../images/svg/sidebar-arrow-down-hover.svg);
+          background-color: $primary_1;
+          box-shadow: none;
+        }
+        &.menu-closed {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+}

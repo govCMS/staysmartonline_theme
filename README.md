@@ -1,1 +1,0 @@
-# Stay Smart Online Theme
