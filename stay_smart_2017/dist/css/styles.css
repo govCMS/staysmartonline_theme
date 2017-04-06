@@ -9791,6 +9791,86 @@ ul.tabs.primary {
   width: 100%;
 }
 
+.item-list .pager {
+  position: relative;
+}
+
+.item-list .pager li {
+  margin: 0 5px;
+  padding: 0;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .item-list .pager li {
+    background-image: none;
+    display: inline;
+    list-style-type: none;
+    padding: 0.5em;
+  }
+}
+
+.item-list .pager .pager-previous {
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .item-list .pager .pager-previous {
+    left: auto;
+  }
+}
+
+.item-list .pager .pager-next {
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .item-list .pager .pager-next {
+    right: auto;
+  }
+}
+
+.item-list .pager .pager-previous, .item-list .pager .pager-next {
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .item-list .pager .pager-previous, .item-list .pager .pager-next {
+    position: relative;
+  }
+}
+
+.item-list .pager .pager-previous a, .item-list .pager .pager-next a {
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .item-list .pager .pager-previous a, .item-list .pager .pager-next a {
+    width: auto;
+    display: inline;
+  }
+}
+
+.item-list .pager .pager-previous .ajax-progress, .item-list .pager .pager-next .ajax-progress {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .item-list .pager .pager-previous .ajax-progress, .item-list .pager .pager-next .ajax-progress {
+    display: inline-block;
+  }
+}
+
+.item-list .pager .pager-item, .item-list .pager .pager-ellipsis, .item-list .pager .pager-first, .item-list .pager .pager-last {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .item-list .pager .pager-item, .item-list .pager .pager-ellipsis, .item-list .pager .pager-first, .item-list .pager .pager-last {
+    display: inline;
+  }
+}
+
 body.page-events #content .no-sidebar .content-body-inner-pane .page__title, body.page-publications #content .no-sidebar .content-body-inner-pane .page__title, body.page-news-media #content .no-sidebar .content-body-inner-pane .page__title, body.page-news #content .no-sidebar .content-body-inner-pane .page__title {
   max-width: 73.125rem;
   margin-left: auto;

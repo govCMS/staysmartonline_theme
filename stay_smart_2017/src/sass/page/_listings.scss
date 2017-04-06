@@ -95,6 +95,60 @@
   }
 }
 
+.item-list {
+  .pager {
+    position: relative;
+    li {
+      margin: 0 5px;
+      padding: 0;
+      display: inline-block;
+      @include breakpoint(tablet) {
+        background-image: none;
+        display: inline;
+        list-style-type: none;
+        padding: 0.5em;
+      }
+    }
+    .pager-previous {
+      left: 0;
+      @include breakpoint(tablet) {
+        left: auto;
+      }
+    }
+    .pager-next {
+      right: 0;
+      @include breakpoint(tablet) {
+        right: auto;
+      }
+    }
+    .pager-previous, .pager-next {
+      position: absolute;
+      @include breakpoint(tablet) {
+        position: relative;
+      }
+      a {
+        display: inline-block;
+        @include breakpoint(tablet) {
+          width: auto;
+          display: inline;
+        }
+      }
+      .ajax-progress {
+        display: none;
+        @include breakpoint(tablet) {
+          display: inline-block;
+        }
+      }
+    }
+    .pager-item, .pager-ellipsis, .pager-first, .pager-last {
+      display: none;
+      @include breakpoint(tablet) {
+        display: inline;
+      }
+    }
+  }
+}
+
 // Implementations of the generic view.
 body.page-events, body.page-publications, body.page-news-media, body.page-news {
   #content {
