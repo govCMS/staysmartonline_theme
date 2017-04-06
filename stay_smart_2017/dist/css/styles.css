@@ -10242,9 +10242,9 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
   width: 100%;
   display: inline-block;
   box-sizing: border-box;
-  padding-top: 0.8125rem;
-  padding-bottom: 0.8125rem;
-  padding-right: 2.1875rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-right: 2.125rem;
   margin-right: 0;
 }
 
@@ -10273,7 +10273,7 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
   margin: 0;
   padding: 0;
   width: 1.875rem;
-  height: 3.5rem;
+  height: 3.375rem;
   box-sizing: border-box;
   background-color: transparent;
   background-repeat: no-repeat;

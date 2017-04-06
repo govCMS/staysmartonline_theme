@@ -127,9 +127,9 @@
         width: 100%;
         display: inline-block;
         box-sizing: border-box;
-        padding-top: rem(13px);
-        padding-bottom: rem(13px);
-        padding-right: rem(35px);
+        padding-top: rem(12px);
+        padding-bottom: rem(12px);
+        padding-right: rem(34px);
         margin-right: 0;
         &:hover, &:focus {
           background-color: $primary_1;
@@ -150,7 +150,7 @@
         margin: 0;
         padding: 0;
         width: rem(30px);
-        height: rem(56px);
+        height: rem(54px);
         box-sizing: border-box;
         background-color: transparent;
         background-repeat: no-repeat;
