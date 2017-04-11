@@ -7443,25 +7443,11 @@ h1, .hero .site-title,
   font-size: 1.5rem;
 }
 
-h1:first-of-type, .hero .site-title:first-of-type,
-.hero-sml .site-title:first-of-type,
-.hero-med .site-title:first-of-type {
-  margin-top: 0;
-}
-
 @media (min-width: 768px) {
   h1, .hero .site-title,
   .hero-sml .site-title,
   .hero-med .site-title {
     font-size: 3rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  h1, .hero .site-title,
-  .hero-sml .site-title,
-  .hero-med .site-title {
-    font-size: 4rem;
   }
 }
 
@@ -7477,7 +7463,7 @@ h2, .display {
 
 @media (min-width: 1200px) {
   h2, .display {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -7493,7 +7479,7 @@ h3 {
 
 @media (min-width: 1200px) {
   h3 {
-    font-size: 2.25rem;
+    font-size: 1.625rem;
   }
 }
 
