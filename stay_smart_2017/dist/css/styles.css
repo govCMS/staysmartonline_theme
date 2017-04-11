@@ -7570,6 +7570,10 @@ blockquote:after {
   max-width: 48.75rem;
 }
 
+.field-name-body table th, .field-name-body table td {
+  vertical-align: top;
+}
+
 .field-name-body .introduction {
   font-weight: 300;
   font-size: 1.375rem;
