@@ -11334,6 +11334,12 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
   }
 }
 
+@media (min-width: 768px) {
+  .node-type-landing-page #content .no-sidebar #block-menu-block-land-pg-child-list-2 .node:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
 .node-type-landing-page #content .has-sidebar #block-menu-block-land-pg-child-list-2 {
   max-width: 48.75rem;
 }
@@ -11353,6 +11359,12 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
 @media (min-width: 768px) {
   .node-type-landing-page #content .has-sidebar #block-menu-block-land-pg-child-list-2 .node:nth-child(2n) {
     margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .node-type-landing-page #content .has-sidebar #block-menu-block-land-pg-child-list-2 .node:nth-child(2n+1) {
+    clear: both;
   }
 }
 
@@ -11376,12 +11388,6 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
   }
   #block-menu-block-land-pg-child-list-2 > .content::after {
     clear: both;
