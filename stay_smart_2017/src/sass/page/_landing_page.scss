@@ -15,6 +15,11 @@
             @include omega();
           }
         }
+        &:nth-child(3n+1) {
+          @include breakpoint(tablet) {
+            clear: both;
+          }
+        }
       }
     }
   }
@@ -28,6 +33,11 @@
         &:nth-child(2n) {
           @include breakpoint(tablet) {
             @include omega();
+          }
+        }
+        &:nth-child(2n+1) {
+          @include breakpoint(tablet) {
+            clear: both;
           }
         }
       }
@@ -47,8 +57,6 @@
   &>.content {
     @include breakpoint(tablet) {
       @include outer-container(100%);
-      display: flex;
-      flex-wrap: wrap;
     }
     .node {
       @include listing-component-wrapper;
