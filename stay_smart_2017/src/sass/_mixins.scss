@@ -200,6 +200,9 @@
 @mixin wysiwyg() {
   table {
     @extend .content-table;
+    th, td {
+      vertical-align: top;
+    }
   }
   .introduction {
     font-weight: 300;

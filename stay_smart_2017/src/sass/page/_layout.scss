@@ -201,14 +201,8 @@ h1, h2, h3, h4, h5 {
 h1 {
   margin-bottom: rem(17px);
   font-size: rem(24px);
-  &:first-of-type {
-    margin-top: 0;
-  }
   @include breakpoint(tablet) {
     font-size: rem(48px);
-  }
-  @include breakpoint(desktop) {
-    font-size: rem(64px);
   }
 }
 
@@ -218,7 +212,7 @@ h2 {
     font-size: rem(36px);
   }
   @include breakpoint(desktop) {
-    font-size: rem(48px);
+    font-size: rem(40px);
   }
 }
 
@@ -228,7 +222,7 @@ h3 {
     font-size: rem(24px);
   }
   @include breakpoint(desktop) {
-    font-size: rem(36px);
+    font-size: rem(26px);
   }
 }
 
