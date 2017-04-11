@@ -11179,6 +11179,7 @@ body.page-events #content .view .pager, body.page-publications #content .view .p
       -ms-flex-align: end;
           align-items: flex-end;
   max-width: 48.75rem;
+  position: relative;
 }
 
 #content .search-form .form-item {

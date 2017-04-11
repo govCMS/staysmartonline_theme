@@ -17,6 +17,7 @@
         display: flex;
         align-items: flex-end;
         max-width: $desktop_content_column;
+        position: relative;
       }
     }
     .form-item {
