@@ -54,7 +54,9 @@
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php foreach ($children_contents as $child_content): ?>
-      <?php print drupal_render($child_content) ?>
+      <div class="card-row">
+        <?php print drupal_render($child_content) ?>
+      </div>
     <?php endforeach ?>
   </div>
 </div>
