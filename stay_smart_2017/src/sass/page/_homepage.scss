@@ -220,27 +220,8 @@
       flex-wrap: wrap;
     }
     .views-row {
-      @include breakpoint(tablet) {
-        @include span-columns(6 of 12);
-        display: flex; // Fixes a safari issue.
-      }
-      @include breakpoint(large_tablet) {
-        @include span-columns(4 of 12);
-        display: flex; // Fixes a safari issue.
-      }
-      &:nth-child(2n) {
-        @include breakpoint(tablet) {
-          @include omega();
-        }
-        @include breakpoint(large_tablet) {
-          margin-right: flex-gutter(12);
-        }
-      }
-      &:nth-child(3n) {
-        @include breakpoint(large_tablet) {
-          @include omega();
-        }
-      }
+      @include generic-view-row-base;
+      @include generic-view-row-3;
       .node {
         @include listing-component-wrapper;
         &.has-thumbnail {
@@ -309,6 +290,10 @@
   .pane-title {
     @include large-block-heading;
   }
+  .view-online-alerts {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .view-online-alerts {
@@ -319,14 +304,8 @@
       flex-wrap: wrap;
     }
     .views-row {
-      @include breakpoint(tablet) {
-        @include span-columns(4 of 12);
-      }
-      &:nth-child(3n) {
-        @include breakpoint(tablet) {
-          @include omega();
-        }
-      }
+      @include generic-view-row-base;
+      @include generic-view-row-3;
       .node {
         position: relative;
         padding-right: rem(11px);

@@ -6,46 +6,17 @@
   .no-sidebar {
     #block-menu-block-land-pg-child-list-2 {
       @include center-column($desktop_column);
-      .node {
-        @include breakpoint(tablet) {
-          @include span-columns(4 of 12);
-        }
-        &:nth-child(3n) {
-          @include breakpoint(tablet) {
-            @include omega();
-          }
-        }
-        &:nth-child(3n+1) {
-          @include breakpoint(tablet) {
-            clear: both;
-          }
-        }
+      .card-row {
+        @include generic-view-row-3;
       }
     }
   }
   .has-sidebar {
     #block-menu-block-land-pg-child-list-2 {
       max-width: $desktop_content_column;
-      .node {
-        @include breakpoint(tablet) {
-          @include span-columns(6 of 12);
-        }
-        &:nth-child(2n) {
-          @include breakpoint(tablet) {
-            @include omega();
-          }
-        }
-        &:nth-child(2n+1) {
-          @include breakpoint(tablet) {
-            clear: both;
-          }
-        }
+      .card-row {
+        @include generic-view-row-2;
       }
-    }
-  }
-  .field-name-field-feature-image {
-    img {
-      height: auto;
     }
   }
 }
@@ -57,6 +28,11 @@
   &>.content {
     @include breakpoint(tablet) {
       @include outer-container(100%);
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .card-row {
+      @include generic-view-row-base;
     }
     .node {
       @include listing-component-wrapper;
