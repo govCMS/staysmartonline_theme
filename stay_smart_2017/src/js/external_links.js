@@ -24,7 +24,7 @@
       $('a', context).each(function() {
         var $this = $(this);
         if (isExternalRegexClosure($this.attr('href'))) {
-          $this.attr('rel', 'external');
+          $this.attr('rel', 'external').attr('target', '_blank');
         }
       })
     }

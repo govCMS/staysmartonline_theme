@@ -127,11 +127,9 @@
     }
   }
   img {
-    display: table;
-    object-fit: cover;
-    object-position: center;
-    height: $listing_component_image_height;
+    display: block;
     width: 100%;
+    height: auto;
   }
 }
 
