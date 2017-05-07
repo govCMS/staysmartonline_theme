@@ -38,7 +38,7 @@ function stay_smart_2017_preprocess_html(&$variables) {
   drupal_add_js('jQuery.extend(Drupal.settings, { "pathToTheme": "' . path_to_theme() . '" });', 'inline');
   // Drupal forms.js does not support new jQuery. Migrate library needed.
   drupal_add_js(drupal_get_path('theme', 'stay_smart_2017') . '/vendor/jquery/jquery-migrate-1.2.1.min.js', array('weight' => -1));
-  drupal_add_js(drupal_get_path('theme', 'stay_smart_2017') . '/vendor/jquery/jquery.size.js', array('group' => 'JS_LIBRARY', 'weight' => -1));
+  drupal_add_js(drupal_get_path('theme', 'stay_smart_2017') . '/vendor/jquery/jquery.polyfills.js', array('group' => 'JS_LIBRARY', 'weight' => -1));
 }
 
 /**
@@ -91,6 +91,23 @@ function stay_smart_2017_preprocess_page(&$variables) {
   }
 }
 
+function stay_smart_2017_node_view_alter(&$build) {
+  if ($build['#view_mode'] == 'home_teaser') {
+    $node = $build['#node'];
+    $links = array();
+    // Read more for teas ext.
+    $node_title_stripped = strip_tags($node->title);
+    $links['node-readmore'] = array(
+      'title' => t('Read more<span class="element-invisible"> about @title</span>', array('@title' => $node_title_stripped)),
+      'href' => 'node/' . $node->nid,
+      'html' => TRUE,
+      'attributes' => array('rel' => 'tag', 'title' => $node_title_stripped)
+    );
+    // Assign links.
+    $build['links']['node']['#links'] = $links;
+  }
+}
+
 /**
  * Implements hook_preprocess_field().
  */
@@ -111,7 +128,7 @@ function stay_smart_2017_preprocess_field(&$variables) {
  */
 function stay_smart_2017_preprocess_node(&$variables) {
   $view_mode = $variables['view_mode'];
-  if ($view_mode === 'teaser' || $view_mode === 'compact' || $view_mode === 'landing_page_teaser') {
+  if ($view_mode === 'teaser' || $view_mode === 'compact' || $view_mode === 'landing_page_teaser' || $view_mode === 'home_teaser') {
     // Apply thumbnail class to node teaser view if image exists.
     $has_thumb = !empty($variables['content']['field_thumbnail']);
     $has_image = !empty($variables['content']['field_image']);
@@ -169,11 +186,27 @@ function stay_smart_2017_theme($existing, $type, $theme, $path) {
 function stay_smart_2017_preprocess_block(&$variables) {
   switch ($variables['block_html_id']) {
     case 'block-menu-block-land-pg-child-list-2':
+
+      $hide_feature_images = false;
+
+      $node = menu_get_object();
+      if ($node && $node->type == 'landing_page') {
+        $wrapper = entity_metadata_wrapper('node', $node);
+        if ($wrapper->field_hide_feature_images->value()) {
+          $hide_feature_images = true;
+        }
+      }
+
       $child_content = array();
       foreach ($variables['elements']['#content'] as $key => $content) {
         if (is_numeric($key)) {
           if ($node = node_load(str_replace('node/', '', $content['#href']))) {
+            if ($hide_feature_images) {
+              $child_wrapper = entity_metadata_wrapper('node', $node);
+              $child_wrapper->field_feature_image->set(NULL);
+            }
             $child_content[] = node_view($node, 'landing_page_teaser');
+
           }
         }
       }
@@ -346,3 +379,4 @@ function stay_smart_2017_block_view_alter(&$data, $block) {
     }
   }
 }
+
