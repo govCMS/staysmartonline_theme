@@ -6,6 +6,7 @@
     @include center-column(rem(279px));
   }
   .webform-component--page-helpful {
+    margin-bottom: 0;
     &>label {
       font-family: $varela_round;
       color: $sso_neutral_6;
@@ -16,9 +17,14 @@
         font-size: rem(24px);
       }
       .form-required {
-        font-size: rem(14px);
+        @include visually-hidden();
       }
     }
+  }
+  .webform-component--mandatory-label {
+    font-size: rem(14px); // I would prefer to use .form-required but same issue applies as above.
+    color: #f00;
+    margin-top: 0;
   }
   .form-item-submitted-page-helpful {
     label {

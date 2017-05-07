@@ -6121,9 +6121,6 @@ body.page-events #content .no-sidebar .view, body.page-publications #content .no
     display: block;
     margin-right: 2.7461357194%;
     width: 31.502576187%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
   }
   body.page-events #content .no-sidebar .view .views-row:last-child, body.page-publications #content .no-sidebar .view .views-row:last-child, body.page-news-media #content .no-sidebar .view .views-row:last-child, body.page-news #content .no-sidebar .view .views-row:last-child {
     margin-right: 0;
@@ -6155,9 +6152,6 @@ body.page-events #content .has-sidebar .view, body.page-publications #content .h
     display: block;
     margin-right: 2.7461357194%;
     width: 48.6269321403%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
   }
   body.page-events #content .has-sidebar .view .views-row:last-child, body.page-publications #content .has-sidebar .view .views-row:last-child, body.page-news-media #content .has-sidebar .view .views-row:last-child, body.page-news #content .has-sidebar .view .views-row:last-child {
     margin-right: 0;
@@ -6219,6 +6213,7 @@ body.page-events #content .view .views-row .node, body.page-publications #conten
   max-width: 23.125rem;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
   padding-left: 0;
   padding-right: 0;
 }
@@ -7969,6 +7964,10 @@ blockquote:after {
   display: none;
 }
 
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: 768px) {
   ul, ol, dl, p, dt, dd {
     font-size: inherit;
@@ -9387,9 +9386,6 @@ ul.tabs.primary {
     display: block;
     margin-right: 2.7461357194%;
     width: 31.502576187%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
   }
   .view-home-page-blog-articles .view-content .views-row:last-child, .view-latest-news .view-content .views-row:last-child, .view-whats-new-grid .view-content .views-row:last-child {
     margin-right: 0;
@@ -9420,6 +9416,7 @@ ul.tabs.primary {
   max-width: 23.125rem;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
 }
 
 .view-home-page-blog-articles .view-content .views-row .node.has-thumbnail, .view-latest-news .view-content .views-row .node.has-thumbnail, .view-whats-new-grid .view-content .views-row .node.has-thumbnail {
@@ -9841,9 +9838,6 @@ ul.tabs.primary {
     display: block;
     margin-right: 2.7461357194%;
     width: 31.502576187%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
   }
   .view-online-alerts .view-content .views-row:last-child {
     margin-right: 0;
@@ -10739,6 +10733,7 @@ ul.tabs.primary {
   max-width: 23.125rem;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
   padding: 0;
   background-color: transparent;
 }
@@ -11298,6 +11293,7 @@ ul.tabs.primary {
   max-width: 23.125rem;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
   padding-top: 74.32%;
   padding-left: 0;
   padding-right: 0;
@@ -11361,9 +11357,6 @@ ul.tabs.primary {
     display: block;
     margin-right: 2.7461357194%;
     width: 31.502576187%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
   }
   .node-type-landing-page #content .no-sidebar #block-menu-block-land-pg-child-list-2 .card-row:last-child {
     margin-right: 0;
@@ -11395,9 +11388,6 @@ ul.tabs.primary {
     display: block;
     margin-right: 2.7461357194%;
     width: 48.6269321403%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
   }
   .node-type-landing-page #content .has-sidebar #block-menu-block-land-pg-child-list-2 .card-row:last-child {
     margin-right: 0;
@@ -11470,6 +11460,7 @@ ul.tabs.primary {
   max-width: 23.125rem;
   margin-left: auto;
   margin-right: auto;
+  height: 100%;
   padding-left: 0;
   padding-right: 0;
 }
@@ -12034,6 +12025,10 @@ ul.tabs.primary {
   box-sizing: content-box;
 }
 
+#block-webform-client-block-8912 .webform-component--page-helpful {
+  margin-bottom: 0;
+}
+
 #block-webform-client-block-8912 .webform-component--page-helpful > label {
   font-family: "Varela Round", sans-serif;
   color: #444449;
@@ -12049,7 +12044,20 @@ ul.tabs.primary {
 }
 
 #block-webform-client-block-8912 .webform-component--page-helpful > label .form-required {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#block-webform-client-block-8912 .webform-component--mandatory-label {
   font-size: 0.875rem;
+  color: #f00;
+  margin-top: 0;
 }
 
 #block-webform-client-block-8912 .form-item-submitted-page-helpful label {
