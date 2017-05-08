@@ -14,7 +14,6 @@
 @mixin generic-view-row-3() {
   @include breakpoint(tablet) {
     @include span-columns(4 of 12);
-    display: flex; // Fix safari scaling bug.
     &:last-child {
       margin-right: auto;
     }
@@ -36,7 +35,6 @@
 @mixin generic-view-row-2() {
   @include breakpoint(tablet) {
     @include span-columns(6 of 12);
-    display: flex; // Fix safari scaling bug.
     &:last-child {
       margin-right: auto;
     }
