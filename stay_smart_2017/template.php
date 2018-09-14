@@ -39,6 +39,10 @@ function stay_smart_2017_preprocess_html(&$variables) {
   // Drupal forms.js does not support new jQuery. Migrate library needed.
   drupal_add_js(drupal_get_path('theme', 'stay_smart_2017') . '/vendor/jquery/jquery-migrate-1.2.1.min.js', array('weight' => -1));
   drupal_add_js(drupal_get_path('theme', 'stay_smart_2017') . '/vendor/jquery/jquery.polyfills.js', array('group' => 'JS_LIBRARY', 'weight' => -1));
+
+  // Add a compaign class so we can be more specific in our styles
+  $variables['classes_array'][] = 'campaign-2018';
+
 }
 
 /**

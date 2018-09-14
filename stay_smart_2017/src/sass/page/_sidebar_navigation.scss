@@ -4,9 +4,11 @@
 .region-sidebar-first {
   .block {
     margin-bottom: $default_padding;
+
     &>h2 {
       @include large-block-heading;
       margin: 0;
+
       @include breakpoint(large_tablet) {
         margin-top: rem(33px);
         margin-bottom: rem(33px);
@@ -20,14 +22,18 @@
 // =========================================================
 #block-menu-block-second-nav-menu {
   margin-bottom: $default_padding;
+
   &>.content {
     background-color: $sso_neutral_9;
+
     @include breakpoint(large_tablet) {
       background-color: transparent;
       border-left: rem(5px) solid $primary_1;
     }
   }
+
   h2 {
+
     // Button is only on mobile.
     button {
       @include transition-fade;
@@ -42,11 +48,13 @@
       border-radius: 0;
       background-color: $sso_neutral_10;
       color: $neutral_1;
+
       &:hover, &:focus {
         color: $neutral_1;
         background-color: $neutral_3;
         box-shadow: none;
       }
+
       &:after {
         content: '';
         display: inline-block;
@@ -60,6 +68,7 @@
         background-repeat: no-repeat;
         transform: rotate(0deg);
       }
+
       &.showing {
         &:after {
           transform: rotate(180deg);
@@ -67,17 +76,21 @@
       }
     }
   }
+
   .content {
     display: none;
+
     @include breakpoint(large_tablet) {
       display: block;
     }
+
     &.showing {
       display: block;
       background-color: $sso_neutral_9;
       padding: 0;
     }
   }
+
   .menu-block-wrapper {
     &>ul {
       &>li {
@@ -86,6 +99,7 @@
           padding-left: $small-spacing;
           border-bottom: 2px solid $sso_neutral_8;
         }
+
         &>ul {
           &>li {
             &>a {
@@ -94,6 +108,7 @@
               background-color: $sso_neutral_5;
               color: $sso_access_secondary_1;
             }
+
             &>ul {
               &>li {
                 &>a {
@@ -108,20 +123,25 @@
       }
     }
   }
+
   ul.menu {
     margin: 0;
     padding: 0;
+
     &.menu-closed {
       display: none;
     }
+
     li {
       position: relative;
       margin: 0;
       padding: 0;
       list-style: none;
+
       &:last-child {
         border-bottom: 0;
       }
+
       a {
         color: $neutral_1;
         width: 100%;
@@ -131,18 +151,22 @@
         padding-bottom: rem(12px);
         padding-right: rem(34px);
         margin-right: 0;
+
         &:hover, &:focus {
           background-color: $primary_1;
           color: $white;
         }
+
         &.active {
           background-color: $main_menu_active;
           color: $white;
+
           &:hover, &:focus {
             background-color: $primary_1;
           }
         }
       }
+
       button.sidebar-toggle-menu {
         @include transition-fade;
         @include hide-text;
@@ -162,11 +186,13 @@
         top: 0;
         background-color: $white;
         border-radius: 0;
+
         &:hover, &:focus {
           background-image: url(../images/svg/sidebar-arrow-down-hover.svg);
           background-color: $primary_1;
           box-shadow: none;
         }
+
         &.menu-closed {
           transform: rotate(0deg);
         }

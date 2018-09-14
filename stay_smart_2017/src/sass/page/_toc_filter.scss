@@ -2,12 +2,15 @@
   .content {
     .toc-filter-content {
       @include page-structure-list-wraper;
+
       h2 {
         @include page-structure-list-title;
+
         &:after {
           content: '...';
         }
       }
+
       ul {
         @include page-structure-list-listing;
       }

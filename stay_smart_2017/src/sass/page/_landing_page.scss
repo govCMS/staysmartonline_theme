@@ -6,14 +6,17 @@
   .no-sidebar {
     #block-menu-block-land-pg-child-list-2 {
       @include center-column($desktop_column);
+
       .card-row {
         @include generic-view-row-3;
       }
     }
   }
+
   .has-sidebar {
     #block-menu-block-land-pg-child-list-2 {
       max-width: $desktop_content_column;
+
       .card-row {
         @include generic-view-row-2;
       }
@@ -25,45 +28,56 @@
   &>h2 {
     @include visually-hidden;
   }
+
   &>.content {
     @include breakpoint(tablet) {
       @include outer-container(100%);
       display: flex;
       flex-wrap: wrap;
     }
+
     .card-row {
       @include generic-view-row-base;
     }
+
     .node {
       @include listing-component-wrapper;
       padding-left: 0;
       padding-right: 0;
+
       .content {
         padding: 0;
       }
+
       &.has-thumbnail {
         padding-top: $listing_component_image_height;
+
         .field-type-image {
           @include listing-component-image;
           margin-top: 0;
           margin-bottom: 0;
+
           .field-item:nth-child(n + 2) {
             display: none;
           }
         }
+
         h2 {
           margin-top: rem(30px);
         }
       }
+
       &>.links {
         li {
           padding-left: 0;
         }
       }
+
       h2 {
         @include listing-component-heading;
         margin-top: 0;
       }
+
       .field-name-body {
         @include listing-component-body;
       }

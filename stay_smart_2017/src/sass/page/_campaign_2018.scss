@@ -1,0 +1,72 @@
+body.campaign-2018 {
+  background: $black;
+  color: $white;
+
+  #block-govcms-social-links-services,
+  .view-home-page-blog-articles .view-content .views-row .node,
+  .view-latest-news .view-content .views-row .node,
+  .view-whats-new-grid .view-content .views-row .node,
+  .pane-whats-new-grid,
+  .bean-basic-content {
+    background: $black;
+    color: $white;
+
+    &>.content p {
+      color: $white;
+    }
+  }
+
+  #block-govcms-social-links-services .inner-wrapper h2,
+  #block-govcms-social-links-services .inner-wrapper .display,
+  .view-whats-new-grid .view-header h2,
+  .view-whats-new-grid .view-header .display,
+  .field-name-body {
+    color: $white !important;
+  }
+
+  .region-footer,
+  #block-menu-menu-footer-sub-menu,
+  .view-slideshow .banner-description-panel,
+  .region-navigation {
+    background: none !important;
+  }
+
+  .view-whats-new-grid .view-content .views-row .node-readmore a,
+  .view-online-alerts .view-content .views-row .node-readmore a,
+  .view-slideshow .banner-description-holder .field a {
+    color: $black;
+    background: $white;
+  }
+
+  .view-whats-new-grid .view-content .views-row .node-readmore a,
+  .view-online-alerts .view-content .views-row .node-readmore a {
+    &:hover {
+      box-shadow: 0px 14px 14px 0px rgba(255, 255, 255, 0.25), 0px 10px 5px 0px rgba(255, 255, 255, 0.22);
+    }
+  }
+
+  .header {
+    background-image: none;
+  }
+
+  img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  .node-alert.priority-level-moderate:before {
+    background-color: $white;
+  }
+
+  .node-alert.priority-level-high:before {
+    background-color: $white;
+  }
+
+  .node-alert.priority-level-moderate .field-name-field-priority-level .field-items {
+    color: $white;
+  }
+
+  .node-alert.priority-level-high .field-name-field-priority-level .field-items {
+    color: $white;
+  }
+}

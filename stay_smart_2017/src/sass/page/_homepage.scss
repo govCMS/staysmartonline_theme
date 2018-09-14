@@ -5,18 +5,22 @@
   .page__title {
     @include visually-hidden;
   }
+
   .gov-front-left {
     padding-top: rem(40px);
     padding-bottom: rem(108px);
     background-color: $neutral_4;
+
     .panel-pane {
       @include center-column($desktop_column);
     }
   }
+
   .gov-front-right {
     padding-top: rem(40px);
     padding-bottom: rem(108px);
     background-color: $neutral_4;
+
     .panel-pane {
       @include center-column($desktop_column);
     }
@@ -28,21 +32,25 @@
 // =========================================================
 .bean-basic-content {
   background-color: $sso_neutral_7;
+
   &>.content {
     @include center-column($desktop_column);
     @include link-colours($primary_1, $secondary_3, $neutral_1);
     padding-top: $default_padding;
     padding-bottom: $default_padding;
     color: $neutral_1;
+
     @include breakpoint(tablet) {
       padding-top: $default_padding * 2;
       padding-bottom: rem(50px);
     }
+
     p {
       text-align: center;
       margin-bottom: 0;
       color: $primary_1;
       font-size: rem(16px);
+
       @include breakpoint(tablet) {
         font-size: rem(24px);
       }
@@ -61,12 +69,15 @@
   .view-content {
     position: relative;
     background-color: #0B3B46;
+
     &>ul {
       padding: 0;
       margin-bottom: 0;
+
       @include breakpoint(tablet) {
         height: rem(444px);
       }
+
       &:not(.owl-loaded) {
         &>li:not(.views-row-first) {
           @include breakpoint(tablet) {
@@ -76,13 +87,16 @@
       }
     }
   }
+
   .view-content li.views-row {
     position: relative;
     list-style: none;
     margin-bottom: 0;
   }
+
   .field-name-field-slide-image {
     @include clearfix;
+
     @include breakpoint(tablet) {
       position: absolute;
       top: 0;
@@ -90,36 +104,44 @@
       left: 0;
       right: 0;
     }
+
     .field-items {
       @include breakpoint(tablet) {
         height: 100%;
       }
     }
+
     .field-item {
       @include breakpoint(tablet) {
         height: 100%;
       }
     }
+
     a {
       margin: 0 !important;
+
       &:after {
         display: none !important;
       }
     }
+
     img {
       height: rem(225px);
       object-fit: cover;
       float: left;
+
       @include breakpoint(tablet) {
         width: 100%;
         height: 100%;
       }
     }
   }
+
   .banner-description-holder {
     color: white;
     padding: rem(30px) $default_padding;
     background-color: $primary_1;
+
     @include breakpoint(tablet) {
       @include center-column($desktop_column);
       background-color: transparent;
@@ -127,22 +149,26 @@
       padding-top: 0;
       padding-bottom: 0;
     }
+
     h3 {
       @include link-colours(white, $neutral_4, $neutral_1);
       margin-top: 0;
       font-weight: 400;
+
       @include breakpoint(tablet) {
         margin-bottom: rem(21px);
         font-size: rem(48px);
         font-weight: 300;
       }
     }
+
     .field {
       a {
         @include listing-component-button;
       }
     }
   }
+
   .banner-description-panel {
     @include breakpoint(tablet) {
       position: relative;
@@ -155,11 +181,13 @@
       color: white;
     }
   }
+
   .slider-controls {
     position: absolute;
     top: 0;
     padding-top: rem(34px);
     padding-left: rem(37px);
+
     button {
       color: $white !important;
       border: 0;
@@ -175,33 +203,41 @@
       background-position: center;
       border-bottom: 1px solid transparent !important;
       border-radius: 0 !important;
+
       &:hover, &:focus {
         box-shadow: none !important;
         background-color: $secondary_1 !important;
       }
+
       &.active {
         border-bottom-color: $white !important;
       }
+
       &.slider-prev {
         @include hide-text;
         background-image: url(../images/svg/slider-prev.svg);
       }
+
       &.slider-next {
         @include hide-text;
         background-image: url(../images/svg/slider-next.svg);
       }
+
       &.slider-play {
         @include hide-text;
         background-image: url(../images/svg/slider-pause.svg);
+
         &.paused {
           background-image: url(../images/svg/slider-play.svg);
         }
       }
     }
+
     ul {
       padding: 0;
       margin: 0;
       display: inline;
+
       li {
         display: inline;
       }
@@ -219,28 +255,36 @@
       display: flex;
       flex-wrap: wrap;
     }
+
     .views-row {
       @include generic-view-row-base;
       @include generic-view-row-3;
+
       .node {
         @include listing-component-wrapper;
+
         &.has-thumbnail {
           padding-top: $listing_component_image_height;
+
           .field-type-image, .field-name-field-feature-image {
             @include listing-component-image;
           }
+
           h2 {
             margin-top: rem(30px);
           }
         }
       }
+
       h2 {
         @include listing-component-heading;
         margin-top: 0;
       }
+
       .field-type-datetime, .submitted {
         @include listing-component-subtext;
       }
+
       .field-name-body {
         @include listing-component-body;
       }
@@ -259,21 +303,25 @@
 
 .view-whats-new-grid {
   @include center-column($desktop_column);
+
   .view-header {
     h2 {
       @include large-block-heading;
     }
   }
+
   .view-content {
     .views-row {
       .node-readmore {
         padding: 0;
+
         a {
           @include listing-component-button;
         }
       }
     }
   }
+
   .view-footer {
     text-align: right;
     @include link-colours($sso_neutral_6, $secondary_3, $white);
@@ -287,9 +335,11 @@
   @include center-column($desktop_column);
   padding-top: rem(55px);
   padding-bottom: rem(43px);
+
   .pane-title {
     @include large-block-heading;
   }
+
   .view-online-alerts {
     padding-left: 0;
     padding-right: 0;
@@ -303,9 +353,11 @@
       display: flex;
       flex-wrap: wrap;
     }
+
     .views-row {
       @include generic-view-row-base;
       @include generic-view-row-3;
+
       .node {
         position: relative;
         padding-right: rem(11px);
@@ -313,14 +365,17 @@
         padding-top: rem(16px);
         padding-bottom: rem(22px);
         padding-left: rem(35px);
+
         @include breakpoint(tablet) {
           padding-left: rem(11px);
         }
+
         @include breakpoint(large_tablet) {
           padding-left: rem(47px);
           padding-top: rem(38px);
           padding-bottom: rem(46px);
         }
+
         &:before {
           content: '';
           display: inline-block;
@@ -332,26 +387,32 @@
           right: auto;
         }
       }
+
       h2 {
         @include listing-component-heading;
         margin-top: 0;
         font-family: $varela_round;
         font-size: rem(18px);
+
         @include breakpoint(large_tablet) {
           font-size: rem(24px);
         }
       }
+
       .field-name-body {
         color: #333333;
         letter-spacing: 0px;
         font-size: rem(14px);
         line-height: 1.2em;
+
         @include breakpoint(large_tablet) {
           font-size: rem(16px);
         }
       }
+
       .node-readmore {
         padding: 0;
+
         a {
           @include listing-component-button;
         }
@@ -366,6 +427,7 @@
 .pane-partners {
   padding-top: rem(55px);
   padding-bottom: rem(43px);
+
   .pane-title {
     @include center-column($desktop_column);
     @include large-block-heading;
@@ -374,20 +436,25 @@
 
 .view-partners.view-display-id-home_block {
   @include center-column(370px);
+
   @include breakpoint(tablet) {
     @include center-column($desktop_column);
   }
+
   &:after {
     @include clearfix;
   }
+
   .view-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
     .no-flexbox & {
       @include clearfix;
     }
+
     .views-row {
       margin: 0;
       margin-bottom: rem(30px);
@@ -396,52 +463,64 @@
       padding-left: rem(16px);
       padding-right: rem(16px);
       width: 33.33%;
+
       .no-flexbox & {
         display: inline-block;
         min-height: rem(130px);
         float: left;
       }
+
       @include breakpoint(tablet) {
         width: 20%;
         padding-left: rem(25px);
         padding-right: rem(25px);
       }
+
       @include breakpoint(desktop) {
         padding-left: rem(42px);
         padding-right: rem(42px);
       }
+
       &:first-child, &:nth-child(3n+1) {
         padding-left: 0;
       }
+
       &:nth-child(3n), &:last-child {
         padding-right: 0;
       }
+
       &:nth-child(3n+1), &:nth-child(3n) {
         @include breakpoint(tablet) {
           padding-left: rem(25px);
           padding-right: rem(25px);
         }
+
         @include breakpoint(desktop) {
           padding-left: rem(42px);
           padding-right: rem(42px);
         }
       }
+
       &:first-child, &:nth-child(5n+1) {
         @include breakpoint(tablet) {
           padding-left: 0;
         }
       }
+
       &:nth-child(5n), &:last-child {
         @include breakpoint(tablet) {
           padding-right: 0;
         }
       }
+
       a {
         display: inline-block;
+
         img {
           height: auto;
           width: auto;
           max-height: rem(100px);
+
           .no-flexbox & {
             width: 100%;
           }
