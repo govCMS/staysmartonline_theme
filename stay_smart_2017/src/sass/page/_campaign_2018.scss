@@ -69,4 +69,52 @@ body.campaign-2018 {
   .node-alert.priority-level-high .field-name-field-priority-level .field-items {
     color: $white;
   }
+
+  .region-navigation .block-superfish ul.sf-menu {
+    >li {
+      &.sfHover {
+        >a {
+          background-color: $neutral_4;
+          color: $black;
+        }
+      }
+
+      >a {
+        &:hover {
+          background-color: $white;
+          color: $black;
+        }
+      }
+
+      &.active-trail {
+        >a {
+          background-color: $white;
+          color: $black;
+        }
+      }
+
+      ul {
+        li {
+          a {
+            background-color: $white;
+            color: $black;
+
+            &:hover {
+              background-color: $neutral_3;
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .view-slideshow .slider-controls button:hover,
+  .view-slideshow .slider-controls button:focus {
+    background-color: $neutral_2 !important;
+  }
+
+  .content-header .breadcrumbs ul li:last-child {
+    color: $white;
+  }
 }

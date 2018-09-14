@@ -11088,4 +11088,38 @@ body.campaign-2018 .node-alert.priority-level-moderate .field-name-field-priorit
 body.campaign-2018 .node-alert.priority-level-high .field-name-field-priority-level .field-items {
   color: #fff;
 }
+
+body.campaign-2018 .region-navigation .block-superfish ul.sf-menu > li.sfHover > a {
+  background-color: #F0F3F5;
+  color: #000;
+}
+
+body.campaign-2018 .region-navigation .block-superfish ul.sf-menu > li > a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+body.campaign-2018 .region-navigation .block-superfish ul.sf-menu > li.active-trail > a {
+  background-color: #fff;
+  color: #000;
+}
+
+body.campaign-2018 .region-navigation .block-superfish ul.sf-menu > li ul li a {
+  background-color: #fff;
+  color: #000;
+}
+
+body.campaign-2018 .region-navigation .block-superfish ul.sf-menu > li ul li a:hover {
+  background-color: #BEBEBE;
+  color: #000;
+}
+
+body.campaign-2018 .view-slideshow .slider-controls button:hover,
+body.campaign-2018 .view-slideshow .slider-controls button:focus {
+  background-color: #717171 !important;
+}
+
+body.campaign-2018 .content-header .breadcrumbs ul li:last-child {
+  color: #fff;
+}
 /*# sourceMappingURL=styles.css.map */
