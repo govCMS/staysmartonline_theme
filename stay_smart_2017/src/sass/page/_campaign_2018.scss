@@ -84,6 +84,11 @@ body.campaign-2018 {
           background-color: $white;
           color: $black;
         }
+
+        &:focus {
+          background-color: $white;
+          color: $black;
+        }
       }
 
       &.active-trail {
@@ -116,5 +121,158 @@ body.campaign-2018 {
 
   .content-header .breadcrumbs ul li:last-child {
     color: $white;
+  }
+
+  #block-menu-block-second-nav-menu ul.menu li a {
+    color: $white;
+
+    &.active {
+      background-color: $white;
+      color: $black;
+    }
+
+    &:hover {
+      background-color: $neutral_2;
+    }
+
+    &:focus {
+      background-color: $neutral_2;
+    }
+  }
+
+  #block-menu-block-second-nav-menu>.content {
+    border-left: 0.3rem solid $white;
+  }
+
+  #block-menu-block-second-nav-menu .menu-block-wrapper>ul>li>ul>li>a {
+    background-color: $sso_neutral_11;
+    color: $black;
+  }
+
+  #block-menu-block-second-nav-menu .menu-block-wrapper>ul>li>ul>li>ul>li>a {
+    background-color: $neutral_4;
+    color: $black;
+  }
+
+  #block-menu-block-second-nav-menu ul.menu li button.sidebar-toggle-menu {
+    background-color: $black;
+
+    &:hover {
+      background-color: $neutral_2;
+    }
+  }
+
+  .field-name-field-introduction {
+    color: $white;
+  }
+
+  .social-share-links li {
+    a {
+      background-color: $white;
+
+      &:hover {
+        background-color: $neutral_3;
+      }
+    }
+  }
+
+  #block-webform-client-block-8912 {
+    background-color: $black;
+
+    label {
+      color: $white;
+
+      &.option {
+        color: $white;
+      }
+    }
+
+    form.webform-client-form .form-item {
+      color: $white;
+    }
+
+    .form-item-submitted-page-helpful {
+      label:before {
+        border-color: $white;
+      }
+    }
+
+    .form-actions .webform-submit {
+      background-color: $white;
+      color: $black;
+
+      &:hover {
+        background-color: $neutral_3;
+      }
+    }
+  }
+
+  blockquote:before {
+    background-color: $white;
+  }
+
+  #block-bean-sso-related-content ul>li {
+    a {
+      color: $black;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .region-sidebar-first .block>h2,
+  .region-sidebar-first .block>.display {
+    color: $white;
+  }
+
+  .social-share-links h2 {
+    color: $white;
+  }
+
+  .date-display-single {
+    color: $white;
+  }
+
+  #block-menu-block-land-pg-child-list-2>.content .node {
+    background-color: $black;
+  }
+
+  .view-latest-news {
+    .views-row {
+      .node-news-article {
+        background-color: transparent !important;
+      }
+
+      .node-readmore {
+        a {
+          background-color: $white !important;
+          color: $black !important;
+
+          &:hover {
+            background-color: $neutral_3 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .profile {
+    h3 {
+      color: $white;
+    }
+
+    dl {
+      color: $white;
+    }
+  }
+
+  .content-body .content {
+    color: $white;
+  }
+
+  #content [type='submit'] {
+    background-color: $white;
+    color: $black;
   }
 }

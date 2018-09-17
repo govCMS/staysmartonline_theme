@@ -11099,6 +11099,11 @@ body.campaign-2018 .region-navigation .block-superfish ul.sf-menu > li > a:hover
   color: #000;
 }
 
+body.campaign-2018 .region-navigation .block-superfish ul.sf-menu > li > a:focus {
+  background-color: #fff;
+  color: #000;
+}
+
 body.campaign-2018 .region-navigation .block-superfish ul.sf-menu > li.active-trail > a {
   background-color: #fff;
   color: #000;
@@ -11121,5 +11126,144 @@ body.campaign-2018 .view-slideshow .slider-controls button:focus {
 
 body.campaign-2018 .content-header .breadcrumbs ul li:last-child {
   color: #fff;
+}
+
+body.campaign-2018 #block-menu-block-second-nav-menu ul.menu li a {
+  color: #fff;
+}
+
+body.campaign-2018 #block-menu-block-second-nav-menu ul.menu li a.active {
+  background-color: #fff;
+  color: #000;
+}
+
+body.campaign-2018 #block-menu-block-second-nav-menu ul.menu li a:hover {
+  background-color: #717171;
+}
+
+body.campaign-2018 #block-menu-block-second-nav-menu ul.menu li a:focus {
+  background-color: #717171;
+}
+
+body.campaign-2018 #block-menu-block-second-nav-menu > .content {
+  border-left: 0.3rem solid #fff;
+}
+
+body.campaign-2018 #block-menu-block-second-nav-menu .menu-block-wrapper > ul > li > ul > li > a {
+  background-color: #E6E6E6;
+  color: #000;
+}
+
+body.campaign-2018 #block-menu-block-second-nav-menu .menu-block-wrapper > ul > li > ul > li > ul > li > a {
+  background-color: #F0F3F5;
+  color: #000;
+}
+
+body.campaign-2018 #block-menu-block-second-nav-menu ul.menu li button.sidebar-toggle-menu {
+  background-color: #000;
+}
+
+body.campaign-2018 #block-menu-block-second-nav-menu ul.menu li button.sidebar-toggle-menu:hover {
+  background-color: #717171;
+}
+
+body.campaign-2018 .field-name-field-introduction {
+  color: #fff;
+}
+
+body.campaign-2018 .social-share-links li a {
+  background-color: #fff;
+}
+
+body.campaign-2018 .social-share-links li a:hover {
+  background-color: #BEBEBE;
+}
+
+body.campaign-2018 #block-webform-client-block-8912 {
+  background-color: #000;
+}
+
+body.campaign-2018 #block-webform-client-block-8912 label {
+  color: #fff;
+}
+
+body.campaign-2018 #block-webform-client-block-8912 label.option {
+  color: #fff;
+}
+
+body.campaign-2018 #block-webform-client-block-8912 form.webform-client-form .form-item {
+  color: #fff;
+}
+
+body.campaign-2018 #block-webform-client-block-8912 .form-item-submitted-page-helpful label:before {
+  border-color: #fff;
+}
+
+body.campaign-2018 #block-webform-client-block-8912 .form-actions .webform-submit {
+  background-color: #fff;
+  color: #000;
+}
+
+body.campaign-2018 #block-webform-client-block-8912 .form-actions .webform-submit:hover {
+  background-color: #BEBEBE;
+}
+
+body.campaign-2018 blockquote:before {
+  background-color: #fff;
+}
+
+body.campaign-2018 #block-bean-sso-related-content ul > li a {
+  color: #000;
+}
+
+body.campaign-2018 #block-bean-sso-related-content ul > li a:hover {
+  text-decoration: underline;
+}
+
+body.campaign-2018 .region-sidebar-first .block > h2, body.campaign-2018 .region-sidebar-first .block > .display,
+body.campaign-2018 .region-sidebar-first .block > .display {
+  color: #fff;
+}
+
+body.campaign-2018 .social-share-links h2, body.campaign-2018 .social-share-links .display {
+  color: #fff;
+}
+
+body.campaign-2018 .date-display-single {
+  color: #fff;
+}
+
+body.campaign-2018 #block-menu-block-land-pg-child-list-2 > .content .node {
+  background-color: #000;
+}
+
+body.campaign-2018 .view-latest-news .views-row .node-news-article {
+  background-color: transparent !important;
+}
+
+body.campaign-2018 .view-latest-news .views-row .node-readmore a {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+body.campaign-2018 .view-latest-news .views-row .node-readmore a:hover {
+  background-color: #BEBEBE !important;
+}
+
+body.campaign-2018 .profile h3 {
+  color: #fff;
+}
+
+body.campaign-2018 .profile dl {
+  color: #fff;
+}
+
+body.campaign-2018 .content-body .content {
+  color: #fff;
+}
+
+body.campaign-2018 #content [type='submit'] {
+  background-color: #fff;
+  color: #000;
 }
 /*# sourceMappingURL=styles.css.map */
