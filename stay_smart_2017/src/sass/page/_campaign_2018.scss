@@ -33,13 +33,17 @@ body.campaign-2018 {
 
   .view-whats-new-grid .view-content .views-row .node-readmore a,
   .view-online-alerts .view-content .views-row .node-readmore a,
-  .view-slideshow .banner-description-holder .field a {
+  .view-slideshow .banner-description-holder .field a,
+  #block-webform-client-block-8912 .form-actions .webform-submit,
+  #content [type='submit'] {
     color: $black;
     background: $white;
   }
 
   .view-whats-new-grid .view-content .views-row .node-readmore a,
-  .view-online-alerts .view-content .views-row .node-readmore a {
+  .view-online-alerts .view-content .views-row .node-readmore a,
+  #block-webform-client-block-8912 .form-actions .webform-submit,
+  #content [type='submit'] {
     &:hover {
       box-shadow: 0px 14px 14px 0px rgba(255, 255, 255, 0.25), 0px 10px 5px 0px rgba(255, 255, 255, 0.22);
     }
@@ -54,19 +58,22 @@ body.campaign-2018 {
     filter: grayscale(100%);
   }
 
-  .node-alert.priority-level-moderate:before {
+  .node-alert.priority-level-moderate:before,
+  .node-alert.priority-level-high:before,
+  blockquote:before {
     background-color: $white;
   }
 
-  .node-alert.priority-level-high:before {
-    background-color: $white;
-  }
-
-  .node-alert.priority-level-moderate .field-name-field-priority-level .field-items {
-    color: $white;
-  }
-
-  .node-alert.priority-level-high .field-name-field-priority-level .field-items {
+  .node-alert.priority-level-moderate .field-name-field-priority-level .field-items,
+  .node-alert.priority-level-high .field-name-field-priority-level .field-items,
+  .profile h3,
+  .profile dl,
+  .content-body .content,
+  .social-share-links h2,
+  .date-display-single,
+  .region-sidebar-first .block>h2,
+  .region-sidebar-first .block>.display,
+  .field-name-field-introduction {
     color: $white;
   }
 
@@ -162,10 +169,6 @@ body.campaign-2018 {
     }
   }
 
-  .field-name-field-introduction {
-    color: $white;
-  }
-
   .social-share-links li {
     a {
       background-color: $white;
@@ -196,19 +199,6 @@ body.campaign-2018 {
         border-color: $white;
       }
     }
-
-    .form-actions .webform-submit {
-      background-color: $white;
-      color: $black;
-
-      &:hover {
-        background-color: $neutral_3;
-      }
-    }
-  }
-
-  blockquote:before {
-    background-color: $white;
   }
 
   #block-bean-sso-related-content ul>li {
@@ -219,19 +209,6 @@ body.campaign-2018 {
         text-decoration: underline;
       }
     }
-  }
-
-  .region-sidebar-first .block>h2,
-  .region-sidebar-first .block>.display {
-    color: $white;
-  }
-
-  .social-share-links h2 {
-    color: $white;
-  }
-
-  .date-display-single {
-    color: $white;
   }
 
   #block-menu-block-land-pg-child-list-2>.content .node {
@@ -250,29 +227,10 @@ body.campaign-2018 {
           color: $black !important;
 
           &:hover {
-            background-color: $neutral_3 !important;
+            box-shadow: 0px 14px 14px 0px rgba(255, 255, 255, 0.25), 0px 10px 5px 0px rgba(255, 255, 255, 0.22) !important;
           }
         }
       }
     }
-  }
-
-  .profile {
-    h3 {
-      color: $white;
-    }
-
-    dl {
-      color: $white;
-    }
-  }
-
-  .content-body .content {
-    color: $white;
-  }
-
-  #content [type='submit'] {
-    background-color: $white;
-    color: $black;
   }
 }

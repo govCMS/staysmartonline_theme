@@ -11054,13 +11054,17 @@ body.campaign-2018 .region-navigation {
 
 body.campaign-2018 .view-whats-new-grid .view-content .views-row .node-readmore a,
 body.campaign-2018 .view-online-alerts .view-content .views-row .node-readmore a,
-body.campaign-2018 .view-slideshow .banner-description-holder .field a {
+body.campaign-2018 .view-slideshow .banner-description-holder .field a,
+body.campaign-2018 #block-webform-client-block-8912 .form-actions .webform-submit,
+body.campaign-2018 #content [type='submit'] {
   color: #000;
   background: #fff;
 }
 
 body.campaign-2018 .view-whats-new-grid .view-content .views-row .node-readmore a:hover,
-body.campaign-2018 .view-online-alerts .view-content .views-row .node-readmore a:hover {
+body.campaign-2018 .view-online-alerts .view-content .views-row .node-readmore a:hover,
+body.campaign-2018 #block-webform-client-block-8912 .form-actions .webform-submit:hover,
+body.campaign-2018 #content [type='submit']:hover {
   box-shadow: 0px 14px 14px 0px rgba(255, 255, 255, 0.25), 0px 10px 5px 0px rgba(255, 255, 255, 0.22);
 }
 
@@ -11073,19 +11077,24 @@ body.campaign-2018 img {
   filter: grayscale(100%);
 }
 
-body.campaign-2018 .node-alert.priority-level-moderate:before {
+body.campaign-2018 .node-alert.priority-level-moderate:before,
+body.campaign-2018 .node-alert.priority-level-high:before,
+body.campaign-2018 blockquote:before {
   background-color: #fff;
 }
 
-body.campaign-2018 .node-alert.priority-level-high:before {
-  background-color: #fff;
-}
-
-body.campaign-2018 .node-alert.priority-level-moderate .field-name-field-priority-level .field-items {
-  color: #fff;
-}
-
-body.campaign-2018 .node-alert.priority-level-high .field-name-field-priority-level .field-items {
+body.campaign-2018 .node-alert.priority-level-moderate .field-name-field-priority-level .field-items,
+body.campaign-2018 .node-alert.priority-level-high .field-name-field-priority-level .field-items,
+body.campaign-2018 .profile h3,
+body.campaign-2018 .profile dl,
+body.campaign-2018 .content-body .content,
+body.campaign-2018 .social-share-links h2,
+body.campaign-2018 .social-share-links .display,
+body.campaign-2018 .date-display-single,
+body.campaign-2018 .region-sidebar-first .block > h2,
+body.campaign-2018 .region-sidebar-first .block > .display,
+body.campaign-2018 .region-sidebar-first .block > .display,
+body.campaign-2018 .field-name-field-introduction {
   color: #fff;
 }
 
@@ -11167,10 +11176,6 @@ body.campaign-2018 #block-menu-block-second-nav-menu ul.menu li button.sidebar-t
   background-color: #717171;
 }
 
-body.campaign-2018 .field-name-field-introduction {
-  color: #fff;
-}
-
 body.campaign-2018 .social-share-links li a {
   background-color: #fff;
 }
@@ -11199,38 +11204,12 @@ body.campaign-2018 #block-webform-client-block-8912 .form-item-submitted-page-he
   border-color: #fff;
 }
 
-body.campaign-2018 #block-webform-client-block-8912 .form-actions .webform-submit {
-  background-color: #fff;
-  color: #000;
-}
-
-body.campaign-2018 #block-webform-client-block-8912 .form-actions .webform-submit:hover {
-  background-color: #BEBEBE;
-}
-
-body.campaign-2018 blockquote:before {
-  background-color: #fff;
-}
-
 body.campaign-2018 #block-bean-sso-related-content ul > li a {
   color: #000;
 }
 
 body.campaign-2018 #block-bean-sso-related-content ul > li a:hover {
   text-decoration: underline;
-}
-
-body.campaign-2018 .region-sidebar-first .block > h2, body.campaign-2018 .region-sidebar-first .block > .display,
-body.campaign-2018 .region-sidebar-first .block > .display {
-  color: #fff;
-}
-
-body.campaign-2018 .social-share-links h2, body.campaign-2018 .social-share-links .display {
-  color: #fff;
-}
-
-body.campaign-2018 .date-display-single {
-  color: #fff;
 }
 
 body.campaign-2018 #block-menu-block-land-pg-child-list-2 > .content .node {
@@ -11247,23 +11226,6 @@ body.campaign-2018 .view-latest-news .views-row .node-readmore a {
 }
 
 body.campaign-2018 .view-latest-news .views-row .node-readmore a:hover {
-  background-color: #BEBEBE !important;
-}
-
-body.campaign-2018 .profile h3 {
-  color: #fff;
-}
-
-body.campaign-2018 .profile dl {
-  color: #fff;
-}
-
-body.campaign-2018 .content-body .content {
-  color: #fff;
-}
-
-body.campaign-2018 #content [type='submit'] {
-  background-color: #fff;
-  color: #000;
+  box-shadow: 0px 14px 14px 0px rgba(255, 255, 255, 0.25), 0px 10px 5px 0px rgba(255, 255, 255, 0.22) !important;
 }
 /*# sourceMappingURL=styles.css.map */
