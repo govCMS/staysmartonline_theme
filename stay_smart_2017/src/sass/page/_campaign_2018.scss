@@ -60,12 +60,14 @@ body.campaign-2018 {
 
   .node-alert.priority-level-moderate:before,
   .node-alert.priority-level-high:before,
+  .node-alert.priority-level-low:before,
   blockquote:before {
     background-color: $white;
   }
 
   .node-alert.priority-level-moderate .field-name-field-priority-level .field-items,
   .node-alert.priority-level-high .field-name-field-priority-level .field-items,
+  .node-alert.priority-level-low .field-name-field-priority-level .field-items,
   .profile h3,
   .profile dl,
   .content-body .content,
@@ -73,7 +75,8 @@ body.campaign-2018 {
   .date-display-single,
   .region-sidebar-first .block>h2,
   .region-sidebar-first .block>.display,
-  .field-name-field-introduction {
+  .field-name-field-introduction,
+  .pane-online-alerts .pane-title {
     color: $white;
   }
 

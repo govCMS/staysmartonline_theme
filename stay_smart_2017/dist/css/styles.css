@@ -11079,12 +11079,14 @@ body.campaign-2018 img {
 
 body.campaign-2018 .node-alert.priority-level-moderate:before,
 body.campaign-2018 .node-alert.priority-level-high:before,
+body.campaign-2018 .node-alert.priority-level-low:before,
 body.campaign-2018 blockquote:before {
   background-color: #fff;
 }
 
 body.campaign-2018 .node-alert.priority-level-moderate .field-name-field-priority-level .field-items,
 body.campaign-2018 .node-alert.priority-level-high .field-name-field-priority-level .field-items,
+body.campaign-2018 .node-alert.priority-level-low .field-name-field-priority-level .field-items,
 body.campaign-2018 .profile h3,
 body.campaign-2018 .profile dl,
 body.campaign-2018 .content-body .content,
@@ -11094,7 +11096,8 @@ body.campaign-2018 .date-display-single,
 body.campaign-2018 .region-sidebar-first .block > h2,
 body.campaign-2018 .region-sidebar-first .block > .display,
 body.campaign-2018 .region-sidebar-first .block > .display,
-body.campaign-2018 .field-name-field-introduction {
+body.campaign-2018 .field-name-field-introduction,
+body.campaign-2018 .pane-online-alerts .pane-title {
   color: #fff;
 }
 
