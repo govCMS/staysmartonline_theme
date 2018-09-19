@@ -11231,4 +11231,14 @@ body.campaign-2018 .view-latest-news .views-row .node-readmore a {
 body.campaign-2018 .view-latest-news .views-row .node-readmore a:hover {
   box-shadow: 0px 14px 14px 0px rgba(255, 255, 255, 0.25), 0px 10px 5px 0px rgba(255, 255, 255, 0.22) !important;
 }
+
+@media (max-width: 420px) {
+  body.campaign-2018 .view-slideshow .banner-description-holder {
+    background-color: #000;
+  }
+  body.campaign-2018 .mobile-nav ul.links li a {
+    background-color: #fff;
+    color: #000;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
