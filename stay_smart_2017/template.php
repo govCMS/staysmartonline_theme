@@ -54,7 +54,7 @@ function stay_smart_2017_preprocess_page(&$variables) {
     $logo_mobile_file = file_load($logo_mobile_fid);
     $logo_mobile_alt = theme_get_setting('stay_smart_2017_mobile_logo_alt');
     $logo_mobile = theme_image(array(
-      'path' => file_create_url($logo_mobile_file->uri),
+      'path' => '/'.path_to_theme().'/mobile_logo.png',
       'alt' => $logo_mobile_alt,
       'attributes' => array('class' => array('header__logo_mobile-image')),
     ));
