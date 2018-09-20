@@ -11241,4 +11241,14 @@ body.campaign-2018 .view-latest-news .views-row .node-readmore a:hover {
     color: #000;
   }
 }
+
+@media screen and (min-width: 420px) and (max-width: 767px) {
+  body.campaign-2018 .view-slideshow .banner-description-holder {
+    background-color: #000;
+  }
+  body.campaign-2018 .mobile-nav ul.links li a {
+    background-color: #fff;
+    color: #000;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

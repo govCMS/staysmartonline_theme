@@ -248,4 +248,15 @@ body.campaign-2018 {
     }
   }
 
+  @include media($mobile-only) {
+    .view-slideshow .banner-description-holder {
+      background-color: $black;
+    }
+
+    .mobile-nav ul.links li a {
+      background-color: $white;
+      color: $black;
+    }
+  }
+
 }
