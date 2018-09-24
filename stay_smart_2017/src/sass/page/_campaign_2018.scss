@@ -258,5 +258,27 @@ body.campaign-2018 {
       color: $black;
     }
   }
+}
 
+
+.content-table tr:nth-child(even),
+.field-name-body table tr:nth-child(even),
+form.webform-client-form .webform-component-grid table.webform-grid tr:nth-child(even) {
+  background: none;
+}
+
+.content-body .content .toc-filter-content {
+  h3 {
+    color: $white;
+  }
+
+  background: none;
+}
+
+// Image treatment exception
+.page-node-9206 {
+  .view-id-partners img {
+    -webkit-filter: none;
+    filter: none;
+  }
 }

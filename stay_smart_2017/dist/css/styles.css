@@ -29,7 +29,7 @@
 }
 
 .nav-toggle {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -710,10 +710,10 @@ summary::before, .accordion--controls summary::before, .nav-toggle::before {
   background-image: url("../latest/img/icons/chevron-down--navy.svg");
 }
 
-.list-horizontal .tags a:not(.no-style)[rel~='external']::after, .list-vertical .tags a:not(.no-style)[rel~='external']::after, .list-vertical--thirds .tags a:not(.no-style)[rel~='external']::after, .list-vertical--fourths .tags a:not(.no-style)[rel~='external']::after, footer[role='contentinfo'] .footer-top nav .tags a:not(.no-style)[rel~='external']::after, .list-small .tags a:not(.no-style)[rel~='external']::after, .list-highlighted .tags a:not(.no-style)[rel~='external']::after, .primary-nav ul a:not(.no-style)[rel~='external']::after,
-.local-nav ul a:not(.no-style)[rel~='external']::after, [class^='breadcrumbs'] a:not(.no-style)[rel~='external']::after, [class^='breadcrumbs'][class$='--inverted'] a:not(.no-style)[rel~='external']::after, .skip-to a:not(.no-style)[rel~='external']::after, [class^='controls'] a:not(.no-style)[rel~='external']::after, .govau--header a:not(.no-style)[rel~='external']::after, .prerelease-govau--header a:not(.no-style)[rel~='external']::after, .hero a:not(.no-style)[rel~='external']::after,
-.hero-sml a:not(.no-style)[rel~='external']::after,
-.hero-med a:not(.no-style)[rel~='external']::after, body.page-events #content .view .views-row h2 a:not(.no-style)[rel~='external']::after, body.page-events #content .view .views-row .display a:not(.no-style)[rel~='external']::after, body.page-publications #content .view .views-row h2 a:not(.no-style)[rel~='external']::after, body.page-publications #content .view .views-row .display a:not(.no-style)[rel~='external']::after, body.page-news-media #content .view .views-row h2 a:not(.no-style)[rel~='external']::after, body.page-news-media #content .view .views-row .display a:not(.no-style)[rel~='external']::after, body.page-news #content .view .views-row h2 a:not(.no-style)[rel~='external']::after, body.page-news #content .view .views-row .display a:not(.no-style)[rel~='external']::after, .header__inner .header__secondary-menu a:not(.no-style)[rel~='external']::after, .content-body .content a:not(.no-style)[rel~='external']::after, .more-link a:not(.no-style)[rel~='external']::after, .region-footer .block-menu .content ul.menu > li a:not(.no-style)[rel~='external']::after, .region-footer .block-menu-block .content ul.menu > li a:not(.no-style)[rel~='external']::after, .content-header .breadcrumbs ul li a:not(.no-style)[rel~='external']::after, .bean-basic-content > .content a:not(.no-style)[rel~='external']::after, .view-slideshow .banner-description-holder h3 a:not(.no-style)[rel~='external']::after, .view-home-page-blog-articles .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, .view-home-page-blog-articles .view-content .views-row .display a:not(.no-style)[rel~='external']::after, .view-latest-news .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, .view-latest-news .view-content .views-row .display a:not(.no-style)[rel~='external']::after, .view-whats-new-grid .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, .view-whats-new-grid .view-content .views-row .display a:not(.no-style)[rel~='external']::after, .view-whats-new-grid .view-footer a:not(.no-style)[rel~='external']::after, .view-online-alerts .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, .view-online-alerts .view-content .views-row .display a:not(.no-style)[rel~='external']::after, #block-menu-menu-quick-links ul.menu li a:not(.no-style)[rel~='external']::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a:not(.no-style)[rel~='external']::after, .content-body .content .toc-filter-content ul > li a:not(.no-style)[rel~='external']::after, #block-menu-block-land-pg-child-list-2 > .content .node h2 a:not(.no-style)[rel~='external']::after, #block-menu-block-land-pg-child-list-2 > .content .node .display a:not(.no-style)[rel~='external']::after, #block-bean-sso-related-content ul > li a:not(.no-style)[rel~='external']::after {
+.list-horizontal .tags a[rel~='external']:not(.no-style)::after, .list-vertical .tags a[rel~='external']:not(.no-style)::after, .list-vertical--thirds .tags a[rel~='external']:not(.no-style)::after, .list-vertical--fourths .tags a[rel~='external']:not(.no-style)::after, footer[role='contentinfo'] .footer-top nav .tags a[rel~='external']:not(.no-style)::after, .list-small .tags a[rel~='external']:not(.no-style)::after, .list-highlighted .tags a[rel~='external']:not(.no-style)::after, .primary-nav ul a[rel~='external']:not(.no-style)::after,
+.local-nav ul a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'] a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'][class$='--inverted'] a[rel~='external']:not(.no-style)::after, .skip-to a[rel~='external']:not(.no-style)::after, [class^='controls'] a[rel~='external']:not(.no-style)::after, .govau--header a[rel~='external']:not(.no-style)::after, .prerelease-govau--header a[rel~='external']:not(.no-style)::after, .hero a[rel~='external']:not(.no-style)::after,
+.hero-sml a[rel~='external']:not(.no-style)::after,
+.hero-med a[rel~='external']:not(.no-style)::after, body.page-events #content .view .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-events #content .view .views-row .display a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news #content .view .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news #content .view .views-row .display a[rel~='external']:not(.no-style)::after, .header__inner .header__secondary-menu a[rel~='external']:not(.no-style)::after, .content-body .content a[rel~='external']:not(.no-style)::after, .more-link a[rel~='external']:not(.no-style)::after, .region-footer .block-menu .content ul.menu > li a[rel~='external']:not(.no-style)::after, .region-footer .block-menu-block .content ul.menu > li a[rel~='external']:not(.no-style)::after, .content-header .breadcrumbs ul li a[rel~='external']:not(.no-style)::after, .bean-basic-content > .content a[rel~='external']:not(.no-style)::after, .view-slideshow .banner-description-holder h3 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-footer a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row .display a[rel~='external']:not(.no-style)::after, #block-menu-menu-quick-links ul.menu li a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .content-body .content .toc-filter-content ul > li a[rel~='external']:not(.no-style)::after, #block-menu-block-land-pg-child-list-2 > .content .node h2 a[rel~='external']:not(.no-style)::after, #block-menu-block-land-pg-child-list-2 > .content .node .display a[rel~='external']:not(.no-style)::after, #block-bean-sso-related-content ul > li a[rel~='external']:not(.no-style)::after {
   background-image: url("../latest/img/icons/external-link--aqua.svg");
 }
 
@@ -783,7 +783,7 @@ summary::before, .accordion--controls summary::before, .nav-toggle::before {
   }
   pre,
   blockquote {
-    border: 1px solid #bbbaba;
+    border: 1px solid #bbbbbb;
     page-break-inside: avoid;
   }
   thead {
@@ -803,9 +803,7 @@ summary::before, .accordion--controls summary::before, .nav-toggle::before {
     orphans: 3;
     widows: 3;
   }
-  
-  h2,
-  .display,
+  h2, .display,
   h3 {
     page-break-after: avoid;
   }
@@ -923,7 +921,7 @@ summary:last-child {
 .accordion-button:hover,
 summary:hover, .accordion-button:focus,
 summary:focus {
-  background-color: #bbbaba;
+  background-color: #bbbbbb;
   outline: none;
 }
 
@@ -950,8 +948,8 @@ summary::before, .accordion--controls summary::before {
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
-[aria-expanded='true'] .accordion-button::before,
-[aria-expanded='true'] summary::before {
+[aria-expanded='true'] .accordion-button::before, [aria-expanded='true']
+summary::before {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -970,7 +968,7 @@ summary::before, .accordion--controls summary::before {
 
 details,
 .accordion {
-  border-color: #bbbaba;
+  border-color: #bbbbbb;
   border-width: 1px 0;
   border-style: solid;
 }
@@ -986,7 +984,7 @@ details + details,
 
 [aria-expanded='true'] .accordion-button, [aria-expanded='true']
 summary {
-  border-bottom: 1px solid #bbbaba;
+  border-bottom: 1px solid #bbbbbb;
 }
 
 .accordion--controls {
@@ -1082,17 +1080,17 @@ button, .button, [role='button'], [type='submit'], [type='reset'], [type='button
 
 button[disabled], button[disabled]:hover, button[disabled]:active, button[disabled]:focus, button.disabled, button.disabled:hover, button.disabled:active, button.disabled:focus, .button[disabled], .button[disabled]:hover, .button[disabled]:active, .button[disabled]:focus, .button.disabled, .button.disabled:hover, .button.disabled:active, .button.disabled:focus, [role='button'][disabled], [role='button'][disabled]:hover, [role='button'][disabled]:active, [role='button'][disabled]:focus, [role='button'].disabled, [role='button'].disabled:hover, [role='button'].disabled:active, [role='button'].disabled:focus, [type='submit'][disabled], [type='submit'][disabled]:hover, [type='submit'][disabled]:active, [type='submit'][disabled]:focus, [type='submit'].disabled, [type='submit'].disabled:hover, [type='submit'].disabled:active, [type='submit'].disabled:focus, [type='reset'][disabled], [type='reset'][disabled]:hover, [type='reset'][disabled]:active, [type='reset'][disabled]:focus, [type='reset'].disabled, [type='reset'].disabled:hover, [type='reset'].disabled:active, [type='reset'].disabled:focus, [type='button'][disabled], [type='button'][disabled]:hover, [type='button'][disabled]:active, [type='button'][disabled]:focus, [type='button'].disabled, [type='button'].disabled:hover, [type='button'].disabled:active, [type='button'].disabled:focus {
   cursor: not-allowed;
-  border-color: #bbbaba;
-  background-color: #bbbaba;
+  border-color: #bbbbbb;
+  background-color: #bbbbbb;
   color: #313131;
 }
 
-button.inverted, button.button--feedback, .button.inverted, .button.button--feedback, [role='button'].inverted, .button--feedback[role='button'], [type='submit'].inverted, .button--feedback[type='submit'], [type='reset'].inverted, .button--feedback[type='reset'], [type='button'].inverted, .button--feedback[type='button'] {
+button.inverted, button.button--feedback, .button.inverted, .button.button--feedback, [role='button'].inverted, [role='button'].button--feedback, [type='submit'].inverted, [type='submit'].button--feedback, [type='reset'].inverted, [type='reset'].button--feedback, [type='button'].inverted, [type='button'].button--feedback {
   border-color: #fff;
   background-color: transparent;
 }
 
-button.inverted:hover, button.button--feedback:hover, button.inverted:active, button.button--feedback:active, button.inverted:focus, button.button--feedback:focus, .button.inverted:hover, .button.button--feedback:hover, .button.inverted:active, .button.button--feedback:active, .button.inverted:focus, .button.button--feedback:focus, [role='button'].inverted:hover, .button--feedback[role='button']:hover, [role='button'].inverted:active, .button--feedback[role='button']:active, [role='button'].inverted:focus, .button--feedback[role='button']:focus, [type='submit'].inverted:hover, .button--feedback[type='submit']:hover, [type='submit'].inverted:active, .button--feedback[type='submit']:active, [type='submit'].inverted:focus, .button--feedback[type='submit']:focus, [type='reset'].inverted:hover, .button--feedback[type='reset']:hover, [type='reset'].inverted:active, .button--feedback[type='reset']:active, [type='reset'].inverted:focus, .button--feedback[type='reset']:focus, [type='button'].inverted:hover, .button--feedback[type='button']:hover, [type='button'].inverted:active, .button--feedback[type='button']:active, [type='button'].inverted:focus, .button--feedback[type='button']:focus {
+button.inverted:hover, button.button--feedback:hover, button.inverted:active, button.button--feedback:active, button.inverted:focus, button.button--feedback:focus, .button.inverted:hover, .button.button--feedback:hover, .button.inverted:active, .button.button--feedback:active, .button.inverted:focus, .button.button--feedback:focus, [role='button'].inverted:hover, [role='button'].button--feedback:hover, [role='button'].inverted:active, [role='button'].button--feedback:active, [role='button'].inverted:focus, [role='button'].button--feedback:focus, [type='submit'].inverted:hover, [type='submit'].button--feedback:hover, [type='submit'].inverted:active, [type='submit'].button--feedback:active, [type='submit'].inverted:focus, [type='submit'].button--feedback:focus, [type='reset'].inverted:hover, [type='reset'].button--feedback:hover, [type='reset'].inverted:active, [type='reset'].button--feedback:active, [type='reset'].inverted:focus, [type='reset'].button--feedback:focus, [type='button'].inverted:hover, [type='button'].button--feedback:hover, [type='button'].inverted:active, [type='button'].button--feedback:active, [type='button'].inverted:focus, [type='button'].button--feedback:focus {
   border-color: #fff;
   background-color: #fff;
   color: #043751;
@@ -1147,17 +1145,17 @@ form [type='email'],
 form [type='password'], form textarea, form input[type='radio'], form input[type='checkbox'] {
   width: 100%;
   outline-offset: 0;
-  border: 2px solid #bbbaba;
+  border: 2px solid #bbbbbb;
   border-radius: 0;
   background-color: #fff;
   padding: 0.4em;
 }
 
-form :invalid[type='text'],
-form :invalid[type='number'],
-form :invalid[type='tel'],
-form :invalid[type='email'],
-form :invalid[type='password'], form textarea:invalid, form input:invalid[type='radio'], form input:invalid[type='checkbox'], form .invalid[type='text'],
+form [type='text']:invalid,
+form [type='number']:invalid,
+form [type='tel']:invalid,
+form [type='email']:invalid,
+form [type='password']:invalid, form textarea:invalid, form input[type='radio']:invalid, form input[type='checkbox']:invalid, form .invalid[type='text'],
 form .invalid[type='number'],
 form .invalid[type='tel'],
 form .invalid[type='email'],
@@ -1173,26 +1171,26 @@ form .valid[type='password'], form textarea.valid, form input.valid[type='radio'
   outline: 2px solid #007554;
 }
 
-form :focus[type='text'],
-form :focus[type='number'],
-form :focus[type='tel'],
-form :focus[type='email'],
-form :focus[type='password'], form textarea:focus, form input:focus[type='radio'], form input:focus[type='checkbox'] {
+form [type='text']:focus,
+form [type='number']:focus,
+form [type='tel']:focus,
+form [type='email']:focus,
+form [type='password']:focus, form textarea:focus, form input[type='radio']:focus, form input[type='checkbox']:focus {
   outline: 2px solid #ce4a02;
 }
 
-form :disabled[type='text'],
-form :disabled[type='number'],
-form :disabled[type='tel'],
-form :disabled[type='email'],
-form :disabled[type='password'], form textarea:disabled, form input:disabled[type='radio'], form input:disabled[type='checkbox'], form [disabled][type='text'],
+form [type='text']:disabled,
+form [type='number']:disabled,
+form [type='tel']:disabled,
+form [type='email']:disabled,
+form [type='password']:disabled, form textarea:disabled, form input[type='radio']:disabled, form input[type='checkbox']:disabled, form [disabled][type='text'],
 form [disabled][type='number'],
 form [disabled][type='tel'],
 form [disabled][type='email'],
 form [disabled][type='password'], form textarea[disabled], form input[disabled][type='radio'], form input[disabled][type='checkbox'] {
   cursor: not-allowed;
   background: #f0f3f5;
-  border: 2px solid #bbbaba;
+  border: 2px solid #bbbbbb;
 }
 
 form {
@@ -1330,7 +1328,7 @@ form input[type='radio'], form input[type='checkbox'] {
 }
 
 form input[type='radio']:focus + label, form input[type='checkbox']:focus + label {
-  outline: 1px solid #bbbaba;
+  outline: 1px solid #bbbbbb;
 }
 
 form input[type='radio']:invalid + label, form input[type='checkbox']:invalid + label {
@@ -1848,10 +1846,10 @@ img {
 /*
 Link styles
 */
-.list-horizontal .tags a:not(.no-style)[rel~='external']::after, .list-vertical .tags a:not(.no-style)[rel~='external']::after, .list-vertical--thirds .tags a:not(.no-style)[rel~='external']::after, .list-vertical--fourths .tags a:not(.no-style)[rel~='external']::after, footer[role='contentinfo'] .footer-top nav .tags a:not(.no-style)[rel~='external']::after, .list-small .tags a:not(.no-style)[rel~='external']::after, .list-highlighted .tags a:not(.no-style)[rel~='external']::after, .primary-nav ul a:not(.no-style)[rel~='external']::after,
-.local-nav ul a:not(.no-style)[rel~='external']::after, [class^='breadcrumbs'] a:not(.no-style)[rel~='external']::after, [class^='breadcrumbs'][class$='--inverted'] a:not(.no-style)[rel~='external']::after, .skip-to a:not(.no-style)[rel~='external']::after, [class^='controls'] a:not(.no-style)[rel~='external']::after, .govau--header a:not(.no-style)[rel~='external']::after, .prerelease-govau--header a:not(.no-style)[rel~='external']::after, .hero a:not(.no-style)[rel~='external']::after,
-.hero-sml a:not(.no-style)[rel~='external']::after,
-.hero-med a:not(.no-style)[rel~='external']::after, body.page-events #content .view .views-row h2 a:not(.no-style)[rel~='external']::after, body.page-events #content .view .views-row .display a:not(.no-style)[rel~='external']::after, body.page-publications #content .view .views-row h2 a:not(.no-style)[rel~='external']::after, body.page-publications #content .view .views-row .display a:not(.no-style)[rel~='external']::after, body.page-news-media #content .view .views-row h2 a:not(.no-style)[rel~='external']::after, body.page-news-media #content .view .views-row .display a:not(.no-style)[rel~='external']::after, body.page-news #content .view .views-row h2 a:not(.no-style)[rel~='external']::after, body.page-news #content .view .views-row .display a:not(.no-style)[rel~='external']::after, .header__inner .header__secondary-menu a:not(.no-style)[rel~='external']::after, .content-body .content a:not(.no-style)[rel~='external']::after, .more-link a:not(.no-style)[rel~='external']::after, .region-footer .block-menu .content ul.menu > li a:not(.no-style)[rel~='external']::after, .region-footer .block-menu-block .content ul.menu > li a:not(.no-style)[rel~='external']::after, .content-header .breadcrumbs ul li a:not(.no-style)[rel~='external']::after, .bean-basic-content > .content a:not(.no-style)[rel~='external']::after, .view-slideshow .banner-description-holder h3 a:not(.no-style)[rel~='external']::after, .view-home-page-blog-articles .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, .view-home-page-blog-articles .view-content .views-row .display a:not(.no-style)[rel~='external']::after, .view-latest-news .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, .view-latest-news .view-content .views-row .display a:not(.no-style)[rel~='external']::after, .view-whats-new-grid .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, .view-whats-new-grid .view-content .views-row .display a:not(.no-style)[rel~='external']::after, .view-whats-new-grid .view-footer a:not(.no-style)[rel~='external']::after, .view-online-alerts .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, .view-online-alerts .view-content .views-row .display a:not(.no-style)[rel~='external']::after, #block-menu-menu-quick-links ul.menu li a:not(.no-style)[rel~='external']::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a:not(.no-style)[rel~='external']::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a:not(.no-style)[rel~='external']::after, .content-body .content .toc-filter-content ul > li a:not(.no-style)[rel~='external']::after, #block-menu-block-land-pg-child-list-2 > .content .node h2 a:not(.no-style)[rel~='external']::after, #block-menu-block-land-pg-child-list-2 > .content .node .display a:not(.no-style)[rel~='external']::after, #block-bean-sso-related-content ul > li a:not(.no-style)[rel~='external']::after {
+.list-horizontal .tags a[rel~='external']:not(.no-style)::after, .list-vertical .tags a[rel~='external']:not(.no-style)::after, .list-vertical--thirds .tags a[rel~='external']:not(.no-style)::after, .list-vertical--fourths .tags a[rel~='external']:not(.no-style)::after, footer[role='contentinfo'] .footer-top nav .tags a[rel~='external']:not(.no-style)::after, .list-small .tags a[rel~='external']:not(.no-style)::after, .list-highlighted .tags a[rel~='external']:not(.no-style)::after, .primary-nav ul a[rel~='external']:not(.no-style)::after,
+.local-nav ul a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'] a[rel~='external']:not(.no-style)::after, [class^='breadcrumbs'][class$='--inverted'] a[rel~='external']:not(.no-style)::after, .skip-to a[rel~='external']:not(.no-style)::after, [class^='controls'] a[rel~='external']:not(.no-style)::after, .govau--header a[rel~='external']:not(.no-style)::after, .prerelease-govau--header a[rel~='external']:not(.no-style)::after, .hero a[rel~='external']:not(.no-style)::after,
+.hero-sml a[rel~='external']:not(.no-style)::after,
+.hero-med a[rel~='external']:not(.no-style)::after, body.page-events #content .view .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-events #content .view .views-row .display a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-publications #content .view .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news-media #content .view .views-row .display a[rel~='external']:not(.no-style)::after, body.page-news #content .view .views-row h2 a[rel~='external']:not(.no-style)::after, body.page-news #content .view .views-row .display a[rel~='external']:not(.no-style)::after, .header__inner .header__secondary-menu a[rel~='external']:not(.no-style)::after, .content-body .content a[rel~='external']:not(.no-style)::after, .more-link a[rel~='external']:not(.no-style)::after, .region-footer .block-menu .content ul.menu > li a[rel~='external']:not(.no-style)::after, .region-footer .block-menu-block .content ul.menu > li a[rel~='external']:not(.no-style)::after, .content-header .breadcrumbs ul li a[rel~='external']:not(.no-style)::after, .bean-basic-content > .content a[rel~='external']:not(.no-style)::after, .view-slideshow .banner-description-holder h3 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-home-page-blog-articles .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-latest-news .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .view-whats-new-grid .view-footer a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, .view-online-alerts .view-content .views-row .display a[rel~='external']:not(.no-style)::after, #block-menu-menu-quick-links ul.menu li a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row h2 a[rel~='external']:not(.no-style)::after, #block-views-footer-teaser-block .view-footer-teaser .view-content .views-row .display a[rel~='external']:not(.no-style)::after, .content-body .content .toc-filter-content ul > li a[rel~='external']:not(.no-style)::after, #block-menu-block-land-pg-child-list-2 > .content .node h2 a[rel~='external']:not(.no-style)::after, #block-menu-block-land-pg-child-list-2 > .content .node .display a[rel~='external']:not(.no-style)::after, #block-bean-sso-related-content ul > li a[rel~='external']:not(.no-style)::after {
   content: '';
   position: absolute;
   display: inline;
@@ -2057,42 +2055,14 @@ Style guide: List styles.4 Highlighted word style
   cursor: not-allowed;
 }
 
-.list-horizontal .tags dl, .list-vertical .tags dl, .list-vertical--thirds .tags dl, .list-vertical--fourths .tags dl, footer[role='contentinfo'] .footer-top nav .tags dl, .list-small .tags dl, .list-highlighted .tags dl,
-.list-horizontal .tags dt,
-.list-vertical .tags dt,
-.list-vertical--thirds .tags dt,
-.list-vertical--fourths .tags dt,
-footer[role='contentinfo'] .footer-top nav .tags dt,
-.list-small .tags dt,
-.list-highlighted .tags dt,
-.list-horizontal .tags dd,
-.list-vertical .tags dd,
-.list-vertical--thirds .tags dd,
-.list-vertical--fourths .tags dd,
-footer[role='contentinfo'] .footer-top nav .tags dd,
-.list-small .tags dd,
-.list-highlighted .tags dd {
+.list-horizontal .tags dl, .list-vertical .tags dl, .list-vertical--thirds .tags dl, .list-vertical--fourths .tags dl, footer[role='contentinfo'] .footer-top nav .tags dl, .list-small .tags dl, .list-highlighted .tags dl, .list-horizontal .tags dt, .list-vertical .tags dt, .list-vertical--thirds .tags dt, .list-vertical--fourths .tags dt, footer[role='contentinfo'] .footer-top nav .tags dt, .list-small .tags dt, .list-highlighted .tags dt, .list-horizontal .tags dd, .list-vertical .tags dd, .list-vertical--thirds .tags dd, .list-vertical--fourths .tags dd, footer[role='contentinfo'] .footer-top nav .tags dd, .list-small .tags dd, .list-highlighted .tags dd {
   display: inline-block;
   margin: 0;
   padding: 0;
   line-height: 2.1;
 }
 
-
-.list-horizontal .tags dt,
-.list-vertical .tags dt,
-.list-vertical--thirds .tags dt,
-.list-vertical--fourths .tags dt,
-footer[role='contentinfo'] .footer-top nav .tags dt,
-.list-small .tags dt,
-.list-highlighted .tags dt,
-.list-horizontal .tags dd,
-.list-vertical .tags dd,
-.list-vertical--thirds .tags dd,
-.list-vertical--fourths .tags dd,
-footer[role='contentinfo'] .footer-top nav .tags dd,
-.list-small .tags dd,
-.list-highlighted .tags dd {
+.list-horizontal .tags dt, .list-vertical .tags dt, .list-vertical--thirds .tags dt, .list-vertical--fourths .tags dt, footer[role='contentinfo'] .footer-top nav .tags dt, .list-small .tags dt, .list-highlighted .tags dt, .list-horizontal .tags dd, .list-vertical .tags dd, .list-vertical--thirds .tags dd, .list-vertical--fourths .tags dd, footer[role='contentinfo'] .footer-top nav .tags dd, .list-small .tags dd, .list-highlighted .tags dd {
   margin-right: 0.4em;
   font-size: 87.5%;
 }
@@ -2118,39 +2088,11 @@ footer[role='contentinfo'] .footer-top nav .tags dd,
 
 .list-horizontal > li, .list-vertical > li, .list-vertical--thirds > li, .list-vertical--fourths > li, footer[role='contentinfo'] .footer-top nav > li, .list-small > li, .list-highlighted > li {
   padding: 2.7461357194% 0;
-  border-bottom: solid 1px #bbbaba;
+  border-bottom: solid 1px #bbbbbb;
   margin-bottom: 0;
 }
 
-.list-horizontal h2, .list-vertical h2, .list-vertical--thirds h2, .list-vertical--fourths h2, footer[role='contentinfo'] .footer-top nav h2, .list-small h2, .list-highlighted h2, .list-horizontal .display, .list-vertical .display, .list-vertical--thirds .display, .list-vertical--fourths .display, footer[role='contentinfo'] .footer-top nav .display, .list-small .display, .list-highlighted .display,
-.list-horizontal h3,
-.list-vertical h3,
-.list-vertical--thirds h3,
-.list-vertical--fourths h3,
-footer[role='contentinfo'] .footer-top nav h3,
-.list-small h3,
-.list-highlighted h3,
-.list-horizontal h4,
-.list-vertical h4,
-.list-vertical--thirds h4,
-.list-vertical--fourths h4,
-footer[role='contentinfo'] .footer-top nav h4,
-.list-small h4,
-.list-highlighted h4,
-.list-horizontal h5,
-.list-vertical h5,
-.list-vertical--thirds h5,
-.list-vertical--fourths h5,
-footer[role='contentinfo'] .footer-top nav h5,
-.list-small h5,
-.list-highlighted h5,
-.list-horizontal h6,
-.list-vertical h6,
-.list-vertical--thirds h6,
-.list-vertical--fourths h6,
-footer[role='contentinfo'] .footer-top nav h6,
-.list-small h6,
-.list-highlighted h6 {
+.list-horizontal h2, .list-vertical h2, .list-vertical--thirds h2, .list-vertical--fourths h2, footer[role='contentinfo'] .footer-top nav h2, .list-small h2, .list-highlighted h2, .list-horizontal .display, .list-vertical .display, .list-vertical--thirds .display, .list-vertical--fourths .display, footer[role='contentinfo'] .footer-top nav .display, .list-small .display, .list-highlighted .display, .list-horizontal h3, .list-vertical h3, .list-vertical--thirds h3, .list-vertical--fourths h3, footer[role='contentinfo'] .footer-top nav h3, .list-small h3, .list-highlighted h3, .list-horizontal h4, .list-vertical h4, .list-vertical--thirds h4, .list-vertical--fourths h4, footer[role='contentinfo'] .footer-top nav h4, .list-small h4, .list-highlighted h4, .list-horizontal h5, .list-vertical h5, .list-vertical--thirds h5, .list-vertical--fourths h5, footer[role='contentinfo'] .footer-top nav h5, .list-small h5, .list-highlighted h5, .list-horizontal h6, .list-vertical h6, .list-vertical--thirds h6, .list-vertical--fourths h6, footer[role='contentinfo'] .footer-top nav h6, .list-small h6, .list-highlighted h6 {
   margin-top: 0;
   margin-bottom: 0.4em;
   font-size: 1.125rem;
@@ -2200,7 +2142,7 @@ footer[role='contentinfo'] .footer-top nav h6,
 }
 
 .list-horizontal > li.hero-item {
-  border-top: solid 1px #bbbaba;
+  border-top: solid 1px #bbbbbb;
 }
 
 @media screen and (min-width: 768px) {
@@ -2238,15 +2180,7 @@ footer[role='contentinfo'] .footer-top nav h6,
           flex-wrap: wrap;
 }
 
-.list-vertical > li article h3, .list-vertical--thirds > li article h3, .list-vertical--fourths > li article h3, footer[role='contentinfo'] .footer-top nav > li article h3,
-.list-vertical > li article div,
-.list-vertical--thirds > li article div,
-.list-vertical--fourths > li article div,
-footer[role='contentinfo'] .footer-top nav > li article div,
-.list-vertical > li article p,
-.list-vertical--thirds > li article p,
-.list-vertical--fourths > li article p,
-footer[role='contentinfo'] .footer-top nav > li article p {
+.list-vertical > li article h3, .list-vertical--thirds > li article h3, .list-vertical--fourths > li article h3, footer[role='contentinfo'] .footer-top nav > li article h3, .list-vertical > li article div, .list-vertical--thirds > li article div, .list-vertical--fourths > li article div, footer[role='contentinfo'] .footer-top nav > li article div, .list-vertical > li article p, .list-vertical--thirds > li article p, .list-vertical--fourths > li article p, footer[role='contentinfo'] .footer-top nav > li article p {
   -webkit-flex: 0 0 100%;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -2384,7 +2318,7 @@ footer[role='contentinfo'] .footer-top nav > li article p {
 }
 
 .list-small {
-  border-top: solid 1px #bbbaba;
+  border-top: solid 1px #bbbbbb;
 }
 
 .list-small a {
@@ -2682,11 +2616,11 @@ Style guide: Navigation.6 Footer navigation
 
 .global-nav li {
   margin: 0;
-  border-bottom: 1px solid rgba(187, 186, 186, 0.5);
+  border-bottom: 1px solid rgba(187, 187, 187, 0.5);
 }
 
 .global-nav li:first-child {
-  border-top: 1px solid rgba(187, 186, 186, 0.5);
+  border-top: 1px solid rgba(187, 187, 187, 0.5);
 }
 
 @media screen and (min-width: 768px) {
@@ -2706,7 +2640,7 @@ Style guide: Navigation.6 Footer navigation
     clear: left;
   }
   .global-nav li:nth-child(2) {
-    border-top: 1px solid rgba(187, 186, 186, 0.5);
+    border-top: 1px solid rgba(187, 187, 187, 0.5);
   }
 }
 
@@ -2764,7 +2698,7 @@ Style guide: Navigation.6 Footer navigation
 }
 
 .nav-toggle:focus, .nav-toggle:hover {
-  background-color: #bbbaba;
+  background-color: #bbbbbb;
 }
 
 .nav-toggle::before {
@@ -2929,12 +2863,12 @@ Style guide: Navigation.6 Footer navigation
 .local-nav ul li {
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #bbbaba;
+  border-bottom: 1px solid #bbbbbb;
 }
 
 .primary-nav ul li:first-child,
 .local-nav ul li:first-child {
-  border-top: 1px solid #bbbaba;
+  border-top: 1px solid #bbbbbb;
 }
 
 .primary-nav ul a,
@@ -3504,9 +3438,11 @@ Style guide: Navigation.07 Tab navigation
   margin: 3.2em 0;
 }
 
-.inline-tab-nav h1, .inline-tab-nav .hero .site-title, .hero .inline-tab-nav .site-title,
-.inline-tab-nav .hero-sml .site-title, .hero-sml .inline-tab-nav .site-title,
-.inline-tab-nav .hero-med .site-title, .hero-med .inline-tab-nav .site-title,
+.inline-tab-nav h1, .inline-tab-nav .hero .site-title, .hero .inline-tab-nav .site-title, .inline-tab-nav
+.hero-sml .site-title,
+.hero-sml .inline-tab-nav .site-title, .inline-tab-nav
+.hero-med .site-title,
+.hero-med .inline-tab-nav .site-title,
 .inline-tab-nav h2,
 .inline-tab-nav .display,
 .inline-tab-nav h3,
@@ -3524,9 +3460,11 @@ Style guide: Navigation.07 Tab navigation
 }
 
 @media screen and (min-width: 768px) {
-  .inline-tab-nav h1, .inline-tab-nav .hero .site-title, .hero .inline-tab-nav .site-title,
-  .inline-tab-nav .hero-sml .site-title, .hero-sml .inline-tab-nav .site-title,
-  .inline-tab-nav .hero-med .site-title, .hero-med .inline-tab-nav .site-title,
+  .inline-tab-nav h1, .inline-tab-nav .hero .site-title, .hero .inline-tab-nav .site-title, .inline-tab-nav
+  .hero-sml .site-title,
+  .hero-sml .inline-tab-nav .site-title, .inline-tab-nav
+  .hero-med .site-title,
+  .hero-med .inline-tab-nav .site-title,
   .inline-tab-nav h2,
   .inline-tab-nav .display,
   .inline-tab-nav h3,
@@ -3680,7 +3618,7 @@ footer[role='contentinfo'] .footer-links a {
 footer[role='contentinfo'] .footer-top {
   margin-bottom: 3.2em;
   padding-bottom: 3.2em;
-  border-bottom: 1px solid #bbbaba;
+  border-bottom: 1px solid #bbbbbb;
 }
 
 @media screen and (min-width: 768px) {
@@ -3730,9 +3668,11 @@ footer[role='contentinfo'] .footer-top nav li {
   list-style: none;
 }
 
-footer[role='contentinfo'] .footer-top nav li h1, footer[role='contentinfo'] .footer-top nav li .hero .site-title, .hero footer[role='contentinfo'] .footer-top nav li .site-title,
-footer[role='contentinfo'] .footer-top nav li .hero-sml .site-title, .hero-sml footer[role='contentinfo'] .footer-top nav li .site-title,
-footer[role='contentinfo'] .footer-top nav li .hero-med .site-title, .hero-med footer[role='contentinfo'] .footer-top nav li .site-title,
+footer[role='contentinfo'] .footer-top nav li h1, footer[role='contentinfo'] .footer-top nav li .hero .site-title, .hero footer[role='contentinfo'] .footer-top nav li .site-title, footer[role='contentinfo'] .footer-top nav li
+.hero-sml .site-title,
+.hero-sml footer[role='contentinfo'] .footer-top nav li .site-title, footer[role='contentinfo'] .footer-top nav li
+.hero-med .site-title,
+.hero-med footer[role='contentinfo'] .footer-top nav li .site-title,
 footer[role='contentinfo'] .footer-top nav li h2,
 footer[role='contentinfo'] .footer-top nav li .display,
 footer[role='contentinfo'] .footer-top nav li h3,
@@ -3819,7 +3759,7 @@ footer[role='contentinfo'] .footer-top nav li h4 {
   border-radius: 4px;
   border: 0;
   transition: box-shadow 0.2s;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px transparent;
 }
 
 [class^='controls'] button:hover, [class^='controls'] button:focus, [class^='controls'] .button:hover, [class^='controls'] .button:focus, [class^='controls'] [role='button']:hover, [class^='controls'] [role='button']:focus, [class^='controls'] [type='submit']:hover, [class^='controls'] [type='submit']:focus, [class^='controls'] [type='reset']:hover, [class^='controls'] [type='reset']:focus, [class^='controls'] [type='button']:hover, [class^='controls'] [type='button']:focus {
@@ -3933,7 +3873,7 @@ footer[role='contentinfo'] .footer-top nav li h4 {
   border-radius: 4px;
   border: 0;
   transition: box-shadow 0.2s;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px transparent;
 }
 
 [class^='controls'][class$='--contrast'] button:hover, [class^='controls'][class$='--contrast'] button:focus, [class^='controls'][class$='--contrast'] .button:hover, [class^='controls'][class$='--contrast'] .button:focus, [class^='controls'][class$='--contrast'] [role='button']:hover, [class^='controls'][class$='--contrast'] [role='button']:focus, [class^='controls'][class$='--contrast'] [type='submit']:hover, [class^='controls'][class$='--contrast'] [type='submit']:focus, [class^='controls'][class$='--contrast'] [type='reset']:hover, [class^='controls'][class$='--contrast'] [type='reset']:focus, [class^='controls'][class$='--contrast'] [type='button']:hover, [class^='controls'][class$='--contrast'] [type='button']:focus {
@@ -4056,7 +3996,7 @@ footer[role='contentinfo'] .footer-top nav li h4 {
   border-radius: 4px;
   border: 0;
   transition: box-shadow 0.2s;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px transparent;
 }
 
 .govau--header button:hover, .govau--header button:focus, .govau--header .button:hover, .govau--header .button:focus, .govau--header [role='button']:hover, .govau--header [role='button']:focus, .govau--header [type='submit']:hover, .govau--header [type='submit']:focus, .govau--header [type='reset']:hover, .govau--header [type='reset']:focus, .govau--header [type='button']:hover, .govau--header [type='button']:focus {
@@ -4191,7 +4131,7 @@ footer[role='contentinfo'] .footer-top nav li h4 {
   border-radius: 4px;
   border: 0;
   transition: box-shadow 0.2s;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px transparent;
 }
 
 .prerelease-govau--header button:hover, .prerelease-govau--header button:focus, .prerelease-govau--header .button:hover, .prerelease-govau--header .button:focus, .prerelease-govau--header [role='button']:hover, .prerelease-govau--header [role='button']:focus, .prerelease-govau--header [type='submit']:hover, .prerelease-govau--header [type='submit']:focus, .prerelease-govau--header [type='reset']:hover, .prerelease-govau--header [type='reset']:focus, .prerelease-govau--header [type='button']:hover, .prerelease-govau--header [type='button']:focus {
@@ -4414,10 +4354,8 @@ footer[role='contentinfo'] .footer-top nav li h4 {
 }
 
 .hero h1, .hero .site-title,
-.hero-sml h1,
-.hero-sml .site-title,
-.hero-med h1,
-.hero-med .site-title {
+.hero-sml h1, .hero-sml .site-title,
+.hero-med h1, .hero-med .site-title {
   font-size: 1.75rem;
   margin-top: 0;
   max-width: 20em;
@@ -4425,10 +4363,8 @@ footer[role='contentinfo'] .footer-top nav li h4 {
 
 @media screen and (min-width: 768px) {
   .hero h1, .hero .site-title,
-  .hero-sml h1,
-  .hero-sml .site-title,
-  .hero-med h1,
-  .hero-med .site-title {
+  .hero-sml h1, .hero-sml .site-title,
+  .hero-med h1, .hero-med .site-title {
     font-size: 2.375rem;
   }
 }
@@ -4923,9 +4859,7 @@ h1:first-of-type, .hero .site-title:first-of-type,
   margin-top: 0.4em;
 }
 
-
-h2,
-.display {
+h2, .display {
   font-size: 2rem;
   line-height: 1.2;
   margin-top: 1.6em;
@@ -4933,9 +4867,7 @@ h2,
 }
 
 @media screen and (min-width: 768px) {
-  
-  h2,
-  .display {
+  h2, .display {
     font-size: 2.5rem;
   }
 }
@@ -4960,9 +4892,11 @@ h6 {
   font-weight: 700;
 }
 
-.gov-speak h1, .gov-speak .hero .site-title, .hero .gov-speak .site-title,
-.gov-speak .hero-sml .site-title, .hero-sml .gov-speak .site-title,
-.gov-speak .hero-med .site-title, .hero-med .gov-speak .site-title,
+.gov-speak h1, .gov-speak .hero .site-title, .hero .gov-speak .site-title, .gov-speak
+.hero-sml .site-title,
+.hero-sml .gov-speak .site-title, .gov-speak
+.hero-med .site-title,
+.hero-med .gov-speak .site-title,
 .gov-speak h2,
 .gov-speak .display,
 .gov-speak h3,
@@ -4975,46 +4909,50 @@ h6 {
   margin-top: 1.6em;
 }
 
-.gov-speak h1, .gov-speak .hero .site-title, .hero .gov-speak .site-title,
-.gov-speak .hero-sml .site-title, .hero-sml .gov-speak .site-title,
-.gov-speak .hero-med .site-title, .hero-med .gov-speak .site-title {
+.gov-speak h1, .gov-speak .hero .site-title, .hero .gov-speak .site-title, .gov-speak
+.hero-sml .site-title,
+.hero-sml .gov-speak .site-title, .gov-speak
+.hero-med .site-title,
+.hero-med .gov-speak .site-title {
   font-size: 2rem;
   line-height: 1.2;
 }
 
 @media screen and (min-width: 768px) {
-  .gov-speak h1, .gov-speak .hero .site-title, .hero .gov-speak .site-title,
-  .gov-speak .hero-sml .site-title, .hero-sml .gov-speak .site-title,
-  .gov-speak .hero-med .site-title, .hero-med .gov-speak .site-title {
+  .gov-speak h1, .gov-speak .hero .site-title, .hero .gov-speak .site-title, .gov-speak
+  .hero-sml .site-title,
+  .hero-sml .gov-speak .site-title, .gov-speak
+  .hero-med .site-title,
+  .hero-med .gov-speak .site-title {
     font-size: 2.75rem;
   }
 }
 
 @media screen and (min-width: 75em) {
-  .gov-speak h1, .gov-speak .hero .site-title, .hero .gov-speak .site-title,
-  .gov-speak .hero-sml .site-title, .hero-sml .gov-speak .site-title,
-  .gov-speak .hero-med .site-title, .hero-med .gov-speak .site-title {
+  .gov-speak h1, .gov-speak .hero .site-title, .hero .gov-speak .site-title, .gov-speak
+  .hero-sml .site-title,
+  .hero-sml .gov-speak .site-title, .gov-speak
+  .hero-med .site-title,
+  .hero-med .gov-speak .site-title {
     font-size: 2.5rem;
   }
 }
 
-.gov-speak h1:first-of-type, .gov-speak .hero .site-title:first-of-type, .hero .gov-speak .site-title:first-of-type,
-.gov-speak .hero-sml .site-title:first-of-type, .hero-sml .gov-speak .site-title:first-of-type,
-.gov-speak .hero-med .site-title:first-of-type, .hero-med .gov-speak .site-title:first-of-type {
+.gov-speak h1:first-of-type, .gov-speak .hero .site-title:first-of-type, .hero .gov-speak .site-title:first-of-type, .gov-speak
+.hero-sml .site-title:first-of-type,
+.hero-sml .gov-speak .site-title:first-of-type, .gov-speak
+.hero-med .site-title:first-of-type,
+.hero-med .gov-speak .site-title:first-of-type {
   margin-top: 0.4em;
 }
 
-
-.gov-speak h2,
-.gov-speak .display {
+.gov-speak h2, .gov-speak .display {
   font-size: 1.75rem;
   line-height: 1.2;
 }
 
 @media screen and (min-width: 768px) {
-  
-  .gov-speak h2,
-  .gov-speak .display {
+  .gov-speak h2, .gov-speak .display {
     font-size: 2rem;
   }
 }
@@ -5077,9 +5015,11 @@ Markup: templates/content-full-width.hbs
 Style guide: Typography.4 Line length
 */
 @media screen and (min-width: 75em) {
-  .content-main h1, .content-main .hero .site-title, .hero .content-main .site-title,
-  .content-main .hero-sml .site-title, .hero-sml .content-main .site-title,
-  .content-main .hero-med .site-title, .hero-med .content-main .site-title,
+  .content-main h1, .content-main .hero .site-title, .hero .content-main .site-title, .content-main
+  .hero-sml .site-title,
+  .hero-sml .content-main .site-title, .content-main
+  .hero-med .site-title,
+  .hero-med .content-main .site-title,
   .content-main h2,
   .content-main .display,
   .content-main h3,
@@ -5152,7 +5092,7 @@ strong.very-bold {
 
 .abstract {
   margin: 1.2em 0 2em;
-  border-bottom: 1px solid #bbbaba;
+  border-bottom: 1px solid #bbbbbb;
 }
 
 .abstract p {
@@ -5175,7 +5115,7 @@ strong.very-bold {
 p.abstract {
   margin: 0.8em 0 1.5em;
   padding-bottom: 1.2em;
-  border-bottom: 1px solid #bbbaba;
+  border-bottom: 1px solid #bbbbbb;
   font-size: 1.1875rem;
 }
 
@@ -5192,7 +5132,7 @@ p.abstract {
 }
 
 hr {
-  border-color: #bbbaba;
+  border-color: #bbbbbb;
   border-style: solid;
   border-bottom: none;
   margin-top: 1.6em;
@@ -5302,7 +5242,7 @@ Style guide: Typography.7 Callouts & warnings
   margin: 1.6em 0.8em;
   padding: 1.2em 1.2em 1.2em 1.6em;
   border-radius: 1px;
-  box-shadow: 0 0 8px #bbbaba;
+  box-shadow: 0 0 8px #bbbbbb;
 }
 
 .callout--warning {
@@ -5512,7 +5452,7 @@ blockquote::after {
 blockquote footer {
   margin-top: 1.2em;
   padding-top: 0.4em;
-  border-top: 1px solid #bbbaba;
+  border-top: 1px solid #bbbbbb;
 }
 
 blockquote cite {
@@ -5543,9 +5483,11 @@ cite {
   font-style: normal;
 }
 
-article h1:first-of-type, article .hero .site-title:first-of-type, .hero article .site-title:first-of-type,
-article .hero-sml .site-title:first-of-type, .hero-sml article .site-title:first-of-type,
-article .hero-med .site-title:first-of-type, .hero-med article .site-title:first-of-type {
+article h1:first-of-type, article .hero .site-title:first-of-type, .hero article .site-title:first-of-type, article
+.hero-sml .site-title:first-of-type,
+.hero-sml article .site-title:first-of-type, article
+.hero-med .site-title:first-of-type,
+.hero-med article .site-title:first-of-type {
   margin-top: 0;
 }
 
@@ -5909,7 +5851,7 @@ body.page-events #content .view .views-row .node-readmore a, body.page-publicati
   border-radius: 4px;
   border: 0;
   transition: box-shadow 0.2s;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px transparent;
   display: inline-block;
   height: auto;
 }
@@ -6640,7 +6582,7 @@ html.large-fonts {
   border-radius: 4px;
   border: 0;
   transition: box-shadow 0.2s;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px transparent;
 }
 
 #content button:hover, #content button:focus, #content .button:hover, #content .button:focus, #content [role='button']:hover, #content [role='button']:focus, #content [type='submit']:hover, #content [type='submit']:focus, #content [type='reset']:hover, #content [type='reset']:focus, #content [type='button']:hover, #content [type='button']:focus {
@@ -6672,17 +6614,21 @@ body.not-front #content .content-header .content-header-inner {
   box-sizing: content-box;
 }
 
-body.not-front #content .content-header .content-header-inner h1, body.not-front #content .content-header .content-header-inner .hero .site-title, .hero body.not-front #content .content-header .content-header-inner .site-title,
-body.not-front #content .content-header .content-header-inner .hero-sml .site-title, .hero-sml body.not-front #content .content-header .content-header-inner .site-title,
-body.not-front #content .content-header .content-header-inner .hero-med .site-title, .hero-med body.not-front #content .content-header .content-header-inner .site-title {
+body.not-front #content .content-header .content-header-inner h1, body.not-front #content .content-header .content-header-inner .hero .site-title, .hero body.not-front #content .content-header .content-header-inner .site-title, body.not-front #content .content-header .content-header-inner
+.hero-sml .site-title,
+.hero-sml body.not-front #content .content-header .content-header-inner .site-title, body.not-front #content .content-header .content-header-inner
+.hero-med .site-title,
+.hero-med body.not-front #content .content-header .content-header-inner .site-title {
   font-weight: 300;
   font-size: 2rem;
 }
 
 @media (min-width: 768px) {
-  body.not-front #content .content-header .content-header-inner h1, body.not-front #content .content-header .content-header-inner .hero .site-title, .hero body.not-front #content .content-header .content-header-inner .site-title,
-  body.not-front #content .content-header .content-header-inner .hero-sml .site-title, .hero-sml body.not-front #content .content-header .content-header-inner .site-title,
-  body.not-front #content .content-header .content-header-inner .hero-med .site-title, .hero-med body.not-front #content .content-header .content-header-inner .site-title {
+  body.not-front #content .content-header .content-header-inner h1, body.not-front #content .content-header .content-header-inner .hero .site-title, .hero body.not-front #content .content-header .content-header-inner .site-title, body.not-front #content .content-header .content-header-inner
+  .hero-sml .site-title,
+  .hero-sml body.not-front #content .content-header .content-header-inner .site-title, body.not-front #content .content-header .content-header-inner
+  .hero-med .site-title,
+  .hero-med body.not-front #content .content-header .content-header-inner .site-title {
     font-size: 3rem;
   }
 }
@@ -7176,9 +7122,7 @@ body.front .content-body-inner.no-sidebar .panel-display {
 
 h1, .hero .site-title,
 .hero-sml .site-title,
-.hero-med .site-title,
-h2,
-.display, h3, h4, h5 {
+.hero-med .site-title, h2, .display, h3, h4, h5 {
   font-family: "Varela Round", sans-serif;
   font-weight: normal;
 }
@@ -7198,24 +7142,18 @@ h1, .hero .site-title,
   }
 }
 
-
-h2,
-.display {
+h2, .display {
   font-size: 1.25rem;
 }
 
 @media (min-width: 768px) {
-  
-  h2,
-  .display {
+  h2, .display {
     font-size: 2.25rem;
   }
 }
 
 @media (min-width: 1200px) {
-  
-  h2,
-  .display {
+  h2, .display {
     font-size: 2.5rem;
   }
 }
@@ -7303,12 +7241,7 @@ blockquote p:last-child {
 }
 
 @media (min-width: 768px) {
-  ul,
-  ol,
-  dl,
-  p,
-  dt,
-  dd {
+  ul, ol, dl, p, dt, dd {
     font-size: inherit;
     line-height: 1.875rem;
   }
@@ -7377,7 +7310,7 @@ a[rel~='external']::after {
   border-radius: 4px;
   border: 0;
   transition: box-shadow 0.2s;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px transparent;
 }
 
 #content button:hover, #content button:focus, #content .button:hover, #content .button:focus, #content [role='button']:hover, #content [role='button']:focus, #content [type='submit']:hover, #content [type='submit']:focus, #content [type='reset']:hover, #content [type='reset']:focus, #content [type='button']:hover, #content [type='button']:focus {
@@ -7733,7 +7666,7 @@ form.webform-client-form .webform-component-grid table.sticky-header {
 }
 
 form.webform-client-form .webform-component-grid table.sticky-header th {
-  border-bottom: solid 1px #bbbaba;
+  border-bottom: solid 1px #bbbbbb;
   padding: 0.4em;
   font-size: 87.5%;
   text-align: center;
@@ -8363,7 +8296,7 @@ ul.tabs.primary {
   border-radius: 4px;
   border: 0;
   transition: box-shadow 0.2s;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px transparent;
   display: inline-block;
   height: auto;
 }
@@ -8688,7 +8621,7 @@ ul.tabs.primary {
   border-radius: 4px;
   border: 0;
   transition: box-shadow 0.2s;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px transparent;
   display: inline-block;
   height: auto;
 }
@@ -8999,7 +8932,7 @@ ul.tabs.primary {
   border-radius: 4px;
   border: 0;
   transition: box-shadow 0.2s;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px transparent;
   display: inline-block;
   height: auto;
 }
@@ -10745,7 +10678,7 @@ ul.tabs.primary {
   border-radius: 4px;
   border: 0;
   transition: box-shadow 0.2s;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px transparent;
   display: inline-block;
   height: auto;
 }
@@ -11250,5 +11183,24 @@ body.campaign-2018 .view-latest-news .views-row .node-readmore a:hover {
     background-color: #fff;
     color: #000;
   }
+}
+
+.content-table tr:nth-child(even), .field-name-body table tr:nth-child(even), form.webform-client-form .webform-component-grid table.webform-grid tr:nth-child(even),
+.field-name-body table tr:nth-child(even),
+form.webform-client-form .webform-component-grid table.webform-grid tr:nth-child(even) {
+  background: none;
+}
+
+.content-body .content .toc-filter-content {
+  background: none;
+}
+
+.content-body .content .toc-filter-content h3 {
+  color: #fff;
+}
+
+.page-node-9206 .view-id-partners img {
+  -webkit-filter: none;
+  filter: none;
 }
 /*# sourceMappingURL=styles.css.map */
