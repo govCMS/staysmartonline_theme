@@ -277,8 +277,17 @@ form.webform-client-form .webform-component-grid table.webform-grid tr:nth-child
 
 // Image treatment exception
 .page-node-9206 {
-  .view-id-partners img {
-    -webkit-filter: none;
-    filter: none;
+  .view-id-partners {
+    background: $white;
+    padding: 0 2em;
+
+    h3 {
+      color: $black;
+    }
+
+    img {
+      -webkit-filter: none;
+      filter: none;
+    }
   }
 }

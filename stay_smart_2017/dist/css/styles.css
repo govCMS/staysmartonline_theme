@@ -11199,6 +11199,15 @@ form.webform-client-form .webform-component-grid table.webform-grid tr:nth-child
   color: #fff;
 }
 
+.page-node-9206 .view-id-partners {
+  background: #fff;
+  padding: 0 2em;
+}
+
+.page-node-9206 .view-id-partners h3 {
+  color: #000;
+}
+
 .page-node-9206 .view-id-partners img {
   -webkit-filter: none;
   filter: none;
